@@ -1,0 +1,443 @@
+[
+  {
+    "page": "section1/01-pokhodzhennia-liudyny.html",
+    "css": "assets/tailwind-local/tw-01-section1-01-pokhodzhennia-liudyny.css",
+    "href": "../assets/tailwind-local/tw-01-section1-01-pokhodzhennia-liudyny.css",
+    "candidates": 393,
+    "bytes": 49909
+  },
+  {
+    "page": "section1/02-antropohenez.html",
+    "css": "assets/tailwind-local/tw-02-section1-02-antropohenez.css",
+    "href": "../assets/tailwind-local/tw-02-section1-02-antropohenez.css",
+    "candidates": 280,
+    "bytes": 34823
+  },
+  {
+    "page": "section1/03-neandertaltsi-kromaniontsi.html",
+    "css": "assets/tailwind-local/tw-03-section1-03-neandertaltsi-kromaniontsi.css",
+    "href": "../assets/tailwind-local/tw-03-section1-03-neandertaltsi-kromaniontsi.css",
+    "candidates": 319,
+    "bytes": 44083
+  },
+  {
+    "page": "section1/04-paleolit.html",
+    "css": "assets/tailwind-local/tw-04-section1-04-paleolit.css",
+    "href": "../assets/tailwind-local/tw-04-section1-04-paleolit.css",
+    "candidates": 241,
+    "bytes": 26204
+  },
+  {
+    "page": "section1/05-mezolit.html",
+    "css": "assets/tailwind-local/tw-05-section1-05-mezolit.css",
+    "href": "../assets/tailwind-local/tw-05-section1-05-mezolit.css",
+    "candidates": 183,
+    "bytes": 23334
+  },
+  {
+    "page": "section1/06-neolit.html",
+    "css": "assets/tailwind-local/tw-06-section1-06-neolit.css",
+    "href": "../assets/tailwind-local/tw-06-section1-06-neolit.css",
+    "candidates": 265,
+    "bytes": 34101
+  },
+  {
+    "page": "section1/07-suspilna-orhanizatsiia.html",
+    "css": "assets/tailwind-local/tw-07-section1-07-suspilna-orhanizatsiia.css",
+    "href": "../assets/tailwind-local/tw-07-section1-07-suspilna-orhanizatsiia.css",
+    "candidates": 229,
+    "bytes": 31079
+  },
+  {
+    "page": "section1/08-dukhovna-kultura.html",
+    "css": "assets/tailwind-local/tw-08-section1-08-dukhovna-kultura.css",
+    "href": "../assets/tailwind-local/tw-08-section1-08-dukhovna-kultura.css",
+    "candidates": 213,
+    "bytes": 28957
+  },
+  {
+    "page": "section1/09-midno-kamianyi-vik.html",
+    "css": "assets/tailwind-local/tw-09-section1-09-midno-kamianyi-vik.css",
+    "href": "../assets/tailwind-local/tw-09-section1-09-midno-kamianyi-vik.css",
+    "candidates": 230,
+    "bytes": 28396
+  },
+  {
+    "page": "section1/index.html",
+    "css": "assets/tailwind-local/tw-10-section1-index.css",
+    "href": "../assets/tailwind-local/tw-10-section1-index.css",
+    "candidates": 285,
+    "bytes": 51950
+  },
+  {
+    "page": "section2/10-bronzovyi-vik.html",
+    "css": "assets/tailwind-local/tw-11-section2-10-bronzovyi-vik.css",
+    "href": "../assets/tailwind-local/tw-11-section2-10-bronzovyi-vik.css",
+    "candidates": 257,
+    "bytes": 36608
+  },
+  {
+    "page": "section2/11-shcho-take-tsyvilizatsiia.html",
+    "css": "assets/tailwind-local/tw-12-section2-11-shcho-take-tsyvilizatsiia.css",
+    "href": "../assets/tailwind-local/tw-12-section2-11-shcho-take-tsyvilizatsiia.css",
+    "candidates": 278,
+    "bytes": 29519
+  },
+  {
+    "page": "section2/12-mesopotamiia-pryroda-hospodarstvo.html",
+    "css": "assets/tailwind-local/tw-13-section2-12-mesopotamiia-pryroda-hospodarstvo.css",
+    "href": "../assets/tailwind-local/tw-13-section2-12-mesopotamiia-pryroda-hospodarstvo.css",
+    "candidates": 223,
+    "bytes": 29690
+  },
+  {
+    "page": "section2/13-mesopotamiia-mista-derzhavy.html",
+    "css": "assets/tailwind-local/tw-14-section2-13-mesopotamiia-mista-derzhavy.css",
+    "href": "../assets/tailwind-local/tw-14-section2-13-mesopotamiia-mista-derzhavy.css",
+    "candidates": 263,
+    "bytes": 36770
+  },
+  {
+    "page": "section2/14-mesopotamiia-suspilstvo-khamurapi.html",
+    "css": "assets/tailwind-local/tw-15-section2-14-mesopotamiia-suspilstvo-khamurapi.css",
+    "href": "../assets/tailwind-local/tw-15-section2-14-mesopotamiia-suspilstvo-khamurapi.css",
+    "candidates": 278,
+    "bytes": 40232
+  },
+  {
+    "page": "section2/15-assyriia-vavylon.html",
+    "css": "assets/tailwind-local/tw-16-section2-15-assyriia-vavylon.css",
+    "href": "../assets/tailwind-local/tw-16-section2-15-assyriia-vavylon.css",
+    "candidates": 263,
+    "bytes": 38446
+  },
+  {
+    "page": "section2/16-mesopotamiia-povsiakdennia.html",
+    "css": "assets/tailwind-local/tw-17-section2-16-mesopotamiia-povsiakdennia.css",
+    "href": "../assets/tailwind-local/tw-17-section2-16-mesopotamiia-povsiakdennia.css",
+    "candidates": 298,
+    "bytes": 38284
+  },
+  {
+    "page": "section2/17-mesopotamiia-pysemnist-nauka.html",
+    "css": "assets/tailwind-local/tw-18-section2-17-mesopotamiia-pysemnist-nauka.css",
+    "href": "../assets/tailwind-local/tw-18-section2-17-mesopotamiia-pysemnist-nauka.css",
+    "candidates": 275,
+    "bytes": 35911
+  },
+  {
+    "page": "section2/18-mesopotamiia-relihiia-literatura.html",
+    "css": "assets/tailwind-local/tw-19-section2-18-mesopotamiia-relihiia-literatura.css",
+    "href": "../assets/tailwind-local/tw-19-section2-18-mesopotamiia-relihiia-literatura.css",
+    "candidates": 336,
+    "bytes": 39310
+  },
+  {
+    "page": "section2/19-bronzovyi-vik-ukraina.html",
+    "css": "assets/tailwind-local/tw-20-section2-19-bronzovyi-vik-ukraina.css",
+    "href": "../assets/tailwind-local/tw-20-section2-19-bronzovyi-vik-ukraina.css",
+    "candidates": 272,
+    "bytes": 38335
+  },
+  {
+    "page": "section2/20-davnii-yehypet-nil.html",
+    "css": "assets/tailwind-local/tw-21-section2-20-davnii-yehypet-nil.css",
+    "href": "../assets/tailwind-local/tw-21-section2-20-davnii-yehypet-nil.css",
+    "candidates": 259,
+    "bytes": 39957
+  },
+  {
+    "page": "section2/21-davnii-yehypet-vlada-suspilstvo.html",
+    "css": "assets/tailwind-local/tw-22-section2-21-davnii-yehypet-vlada-suspilstvo.css",
+    "href": "../assets/tailwind-local/tw-22-section2-21-davnii-yehypet-vlada-suspilstvo.css",
+    "candidates": 228,
+    "bytes": 36016
+  },
+  {
+    "page": "section2/22-davnii-yehypet-pravyteli-viiny.html",
+    "css": "assets/tailwind-local/tw-23-section2-22-davnii-yehypet-pravyteli-viiny.css",
+    "href": "../assets/tailwind-local/tw-23-section2-22-davnii-yehypet-pravyteli-viiny.css",
+    "candidates": 226,
+    "bytes": 33977
+  },
+  {
+    "page": "section2/23-davnii-yehypet-povsiakdennia.html",
+    "css": "assets/tailwind-local/tw-24-section2-23-davnii-yehypet-povsiakdennia.css",
+    "href": "../assets/tailwind-local/tw-24-section2-23-davnii-yehypet-povsiakdennia.css",
+    "candidates": 286,
+    "bytes": 36111
+  },
+  {
+    "page": "section2/24-davnii-yehypet-pysemnist-relihiia-mystetstvo.html",
+    "css": "assets/tailwind-local/tw-25-section2-24-davnii-yehypet-pysemnist-relihiia-mystetstvo.css",
+    "href": "../assets/tailwind-local/tw-25-section2-24-davnii-yehypet-pysemnist-relihiia-mystetstvo.css",
+    "candidates": 321,
+    "bytes": 40879
+  },
+  {
+    "page": "section2/25-finikiia.html",
+    "css": "assets/tailwind-local/tw-26-section2-25-finikiia.css",
+    "href": "../assets/tailwind-local/tw-26-section2-25-finikiia.css",
+    "candidates": 273,
+    "bytes": 38261
+  },
+  {
+    "page": "section2/26-izrailske-tsarstvo.html",
+    "css": "assets/tailwind-local/tw-27-section2-26-izrailske-tsarstvo.css",
+    "href": "../assets/tailwind-local/tw-27-section2-26-izrailske-tsarstvo.css",
+    "candidates": 274,
+    "bytes": 37322
+  },
+  {
+    "page": "section2/27-khetska-derzhava-narody-moria.html",
+    "css": "assets/tailwind-local/tw-28-section2-27-khetska-derzhava-narody-moria.css",
+    "href": "../assets/tailwind-local/tw-28-section2-27-khetska-derzhava-narody-moria.css",
+    "candidates": 280,
+    "bytes": 35515
+  },
+  {
+    "page": "section2/28-persiia.html",
+    "css": "assets/tailwind-local/tw-29-section2-28-persiia.css",
+    "href": "../assets/tailwind-local/tw-29-section2-28-persiia.css",
+    "candidates": 308,
+    "bytes": 33860
+  },
+  {
+    "page": "section2/29-kimmeriitsi-skify.html",
+    "css": "assets/tailwind-local/tw-30-section2-29-kimmeriitsi-skify.css",
+    "href": "../assets/tailwind-local/tw-30-section2-29-kimmeriitsi-skify.css",
+    "candidates": 246,
+    "bytes": 31934
+  },
+  {
+    "page": "section2/30-kharappa.html",
+    "css": "assets/tailwind-local/tw-31-section2-30-kharappa.css",
+    "href": "../assets/tailwind-local/tw-31-section2-30-kharappa.css",
+    "candidates": 256,
+    "bytes": 35713
+  },
+  {
+    "page": "section2/31-vediiskyi-period.html",
+    "css": "assets/tailwind-local/tw-32-section2-31-vediiskyi-period.css",
+    "href": "../assets/tailwind-local/tw-32-section2-31-vediiskyi-period.css",
+    "candidates": 288,
+    "bytes": 36118
+  },
+  {
+    "page": "section2/32-indiia-relihii-mauriiv.html",
+    "css": "assets/tailwind-local/tw-33-section2-32-indiia-relihii-mauriiv.css",
+    "href": "../assets/tailwind-local/tw-33-section2-32-indiia-relihii-mauriiv.css",
+    "candidates": 316,
+    "bytes": 34484
+  },
+  {
+    "page": "section2/33-davnii-kytai.html",
+    "css": "assets/tailwind-local/tw-34-section2-33-davnii-kytai.css",
+    "href": "../assets/tailwind-local/tw-34-section2-33-davnii-kytai.css",
+    "candidates": 307,
+    "bytes": 39471
+  },
+  {
+    "page": "section2/34-kytai-tsin.html",
+    "css": "assets/tailwind-local/tw-35-section2-34-kytai-tsin.css",
+    "href": "../assets/tailwind-local/tw-35-section2-34-kytai-tsin.css",
+    "candidates": 315,
+    "bytes": 39985
+  },
+  {
+    "page": "section2/35-kytai-kultura.html",
+    "css": "assets/tailwind-local/tw-36-section2-35-kytai-kultura.css",
+    "href": "../assets/tailwind-local/tw-36-section2-35-kytai-kultura.css",
+    "candidates": 326,
+    "bytes": 41413
+  },
+  {
+    "page": "section2/index.html",
+    "css": "assets/tailwind-local/tw-37-section2-index.css",
+    "href": "../assets/tailwind-local/tw-37-section2-index.css",
+    "candidates": 340,
+    "bytes": 56069
+  },
+  {
+    "page": "section3/36-antychnist-pryroda-hretsii.html",
+    "css": "assets/tailwind-local/tw-38-section3-36-antychnist-pryroda-hretsii.css",
+    "href": "../assets/tailwind-local/tw-38-section3-36-antychnist-pryroda-hretsii.css",
+    "candidates": 265,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/index.html",
+    "css": "assets/tailwind-local/tw-39-section3-index.css",
+    "href": "../assets/tailwind-local/tw-39-section3-index.css",
+    "candidates": 187,
+    "bytes": 57777
+  },
+  {
+    "page": "section3/37-minoiska-mikenska-palatsovi-tsyvilizatsii.html",
+    "css": "assets/tailwind-local/tw-40-section3-37-minoiska-mikenska-palatsovi-tsyvilizatsii.css",
+    "href": "../assets/tailwind-local/tw-40-section3-37-minoiska-mikenska-palatsovi-tsyvilizatsii.css",
+    "candidates": 265,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/38-polisnyi-ustrii-davnoi-hretsii.html",
+    "css": "assets/tailwind-local/tw-41-section3-38-polisnyi-ustrii-davnoi-hretsii.css",
+    "href": "../assets/tailwind-local/tw-41-section3-38-polisnyi-ustrii-davnoi-hretsii.css",
+    "candidates": 265,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/39-sparta-derzhava-viiskovyi-tabir.html",
+    "css": "assets/tailwind-local/tw-42-section3-39-sparta-derzhava-viiskovyi-tabir.css",
+    "href": "../assets/tailwind-local/tw-42-section3-39-sparta-derzhava-viiskovyi-tabir.css",
+    "candidates": 265,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/40-persko-hretski-viiny.html",
+    "css": "assets/tailwind-local/tw-43-section3-40-persko-hretski-viiny.css",
+    "href": "../assets/tailwind-local/tw-43-section3-40-persko-hretski-viiny.css",
+    "candidates": 265,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/41-afinska-demokratiia.html",
+    "css": "assets/tailwind-local/tw-44-section3-41-afinska-demokratiia.css",
+    "href": "../assets/tailwind-local/tw-44-section3-41-afinska-demokratiia.css",
+    "candidates": 265,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/42-relihiia-ta-kultura.html",
+    "css": "assets/tailwind-local/tw-45-section3-42-relihiia-ta-kultura.css",
+    "href": "../assets/tailwind-local/tw-45-section3-42-relihiia-ta-kultura.css",
+    "candidates": 265,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/43-mystetstvo-davnoi-hretsii.html",
+    "css": "assets/tailwind-local/tw-46-section3-43-mystetstvo-davnoi-hretsii.css",
+    "href": "../assets/tailwind-local/tw-46-section3-43-mystetstvo-davnoi-hretsii.css",
+    "candidates": 265,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/44-velyka-hretska-kolonizatsiia-antychni-derzhavy-na-terenakh-ukrainy.html",
+    "css": "assets/tailwind-local/tw-47-section3-44-velyka-hretska-kolonizatsiia-antychni-derzhavy-na-terenakh-ukrainy.css",
+    "href": "../assets/tailwind-local/tw-47-section3-44-velyka-hretska-kolonizatsiia-antychni-derzhavy-na-terenakh-ukrainy.css",
+    "candidates": 290,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/45-peloponneski-viiny-skhidnyi-pokhid-aleksandra-makedonskoho.html",
+    "css": "assets/tailwind-local/tw-48-section3-45-peloponneski-viiny-skhidnyi-pokhid-aleksandra-makedonskoho.css",
+    "href": "../assets/tailwind-local/tw-48-section3-45-peloponneski-viiny-skhidnyi-pokhid-aleksandra-makedonskoho.css",
+    "candidates": 300,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/46-ellinizm.html",
+    "css": "assets/tailwind-local/tw-49-section3-46-ellinizm.css",
+    "href": "../assets/tailwind-local/tw-49-section3-46-ellinizm.css",
+    "candidates": 305,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/47-pryrodni-umovy-apenninskoho-pivostrova-zasnuvannia-ryma.html",
+    "css": "assets/tailwind-local/tw-50-section3-47-pryrodni-umovy-apenninskoho-pivostrova-zasnuvannia-ryma.css",
+    "href": "../assets/tailwind-local/tw-50-section3-47-pryrodni-umovy-apenninskoho-pivostrova-zasnuvannia-ryma.css",
+    "candidates": 310,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/48-naidavnisha-istoriia-rymu.html",
+    "css": "assets/tailwind-local/tw-51-section3-48-naidavnisha-istoriia-rymu.css",
+    "href": "../assets/tailwind-local/tw-51-section3-48-naidavnisha-istoriia-rymu.css",
+    "candidates": 315,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/49-suspilnyi-ustrii-rymu.html",
+    "css": "assets/tailwind-local/tw-52-section3-49-suspilnyi-ustrii-rymu.css",
+    "href": "../assets/tailwind-local/tw-52-section3-49-suspilnyi-ustrii-rymu.css",
+    "candidates": 320,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/50-povsiakdenne-zhyttia-rymu-za-chasiv-respubliky.html",
+    "css": "assets/tailwind-local/tw-53-section3-50-povsiakdenne-zhyttia-rymu-za-chasiv-respubliky.css",
+    "href": "../assets/tailwind-local/tw-53-section3-50-povsiakdenne-zhyttia-rymu-za-chasiv-respubliky.css",
+    "candidates": 330,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/51-rymski-zavoiuvannia.html",
+    "css": "assets/tailwind-local/tw-54-section3-51-rymski-zavoiuvannia.css",
+    "href": "../assets/tailwind-local/tw-54-section3-51-rymski-zavoiuvannia.css",
+    "candidates": 335,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/52-kryza-respublikanskoho-ustroiu-ta-vynyknennia-imperii.html",
+    "css": "assets/tailwind-local/tw-55-section3-52-kryza-respublikanskoho-ustroiu-ta-vynyknennia-imperii.css",
+    "href": "../assets/tailwind-local/tw-55-section3-52-kryza-respublikanskoho-ustroiu-ta-vynyknennia-imperii.css",
+    "candidates": 340,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/53-rymska-imperiia.html",
+    "css": "assets/tailwind-local/tw-56-section3-53-rymska-imperiia.css",
+    "href": "../assets/tailwind-local/tw-56-section3-53-rymska-imperiia.css",
+    "candidates": 340,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/54-relihiia-davnikh-rymlian.html",
+    "css": "assets/tailwind-local/tw-57-section3-54-relihiia-davnikh-rymlian.css",
+    "href": "../assets/tailwind-local/tw-57-section3-54-relihiia-davnikh-rymlian.css",
+    "candidates": 340,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/55-mystetstvo-rymu-doby-imperii.html",
+    "css": "assets/tailwind-local/tw-58-section3-55-mystetstvo-rymu-doby-imperii.css",
+    "href": "../assets/tailwind-local/tw-58-section3-55-mystetstvo-rymu-doby-imperii.css",
+    "candidates": 340,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/56-povsiakdenne-zhyttia-v-rymskii-imperii.html",
+    "css": "assets/tailwind-local/tw-59-section3-56-povsiakdenne-zhyttia-v-rymskii-imperii.css",
+    "href": "../assets/tailwind-local/tw-59-section3-56-povsiakdenne-zhyttia-v-rymskii-imperii.css",
+    "candidates": 340,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/57-varvary.html",
+    "css": "assets/tailwind-local/tw-60-section3-57-varvary.css",
+    "href": "../assets/tailwind-local/tw-60-section3-57-varvary.css",
+    "candidates": 340,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/58-vynyknennia-poshyrennia-khrystyianstva-kryzovi-yavyshcha-rymskoi-imperii.html",
+    "css": "assets/tailwind-local/tw-61-section3-58-vynyknennia-poshyrennia-khrystyianstva-kryzovi-yavyshcha-rymskoi-imperii.css",
+    "href": "../assets/tailwind-local/tw-61-section3-58-vynyknennia-poshyrennia-khrystyianstva-kryzovi-yavyshcha-rymskoi-imperii.css",
+    "candidates": 340,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/59-velyke-pereselennia-narodiv-padinnia-zakhidnoi-rymskoi-imperii.html",
+    "css": "assets/tailwind-local/tw-62-section3-59-velyke-pereselennia-narodiv-padinnia-zakhidnoi-rymskoi-imperii.css",
+    "href": "../assets/tailwind-local/tw-62-section3-59-velyke-pereselennia-narodiv-padinnia-zakhidnoi-rymskoi-imperii.css",
+    "candidates": 340,
+    "bytes": 33188
+  },
+  {
+    "page": "section3/60-sloviany.html",
+    "css": "assets/tailwind-local/tw-63-section3-60-sloviany.css",
+    "href": "../assets/tailwind-local/tw-63-section3-60-sloviany.css",
+    "candidates": 340,
+    "bytes": 33188
+  }
+]

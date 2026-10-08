@@ -1,0 +1,65 @@
+[
+  {
+    "lesson": "§12",
+    "page": "section2/12-mesopotamiia-pryroda-hospodarstvo.html",
+    "title": "Карта Шумеру та Південної Месопотамії",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Sumer_satellite_map.jpg",
+    "strategy": "remote image + intrinsic dimensions + preconnect + accessible HTML fallback + deployed runtime cache after first successful load"
+  },
+  {
+    "lesson": "§36",
+    "page": "section3/36-antychnist-pryroda-hretsii.html",
+    "title": "Карта Егейського світу",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Aegean-Sea.map.png",
+    "strategy": "remote image + intrinsic dimensions + preconnect + accessible HTML fallback + deployed runtime cache after first successful load"
+  },
+  {
+    "lesson": "§51",
+    "page": "section3/51-rymski-zavoiuvannia.html",
+    "title": "Етапи розширення Риму",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Extent_of_the_Roman_Republic_and_the_Roman_Empire_between_218_BC_and_117_AD.png",
+    "strategy": "remote image + intrinsic dimensions + preconnect + accessible HTML fallback + deployed runtime cache after first successful load"
+  },
+  {
+    "lesson": "§53",
+    "page": "section3/53-rymska-imperiia.html",
+    "title": "Римська імперія у 117 році",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Roman_Empire_(117_AD).png",
+    "strategy": "remote image + intrinsic dimensions + preconnect + accessible HTML fallback + deployed runtime cache after first successful load"
+  },
+  {
+    "lesson": "§57",
+    "page": "section3/57-varvary.html",
+    "title": "Рим та сусідні народи",
+    "source_page": "https://commons.wikimedia.org/wiki/File:RomansAndGermansDetailedMap.jpg",
+    "strategy": "remote image + intrinsic dimensions + preconnect + accessible HTML fallback + deployed runtime cache after first successful load"
+  },
+  {
+    "lesson": "§58",
+    "page": "section3/58-vynyknennia-poshyrennia-khrystyianstva-kryzovi-yavyshcha-rymskoi-imperii.html",
+    "title": "Римська імперія та ранні християнські громади",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Biblica_Open_Bible_Map_18_The_Roman_Empire_and_the_Early_Church.png",
+    "strategy": "remote image + intrinsic dimensions + preconnect + accessible HTML fallback + deployed runtime cache after first successful load"
+  },
+  {
+    "lesson": "§59",
+    "page": "section3/59-velyke-pereselennia-narodiv-padinnia-zakhidnoi-rymskoi-imperii.html",
+    "title": "Велике переселення народів",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Invasions_of_the_Roman_Empire_1.png",
+    "strategy": "remote image + intrinsic dimensions + preconnect + accessible HTML fallback + deployed runtime cache after first successful load"
+  },
+  {
+    "lesson": "§60",
+    "page": "section3/60-sloviany.html",
+    "title": "Ранні слов’яни та напрямки розселення",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Migration_of_Early_Slavs.png",
+    "strategy": "remote image + intrinsic dimensions + preconnect + accessible HTML fallback + deployed runtime cache after first successful load"
+  },
+  {
+    "lesson": "§56",
+    "page": "section3/56-povsiakdenne-zhyttia-v-rymskii-imperii.html",
+    "title": "Терми Каракалли",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Rome_Baths_of_Caracalla_2020_P05.jpg",
+    "strategy": "remote image + intrinsic dimensions + preconnect + accessible HTML fallback + deployed runtime cache after first successful load"
+  }
+]

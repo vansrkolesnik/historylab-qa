@@ -1,0 +1,368 @@
+[
+  {
+    "old_file": "section1/index1.html",
+    "new_file": "section1/index.html",
+    "old_url": "/section1/index1.html",
+    "new_url": "/section1/index.html"
+  },
+  {
+    "old_file": "section1/1 походження людини.html",
+    "new_file": "section1/01-pokhodzhennia-liudyny.html",
+    "old_url": "/section1/1%20%D0%BF%D0%BE%D1%85%D0%BE%D0%B4%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F%20%D0%BB%D1%8E%D0%B4%D0%B8%D0%BD%D0%B8.html",
+    "new_url": "/section1/01-pokhodzhennia-liudyny.html"
+  },
+  {
+    "old_file": "section1/2 антропогенез.html",
+    "new_file": "section1/02-antropohenez.html",
+    "old_url": "/section1/2%20%D0%B0%D0%BD%D1%82%D1%80%D0%BE%D0%BF%D0%BE%D0%B3%D0%B5%D0%BD%D0%B5%D0%B7.html",
+    "new_url": "/section1/02-antropohenez.html"
+  },
+  {
+    "old_file": "section1/3 неандертальці та  кроманьйонці.html",
+    "new_file": "section1/03-neandertaltsi-kromaniontsi.html",
+    "old_url": "/section1/3%20%D0%BD%D0%B5%D0%B0%D0%BD%D0%B4%D0%B5%D1%80%D1%82%D0%B0%D0%BB%D1%8C%D1%86%D1%96%20%D1%82%D0%B0%20%20%D0%BA%D1%80%D0%BE%D0%BC%D0%B0%D0%BD%D1%8C%D0%B9%D0%BE%D0%BD%D1%86%D1%96.html",
+    "new_url": "/section1/03-neandertaltsi-kromaniontsi.html"
+  },
+  {
+    "old_file": "section1/4 палеоліт.html",
+    "new_file": "section1/04-paleolit.html",
+    "old_url": "/section1/4%20%D0%BF%D0%B0%D0%BB%D0%B5%D0%BE%D0%BB%D1%96%D1%82.html",
+    "new_url": "/section1/04-paleolit.html"
+  },
+  {
+    "old_file": "section1/5 мезоліт.html",
+    "new_file": "section1/05-mezolit.html",
+    "old_url": "/section1/5%20%D0%BC%D0%B5%D0%B7%D0%BE%D0%BB%D1%96%D1%82.html",
+    "new_url": "/section1/05-mezolit.html"
+  },
+  {
+    "old_file": "section1/6 неоліт.html",
+    "new_file": "section1/06-neolit.html",
+    "old_url": "/section1/6%20%D0%BD%D0%B5%D0%BE%D0%BB%D1%96%D1%82.html",
+    "new_url": "/section1/06-neolit.html"
+  },
+  {
+    "old_file": "section1/7 суспільна організація.html",
+    "new_file": "section1/07-suspilna-orhanizatsiia.html",
+    "old_url": "/section1/7%20%D1%81%D1%83%D1%81%D0%BF%D1%96%D0%BB%D1%8C%D0%BD%D0%B0%20%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D1%96%D0%B7%D0%B0%D1%86%D1%96%D1%8F.html",
+    "new_url": "/section1/07-suspilna-orhanizatsiia.html"
+  },
+  {
+    "old_file": "section1/8 духовна культура.html",
+    "new_file": "section1/08-dukhovna-kultura.html",
+    "old_url": "/section1/8%20%D0%B4%D1%83%D1%85%D0%BE%D0%B2%D0%BD%D0%B0%20%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0.html",
+    "new_url": "/section1/08-dukhovna-kultura.html"
+  },
+  {
+    "old_file": "section1/9 мідно-кам'яний вік.html",
+    "new_file": "section1/09-midno-kamianyi-vik.html",
+    "old_url": "/section1/9%20%D0%BC%D1%96%D0%B4%D0%BD%D0%BE-%D0%BA%D0%B0%D0%BC%27%D1%8F%D0%BD%D0%B8%D0%B9%20%D0%B2%D1%96%D0%BA.html",
+    "new_url": "/section1/09-midno-kamianyi-vik.html"
+  },
+  {
+    "old_file": "section2/index2.html",
+    "new_file": "section2/index.html",
+    "old_url": "/section2/index2.html",
+    "new_url": "/section2/index.html"
+  },
+  {
+    "old_file": "section2/10 бронзовий вік.html",
+    "new_file": "section2/10-bronzovyi-vik.html",
+    "old_url": "/section2/10%20%D0%B1%D1%80%D0%BE%D0%BD%D0%B7%D0%BE%D0%B2%D0%B8%D0%B9%20%D0%B2%D1%96%D0%BA.html",
+    "new_url": "/section2/10-bronzovyi-vik.html"
+  },
+  {
+    "old_file": "section2/11 що в історії називають цивілізацією.html",
+    "new_file": "section2/11-shcho-take-tsyvilizatsiia.html",
+    "old_url": "/section2/11%20%D1%89%D0%BE%20%D0%B2%20%D1%96%D1%81%D1%82%D0%BE%D1%80%D1%96%D1%97%20%D0%BD%D0%B0%D0%B7%D0%B8%D0%B2%D0%B0%D1%8E%D1%82%D1%8C%20%D1%86%D0%B8%D0%B2%D1%96%D0%BB%D1%96%D0%B7%D0%B0%D1%86%D1%96%D1%94%D1%8E.html",
+    "new_url": "/section2/11-shcho-take-tsyvilizatsiia.html"
+  },
+  {
+    "old_file": "section2/12 природні умови та господарство Месопотамії.html",
+    "new_file": "section2/12-mesopotamiia-pryroda-hospodarstvo.html",
+    "old_url": "/section2/12%20%D0%BF%D1%80%D0%B8%D1%80%D0%BE%D0%B4%D0%BD%D1%96%20%D1%83%D0%BC%D0%BE%D0%B2%D0%B8%20%D1%82%D0%B0%20%D0%B3%D0%BE%D1%81%D0%BF%D0%BE%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%BE%20%D0%9C%D0%B5%D1%81%D0%BE%D0%BF%D0%BE%D1%82%D0%B0%D0%BC%D1%96%D1%97.html",
+    "new_url": "/section2/12-mesopotamiia-pryroda-hospodarstvo.html"
+  },
+  {
+    "old_file": "section2/13 міста-держави Месопотамії.html",
+    "new_file": "section2/13-mesopotamiia-mista-derzhavy.html",
+    "old_url": "/section2/13%20%D0%BC%D1%96%D1%81%D1%82%D0%B0-%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%B2%D0%B8%20%D0%9C%D0%B5%D1%81%D0%BE%D0%BF%D0%BE%D1%82%D0%B0%D0%BC%D1%96%D1%97.html",
+    "new_url": "/section2/13-mesopotamiia-mista-derzhavy.html"
+  },
+  {
+    "old_file": "section2/14 суспільний устрій держав месопотамії закони хаммурапі.html",
+    "new_file": "section2/14-mesopotamiia-suspilstvo-khamurapi.html",
+    "old_url": "/section2/14%20%D1%81%D1%83%D1%81%D0%BF%D1%96%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9%20%D1%83%D1%81%D1%82%D1%80%D1%96%D0%B9%20%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%B2%20%D0%BC%D0%B5%D1%81%D0%BE%D0%BF%D0%BE%D1%82%D0%B0%D0%BC%D1%96%D1%97%20%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD%D0%B8%20%D1%85%D0%B0%D0%BC%D0%BC%D1%83%D1%80%D0%B0%D0%BF%D1%96.html",
+    "new_url": "/section2/14-mesopotamiia-suspilstvo-khamurapi.html"
+  },
+  {
+    "old_file": "section2/15 держави залізного віку Ассирія та Вавилон.html",
+    "new_file": "section2/15-assyriia-vavylon.html",
+    "old_url": "/section2/15%20%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%B2%D0%B8%20%D0%B7%D0%B0%D0%BB%D1%96%D0%B7%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B2%D1%96%D0%BA%D1%83%20%D0%90%D1%81%D1%81%D0%B8%D1%80%D1%96%D1%8F%20%D1%82%D0%B0%20%D0%92%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE%D0%BD.html",
+    "new_url": "/section2/15-assyriia-vavylon.html"
+  },
+  {
+    "old_file": "section2/16 повсякденне життя населення Месопотамії.html",
+    "new_file": "section2/16-mesopotamiia-povsiakdennia.html",
+    "old_url": "/section2/16%20%D0%BF%D0%BE%D0%B2%D1%81%D1%8F%D0%BA%D0%B4%D0%B5%D0%BD%D0%BD%D0%B5%20%D0%B6%D0%B8%D1%82%D1%82%D1%8F%20%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F%20%D0%9C%D0%B5%D1%81%D0%BE%D0%BF%D0%BE%D1%82%D0%B0%D0%BC%D1%96%D1%97.html",
+    "new_url": "/section2/16-mesopotamiia-povsiakdennia.html"
+  },
+  {
+    "old_file": "section2/17 писемність та наукові знання.html",
+    "new_file": "section2/17-mesopotamiia-pysemnist-nauka.html",
+    "old_url": "/section2/17%20%D0%BF%D0%B8%D1%81%D0%B5%D0%BC%D0%BD%D1%96%D1%81%D1%82%D1%8C%20%D1%82%D0%B0%20%D0%BD%D0%B0%D1%83%D0%BA%D0%BE%D0%B2%D1%96%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%BD%D1%8F.html",
+    "new_url": "/section2/17-mesopotamiia-pysemnist-nauka.html"
+  },
+  {
+    "old_file": "section2/18 релігія та література.html",
+    "new_file": "section2/18-mesopotamiia-relihiia-literatura.html",
+    "old_url": "/section2/18%20%D1%80%D0%B5%D0%BB%D1%96%D0%B3%D1%96%D1%8F%20%D1%82%D0%B0%20%D0%BB%D1%96%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B0.html",
+    "new_url": "/section2/18-mesopotamiia-relihiia-literatura.html"
+  },
+  {
+    "old_file": "section2/19 бронзовий вік на українських землях.html",
+    "new_file": "section2/19-bronzovyi-vik-ukraina.html",
+    "old_url": "/section2/19%20%D0%B1%D1%80%D0%BE%D0%BD%D0%B7%D0%BE%D0%B2%D0%B8%D0%B9%20%D0%B2%D1%96%D0%BA%20%D0%BD%D0%B0%20%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D1%85%20%D0%B7%D0%B5%D0%BC%D0%BB%D1%8F%D1%85.html",
+    "new_url": "/section2/19-bronzovyi-vik-ukraina.html"
+  },
+  {
+    "old_file": "section2/20 Єгипет дарунок Нілу.html",
+    "new_file": "section2/20-davnii-yehypet-nil.html",
+    "old_url": "/section2/20%20%D0%84%D0%B3%D0%B8%D0%BF%D0%B5%D1%82%20%D0%B4%D0%B0%D1%80%D1%83%D0%BD%D0%BE%D0%BA%20%D0%9D%D1%96%D0%BB%D1%83.html",
+    "new_url": "/section2/20-davnii-yehypet-nil.html"
+  },
+  {
+    "old_file": "section2/21 влада і суспільний устрій Давнього Єгипту.html",
+    "new_file": "section2/21-davnii-yehypet-vlada-suspilstvo.html",
+    "old_url": "/section2/21%20%D0%B2%D0%BB%D0%B0%D0%B4%D0%B0%20%D1%96%20%D1%81%D1%83%D1%81%D0%BF%D1%96%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9%20%D1%83%D1%81%D1%82%D1%80%D1%96%D0%B9%20%D0%94%D0%B0%D0%B2%D0%BD%D1%8C%D0%BE%D0%B3%D0%BE%20%D0%84%D0%B3%D0%B8%D0%BF%D1%82%D1%83.html",
+    "new_url": "/section2/21-davnii-yehypet-vlada-suspilstvo.html"
+  },
+  {
+    "old_file": "section2/22 видатні правителі та війни Давнього Єгипту.html",
+    "new_file": "section2/22-davnii-yehypet-pravyteli-viiny.html",
+    "old_url": "/section2/22%20%D0%B2%D0%B8%D0%B4%D0%B0%D1%82%D0%BD%D1%96%20%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D1%96%20%D1%82%D0%B0%20%D0%B2%D1%96%D0%B9%D0%BD%D0%B8%20%D0%94%D0%B0%D0%B2%D0%BD%D1%8C%D0%BE%D0%B3%D0%BE%20%D0%84%D0%B3%D0%B8%D0%BF%D1%82%D1%83.html",
+    "new_url": "/section2/22-davnii-yehypet-pravyteli-viiny.html"
+  },
+  {
+    "old_file": "section2/23 повсякденне життя Давнього Єгипту.html",
+    "new_file": "section2/23-davnii-yehypet-povsiakdennia.html",
+    "old_url": "/section2/23%20%D0%BF%D0%BE%D0%B2%D1%81%D1%8F%D0%BA%D0%B4%D0%B5%D0%BD%D0%BD%D0%B5%20%D0%B6%D0%B8%D1%82%D1%82%D1%8F%20%D0%94%D0%B0%D0%B2%D0%BD%D1%8C%D0%BE%D0%B3%D0%BE%20%D0%84%D0%B3%D0%B8%D0%BF%D1%82%D1%83.html",
+    "new_url": "/section2/23-davnii-yehypet-povsiakdennia.html"
+  },
+  {
+    "old_file": "section2/24 писемність релігія та мистецтво Давнього Єгипту.html",
+    "new_file": "section2/24-davnii-yehypet-pysemnist-relihiia-mystetstvo.html",
+    "old_url": "/section2/24%20%D0%BF%D0%B8%D1%81%D0%B5%D0%BC%D0%BD%D1%96%D1%81%D1%82%D1%8C%20%D1%80%D0%B5%D0%BB%D1%96%D0%B3%D1%96%D1%8F%20%D1%82%D0%B0%20%D0%BC%D0%B8%D1%81%D1%82%D0%B5%D1%86%D1%82%D0%B2%D0%BE%20%D0%94%D0%B0%D0%B2%D0%BD%D1%8C%D0%BE%D0%B3%D0%BE%20%D0%84%D0%B3%D0%B8%D0%BF%D1%82%D1%83.html",
+    "new_url": "/section2/24-davnii-yehypet-pysemnist-relihiia-mystetstvo.html"
+  },
+  {
+    "old_file": "section2/25 Фінікія.html",
+    "new_file": "section2/25-finikiia.html",
+    "old_url": "/section2/25%20%D0%A4%D1%96%D0%BD%D1%96%D0%BA%D1%96%D1%8F.html",
+    "new_url": "/section2/25-finikiia.html"
+  },
+  {
+    "old_file": "section2/26 Ізраїльське царство.html",
+    "new_file": "section2/26-izrailske-tsarstvo.html",
+    "old_url": "/section2/26%20%D0%86%D0%B7%D1%80%D0%B0%D1%97%D0%BB%D1%8C%D1%81%D1%8C%D0%BA%D0%B5%20%D1%86%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%BE.html",
+    "new_url": "/section2/26-izrailske-tsarstvo.html"
+  },
+  {
+    "old_file": "section2/27 Хетська держава Навала народів моря Завершення бронзового віку.html",
+    "new_file": "section2/27-khetska-derzhava-narody-moria.html",
+    "old_url": "/section2/27%20%D0%A5%D0%B5%D1%82%D1%81%D1%8C%D0%BA%D0%B0%20%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%B2%D0%B0%20%D0%9D%D0%B0%D0%B2%D0%B0%D0%BB%D0%B0%20%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D1%96%D0%B2%20%D0%BC%D0%BE%D1%80%D1%8F%20%D0%97%D0%B0%D0%B2%D0%B5%D1%80%D1%88%D0%B5%D0%BD%D0%BD%D1%8F%20%D0%B1%D1%80%D0%BE%D0%BD%D0%B7%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%20%D0%B2%D1%96%D0%BA%D1%83.html",
+    "new_url": "/section2/27-khetska-derzhava-narody-moria.html"
+  },
+  {
+    "old_file": "section2/28 Персія.html",
+    "new_file": "section2/28-persiia.html",
+    "old_url": "/section2/28%20%D0%9F%D0%B5%D1%80%D1%81%D1%96%D1%8F.html",
+    "new_url": "/section2/28-persiia.html"
+  },
+  {
+    "old_file": "section2/29 залізний вік на теренах України кіммерійці та скіфи.html",
+    "new_file": "section2/29-kimmeriitsi-skify.html",
+    "old_url": "/section2/29%20%D0%B7%D0%B0%D0%BB%D1%96%D0%B7%D0%BD%D0%B8%D0%B9%20%D0%B2%D1%96%D0%BA%20%D0%BD%D0%B0%20%D1%82%D0%B5%D1%80%D0%B5%D0%BD%D0%B0%D1%85%20%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8%20%D0%BA%D1%96%D0%BC%D0%BC%D0%B5%D1%80%D1%96%D0%B9%D1%86%D1%96%20%D1%82%D0%B0%20%D1%81%D0%BA%D1%96%D1%84%D0%B8.html",
+    "new_url": "/section2/29-kimmeriitsi-skify.html"
+  },
+  {
+    "old_file": "section2/30 Хараппська цивілізація.html",
+    "new_file": "section2/30-kharappa.html",
+    "old_url": "/section2/30%20%D0%A5%D0%B0%D1%80%D0%B0%D0%BF%D0%BF%D1%81%D1%8C%D0%BA%D0%B0%20%D1%86%D0%B8%D0%B2%D1%96%D0%BB%D1%96%D0%B7%D0%B0%D1%86%D1%96%D1%8F.html",
+    "new_url": "/section2/30-kharappa.html"
+  },
+  {
+    "old_file": "section2/31 Ведійський період в історії Індії.html",
+    "new_file": "section2/31-vediiskyi-period.html",
+    "old_url": "/section2/31%20%D0%92%D0%B5%D0%B4%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80%D1%96%D0%BE%D0%B4%20%D0%B2%20%D1%96%D1%81%D1%82%D0%BE%D1%80%D1%96%D1%97%20%D0%86%D0%BD%D0%B4%D1%96%D1%97.html",
+    "new_url": "/section2/31-vediiskyi-period.html"
+  },
+  {
+    "old_file": "section2/32 релігії індії імперія маур'їв.html",
+    "new_file": "section2/32-indiia-relihii-mauriiv.html",
+    "old_url": "/section2/32%20%D1%80%D0%B5%D0%BB%D1%96%D0%B3%D1%96%D1%97%20%D1%96%D0%BD%D0%B4%D1%96%D1%97%20%D1%96%D0%BC%D0%BF%D0%B5%D1%80%D1%96%D1%8F%20%D0%BC%D0%B0%D1%83%D1%80%27%D1%97%D0%B2.html",
+    "new_url": "/section2/32-indiia-relihii-mauriiv.html"
+  },
+  {
+    "old_file": "section2/33 цивілізація Давнього Китаю.html",
+    "new_file": "section2/33-davnii-kytai.html",
+    "old_url": "/section2/33%20%D1%86%D0%B8%D0%B2%D1%96%D0%BB%D1%96%D0%B7%D0%B0%D1%86%D1%96%D1%8F%20%D0%94%D0%B0%D0%B2%D0%BD%D1%8C%D0%BE%D0%B3%D0%BE%20%D0%9A%D0%B8%D1%82%D0%B0%D1%8E.html",
+    "new_url": "/section2/33-davnii-kytai.html"
+  },
+  {
+    "old_file": "section2/34 давньокитайські держави Імперія Цінь.html",
+    "new_file": "section2/34-kytai-tsin.html",
+    "old_url": "/section2/34%20%D0%B4%D0%B0%D0%B2%D0%BD%D1%8C%D0%BE%D0%BA%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D1%8C%D0%BA%D1%96%20%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%B2%D0%B8%20%D0%86%D0%BC%D0%BF%D0%B5%D1%80%D1%96%D1%8F%20%D0%A6%D1%96%D0%BD%D1%8C.html",
+    "new_url": "/section2/34-kytai-tsin.html"
+  },
+  {
+    "old_file": "section2/35 культура Давнього Китаю.html",
+    "new_file": "section2/35-kytai-kultura.html",
+    "old_url": "/section2/35%20%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0%20%D0%94%D0%B0%D0%B2%D0%BD%D1%8C%D0%BE%D0%B3%D0%BE%20%D0%9A%D0%B8%D1%82%D0%B0%D1%8E.html",
+    "new_url": "/section2/35-kytai-kultura.html"
+  },
+  {
+    "old_file": "section3/37 Мінойська та Мікенська палацові цивілізації.html",
+    "new_file": "section3/37-minoiska-mikenska-palatsovi-tsyvilizatsii.html",
+    "old_url": "/section3/37%20%D0%9C%D1%96%D0%BD%D0%BE%D0%B9%D1%81%D1%8C%D0%BA%D0%B0%20%D1%82%D0%B0%20%D0%9C%D1%96%D0%BA%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B0%20%D0%BF%D0%B0%D0%BB%D0%B0%D1%86%D0%BE%D0%B2%D1%96%20%D1%86%D0%B8%D0%B2%D1%96%D0%BB%D1%96%D0%B7%D0%B0%D1%86%D1%96%D1%97.html",
+    "new_url": "/section3/37-minoiska-mikenska-palatsovi-tsyvilizatsii.html"
+  },
+  {
+    "old_file": "section3/38 Полісний устрій Давньої Греції.html",
+    "new_file": "section3/38-polisnyi-ustrii-davnoi-hretsii.html",
+    "old_url": "/section3/38%20%D0%9F%D0%BE%D0%BB%D1%96%D1%81%D0%BD%D0%B8%D0%B9%20%D1%83%D1%81%D1%82%D1%80%D1%96%D0%B9%20%D0%94%D0%B0%D0%B2%D0%BD%D1%8C%D0%BE%D1%97%20%D0%93%D1%80%D0%B5%D1%86%D1%96%D1%97.html",
+    "new_url": "/section3/38-polisnyi-ustrii-davnoi-hretsii.html"
+  },
+  {
+    "old_file": "section3/39 Спарта — «держава-військовий табір».html",
+    "new_file": "section3/39-sparta-derzhava-viiskovyi-tabir.html",
+    "old_url": "/section3/39%20%D0%A1%D0%BF%D0%B0%D1%80%D1%82%D0%B0%20%E2%80%94%20%C2%AB%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%B2%D0%B0-%D0%B2%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%BE%D0%B2%D0%B8%D0%B9%20%D1%82%D0%B0%D0%B1%D1%96%D1%80%C2%BB.html",
+    "new_url": "/section3/39-sparta-derzhava-viiskovyi-tabir.html"
+  },
+  {
+    "old_file": "section3/40 Персько-грецькі війни.html",
+    "new_file": "section3/40-persko-hretski-viiny.html",
+    "old_url": "/section3/40%20%D0%9F%D0%B5%D1%80%D1%81%D1%8C%D0%BA%D0%BE-%D0%B3%D1%80%D0%B5%D1%86%D1%8C%D0%BA%D1%96%20%D0%B2%D1%96%D0%B9%D0%BD%D0%B8.html",
+    "new_url": "/section3/40-persko-hretski-viiny.html"
+  },
+  {
+    "old_file": "section3/41 Афінська демократія.html",
+    "new_file": "section3/41-afinska-demokratiia.html",
+    "old_url": "/section3/41%20%D0%90%D1%84%D1%96%D0%BD%D1%81%D1%8C%D0%BA%D0%B0%20%D0%B4%D0%B5%D0%BC%D0%BE%D0%BA%D1%80%D0%B0%D1%82%D1%96%D1%8F.html",
+    "new_url": "/section3/41-afinska-demokratiia.html"
+  },
+  {
+    "old_file": "section3/42 Релігія та культура.html",
+    "new_file": "section3/42-relihiia-ta-kultura.html",
+    "old_url": "/section3/42%20%D0%A0%D0%B5%D0%BB%D1%96%D0%B3%D1%96%D1%8F%20%D1%82%D0%B0%20%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0.html",
+    "new_url": "/section3/42-relihiia-ta-kultura.html"
+  },
+  {
+    "old_file": "section3/43 Мистецтво Давньої Греції.html",
+    "new_file": "section3/43-mystetstvo-davnoi-hretsii.html",
+    "old_url": "/section3/43%20%D0%9C%D0%B8%D1%81%D1%82%D0%B5%D1%86%D1%82%D0%B2%D0%BE%20%D0%94%D0%B0%D0%B2%D0%BD%D1%8C%D0%BE%D1%97%20%D0%93%D1%80%D0%B5%D1%86%D1%96%D1%97.html",
+    "new_url": "/section3/43-mystetstvo-davnoi-hretsii.html"
+  },
+  {
+    "old_file": "section3/44 Велика грецька колонізація. Античні держави на теренах України.html",
+    "new_file": "section3/44-velyka-hretska-kolonizatsiia-antychni-derzhavy-na-terenakh-ukrainy.html",
+    "old_url": "/section3/44%20%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%B0%20%D0%B3%D1%80%D0%B5%D1%86%D1%8C%D0%BA%D0%B0%20%D0%BA%D0%BE%D0%BB%D0%BE%D0%BD%D1%96%D0%B7%D0%B0%D1%86%D1%96%D1%8F.%20%D0%90%D0%BD%D1%82%D0%B8%D1%87%D0%BD%D1%96%20%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%B2%D0%B8%20%D0%BD%D0%B0%20%D1%82%D0%B5%D1%80%D0%B5%D0%BD%D0%B0%D1%85%20%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8.html",
+    "new_url": "/section3/44-velyka-hretska-kolonizatsiia-antychni-derzhavy-na-terenakh-ukrainy.html"
+  },
+  {
+    "old_file": "section3/45 Пелопоннеські війни. «Східний похід» Александра Македонського.html",
+    "new_file": "section3/45-peloponneski-viiny-skhidnyi-pokhid-aleksandra-makedonskoho.html",
+    "old_url": "/section3/45%20%D0%9F%D0%B5%D0%BB%D0%BE%D0%BF%D0%BE%D0%BD%D0%BD%D0%B5%D1%81%D1%8C%D0%BA%D1%96%20%D0%B2%D1%96%D0%B9%D0%BD%D0%B8.%20%C2%AB%D0%A1%D1%85%D1%96%D0%B4%D0%BD%D0%B8%D0%B9%20%D0%BF%D0%BE%D1%85%D1%96%D0%B4%C2%BB%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%B0%20%D0%9C%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE.html",
+    "new_url": "/section3/45-peloponneski-viiny-skhidnyi-pokhid-aleksandra-makedonskoho.html"
+  },
+  {
+    "old_file": "section3/46 Еллінізм.html",
+    "new_file": "section3/46-ellinizm.html",
+    "old_url": "/section3/46%20%D0%95%D0%BB%D0%BB%D1%96%D0%BD%D1%96%D0%B7%D0%BC.html",
+    "new_url": "/section3/46-ellinizm.html"
+  },
+  {
+    "old_file": "section3/47 Природні умови Апеннінського півострова. Заснування Рима.html",
+    "new_file": "section3/47-pryrodni-umovy-apenninskoho-pivostrova-zasnuvannia-ryma.html",
+    "old_url": "/section3/47%20%D0%9F%D1%80%D0%B8%D1%80%D0%BE%D0%B4%D0%BD%D1%96%20%D1%83%D0%BC%D0%BE%D0%B2%D0%B8%20%D0%90%D0%BF%D0%B5%D0%BD%D0%BD%D1%96%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%96%D0%B2%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B2%D0%B0.%20%D0%97%D0%B0%D1%81%D0%BD%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F%20%D0%A0%D0%B8%D0%BC%D0%B0.html",
+    "new_url": "/section3/47-pryrodni-umovy-apenninskoho-pivostrova-zasnuvannia-ryma.html"
+  },
+  {
+    "old_file": "section3/48 Найдавніша історія Риму.html",
+    "new_file": "section3/48-naidavnisha-istoriia-rymu.html",
+    "old_url": "/section3/48%20%D0%9D%D0%B0%D0%B9%D0%B4%D0%B0%D0%B2%D0%BD%D1%96%D1%88%D0%B0%20%D1%96%D1%81%D1%82%D0%BE%D1%80%D1%96%D1%8F%20%D0%A0%D0%B8%D0%BC%D1%83.html",
+    "new_url": "/section3/48-naidavnisha-istoriia-rymu.html"
+  },
+  {
+    "old_file": "section3/49 Суспільний устрій Риму.html",
+    "new_file": "section3/49-suspilnyi-ustrii-rymu.html",
+    "old_url": "/section3/49%20%D0%A1%D1%83%D1%81%D0%BF%D1%96%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9%20%D1%83%D1%81%D1%82%D1%80%D1%96%D0%B9%20%D0%A0%D0%B8%D0%BC%D1%83.html",
+    "new_url": "/section3/49-suspilnyi-ustrii-rymu.html"
+  },
+  {
+    "old_file": "section3/50 Повсякденне життя Риму за часів республіки.html",
+    "new_file": "section3/50-povsiakdenne-zhyttia-rymu-za-chasiv-respubliky.html",
+    "old_url": "/section3/50%20%D0%9F%D0%BE%D0%B2%D1%81%D1%8F%D0%BA%D0%B4%D0%B5%D0%BD%D0%BD%D0%B5%20%D0%B6%D0%B8%D1%82%D1%82%D1%8F%20%D0%A0%D0%B8%D0%BC%D1%83%20%D0%B7%D0%B0%20%D1%87%D0%B0%D1%81%D1%96%D0%B2%20%D1%80%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D1%96%D0%BA%D0%B8.html",
+    "new_url": "/section3/50-povsiakdenne-zhyttia-rymu-za-chasiv-respubliky.html"
+  },
+  {
+    "old_file": "section3/51 Римські завоювання.html",
+    "new_file": "section3/51-rymski-zavoiuvannia.html",
+    "old_url": "/section3/51%20%D0%A0%D0%B8%D0%BC%D1%81%D1%8C%D0%BA%D1%96%20%D0%B7%D0%B0%D0%B2%D0%BE%D1%8E%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F.html",
+    "new_url": "/section3/51-rymski-zavoiuvannia.html"
+  },
+  {
+    "old_file": "section3/52 Криза республіканського устрою та виникнення імперії.html",
+    "new_file": "section3/52-kryza-respublikanskoho-ustroiu-ta-vynyknennia-imperii.html",
+    "old_url": "/section3/52%20%D0%9A%D1%80%D0%B8%D0%B7%D0%B0%20%D1%80%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D1%96%D0%BA%D0%B0%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE%20%D1%83%D1%81%D1%82%D1%80%D0%BE%D1%8E%20%D1%82%D0%B0%20%D0%B2%D0%B8%D0%BD%D0%B8%D0%BA%D0%BD%D0%B5%D0%BD%D0%BD%D1%8F%20%D1%96%D0%BC%D0%BF%D0%B5%D1%80%D1%96%D1%97.html",
+    "new_url": "/section3/52-kryza-respublikanskoho-ustroiu-ta-vynyknennia-imperii.html"
+  },
+  {
+    "old_file": "section3/53 Римська імперія.html",
+    "new_file": "section3/53-rymska-imperiia.html",
+    "old_url": "/section3/53%20%D0%A0%D0%B8%D0%BC%D1%81%D1%8C%D0%BA%D0%B0%20%D1%96%D0%BC%D0%BF%D0%B5%D1%80%D1%96%D1%8F.html",
+    "new_url": "/section3/53-rymska-imperiia.html"
+  },
+  {
+    "old_file": "section3/54 Релігія давніх римлян.html",
+    "new_file": "section3/54-relihiia-davnikh-rymlian.html",
+    "old_url": "/section3/54%20%D0%A0%D0%B5%D0%BB%D1%96%D0%B3%D1%96%D1%8F%20%D0%B4%D0%B0%D0%B2%D0%BD%D1%96%D1%85%20%D1%80%D0%B8%D0%BC%D0%BB%D1%8F%D0%BD.html",
+    "new_url": "/section3/54-relihiia-davnikh-rymlian.html"
+  },
+  {
+    "old_file": "section3/55 Мистецтво Риму доби імперії.html",
+    "new_file": "section3/55-mystetstvo-rymu-doby-imperii.html",
+    "old_url": "/section3/55%20%D0%9C%D0%B8%D1%81%D1%82%D0%B5%D1%86%D1%82%D0%B2%D0%BE%20%D0%A0%D0%B8%D0%BC%D1%83%20%D0%B4%D0%BE%D0%B1%D0%B8%20%D1%96%D0%BC%D0%BF%D0%B5%D1%80%D1%96%D1%97.html",
+    "new_url": "/section3/55-mystetstvo-rymu-doby-imperii.html"
+  },
+  {
+    "old_file": "section3/56 Повсякденне життя в Римській імперії.html",
+    "new_file": "section3/56-povsiakdenne-zhyttia-v-rymskii-imperii.html",
+    "old_url": "/section3/56%20%D0%9F%D0%BE%D0%B2%D1%81%D1%8F%D0%BA%D0%B4%D0%B5%D0%BD%D0%BD%D0%B5%20%D0%B6%D0%B8%D1%82%D1%82%D1%8F%20%D0%B2%20%D0%A0%D0%B8%D0%BC%D1%81%D1%8C%D0%BA%D1%96%D0%B9%20%D1%96%D0%BC%D0%BF%D0%B5%D1%80%D1%96%D1%97.html",
+    "new_url": "/section3/56-povsiakdenne-zhyttia-v-rymskii-imperii.html"
+  },
+  {
+    "old_file": "section3/57 Варвари.html",
+    "new_file": "section3/57-varvary.html",
+    "old_url": "/section3/57%20%D0%92%D0%B0%D1%80%D0%B2%D0%B0%D1%80%D0%B8.html",
+    "new_url": "/section3/57-varvary.html"
+  },
+  {
+    "old_file": "section3/58 Виникнення та поширення християнства. Кризові явища в Римській імперії.html",
+    "new_file": "section3/58-vynyknennia-poshyrennia-khrystyianstva-kryzovi-yavyshcha-rymskoi-imperii.html",
+    "old_url": "/section3/58%20%D0%92%D0%B8%D0%BD%D0%B8%D0%BA%D0%BD%D0%B5%D0%BD%D0%BD%D1%8F%20%D1%82%D0%B0%20%D0%BF%D0%BE%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%BD%D1%8F%20%D1%85%D1%80%D0%B8%D1%81%D1%82%D0%B8%D1%8F%D0%BD%D1%81%D1%82%D0%B2%D0%B0.%20%D0%9A%D1%80%D0%B8%D0%B7%D0%BE%D0%B2%D1%96%20%D1%8F%D0%B2%D0%B8%D1%89%D0%B0%20%D0%B2%20%D0%A0%D0%B8%D0%BC%D1%81%D1%8C%D0%BA%D1%96%D0%B9%20%D1%96%D0%BC%D0%BF%D0%B5%D1%80%D1%96%D1%97.html",
+    "new_url": "/section3/58-vynyknennia-poshyrennia-khrystyianstva-kryzovi-yavyshcha-rymskoi-imperii.html"
+  },
+  {
+    "old_file": "section3/59 Велике переселення народів. Падіння Західної Римської імперії.html",
+    "new_file": "section3/59-velyke-pereselennia-narodiv-padinnia-zakhidnoi-rymskoi-imperii.html",
+    "old_url": "/section3/59%20%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%B5%20%D0%BF%D0%B5%D1%80%D0%B5%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F%20%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D1%96%D0%B2.%20%D0%9F%D0%B0%D0%B4%D1%96%D0%BD%D0%BD%D1%8F%20%D0%97%D0%B0%D1%85%D1%96%D0%B4%D0%BD%D0%BE%D1%97%20%D0%A0%D0%B8%D0%BC%D1%81%D1%8C%D0%BA%D0%BE%D1%97%20%D1%96%D0%BC%D0%BF%D0%B5%D1%80%D1%96%D1%97.html",
+    "new_url": "/section3/59-velyke-pereselennia-narodiv-padinnia-zakhidnoi-rymskoi-imperii.html"
+  },
+  {
+    "old_file": "section3/60 Слов’яни.html",
+    "new_file": "section3/60-sloviany.html",
+    "old_url": "/section3/60%20%D0%A1%D0%BB%D0%BE%D0%B2%E2%80%99%D1%8F%D0%BD%D0%B8.html",
+    "new_url": "/section3/60-sloviany.html"
+  }
+]

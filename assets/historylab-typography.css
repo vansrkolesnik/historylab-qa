@@ -1,0 +1,25 @@
+/* History Lab: shared typography. Layout, colours and symbol fonts stay intact. */
+@import url('./fonts/historylab-fonts.css');
+
+:root {
+  --hl-font-body: "Nunito", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --hl-font-heading: "Comfortaa", "Nunito", system-ui, sans-serif;
+}
+body.hl-v84,
+body.hl-v84 .lesson-course-nav,
+body.hl-v84 .historylab-footer,
+body.hl-v84 :is(button, input, select, textarea, .font-sans, .font-body) {
+  font-family: var(--hl-font-body) !important;
+}
+body.hl-v84 :is(h1, h2, .hl-h1, .hl-h2),
+body.hl-v84.hl-ds2 :is(h1, h2, .hl-h1, .hl-h2),
+body.hl-v84.hl-ds2 main>section.hl-hero h1 {
+  font-family: var(--hl-font-heading) !important;
+  font-weight: 700 !important;
+}
+body.hl-v84 :is(h3, h4, h5, h6, .hl-h3, .hl-h4, .font-heading:not(h1):not(h2), .font-header:not(h1):not(h2)) {
+  font-family: var(--hl-font-body) !important;
+}
+body.hl-v84 :is(h3, h4, h5, h6) { font-weight: 700 !important; }
+body.hl-v84 .historylab-footer__copy { font-weight: 600; }
+body.hl-v84 .btn { font-weight: 700; }
