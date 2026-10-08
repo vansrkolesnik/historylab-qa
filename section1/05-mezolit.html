@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html lang="uk">
+<head>
+<!-- Chosen Palette: Warm Forest & River Stone (Warm Neutral #F7F5F0, Deep Forest #2C4C3E, Warm Amber #D97706, Clay #C25E38, Charcoal #222222) -->
+<!-- Application Structure Plan:
+         Designed for 6th graders to transform textbook paragraph 5 ("Мезоліт") into an engaging prehistoric app.
+         1. Hero Header & Quick Key Metrics Dashboard (timeline bounds XI-VI millenia BC, climate warming, 300 sites in Ukraine).
+         2. Interactive Section 1: "Зміна природних умов" with a climate transition visualizer and Ice Age vs Mesolithic animal survival comparison chart.
+         3. Interactive Section 2: "Господарство та нові винаходи" featuring microblades, the bow & arrow simulator, and the invention of boats/fishing.
+         4. Interactive Section 3: "Перша свійська тварина" — interactive card for the dog and wild boar/pig domestication.
+         5. Interactive Section 4: "Експрес-Перевірка Знань" (4-question interactive quiz with instant feedback).
+    -->
+<!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>§5 Мезоліт — Історія, 6 клас | History Lab</title>
+<link href="https://history-lab.netlify.app/section1/05-mezolit.html" rel="canonical"/>
+<link href="../assets/tailwind-local/tw-05-section1-05-mezolit.css" rel="stylesheet">
+<!-- History Lab local chart runtime -->
+<script src="../assets/historylab-chart-local.js"></script>
+<style>
+        
+        
+        body {
+            font-family:var(--hl-font-body);
+            background-color: #f7f5f0;
+            color: #222222;
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 280px;
+            max-height: 350px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 320px;
+            }
+        }
+
+        .tab-btn.active {
+            background-color: #2c4c3e;
+            color: #ffffff;
+            border-color: #2c4c3e;
+        }
+    
+.historylab-footer__textbook{margin-top:12px;padding-top:12px;border-top:1px solid rgba(148,163,184,.25)}
+.historylab-footer__textbook p{margin:0 0 4px}
+.historylab-footer__textbook strong{color:#475569}
+
+</style>
+<style id="historylab-copyright-style">
+.historylab-footer{max-width:1180px;margin:42px auto 0;padding:0 22px 30px;font-family:var(--hl-font-body)}
+.historylab-footer__inner{border-top:1px solid rgba(148,163,184,.35);padding-top:22px;display:grid;grid-template-columns:1.05fr .95fr;gap:26px;color:#64748b;font-size:13px;line-height:1.6}
+.historylab-footer__brand{font-size:15px;font-weight:800;color:#475569;margin-bottom:5px}
+.historylab-footer p{margin:0 0 6px}
+.historylab-footer__copy{font-weight:650;color:#475569}
+.historylab-footer__title{font-weight:800;color:#475569;margin-bottom:5px}
+.historylab-footer__note{font-size:12px;color:#7c8798}
+@media(max-width:720px){.historylab-footer__inner{grid-template-columns:1fr;gap:14px}.historylab-footer{margin-top:30px}}
+</style>
+<script src="../assets/historylab-chart-theme.js"></script>
+<link href="../assets/historylab-v842.css" rel="stylesheet"/>
+<link href="../assets/historylab-typography.css" rel="stylesheet"/>
+<link href="../favicon.ico" rel="icon" type="image/x-icon"/>
+</link></head>
+<body class="min-h-screen flex flex-col justify-between antialiased hl-section-1 hl-ds2 hl-v84">
+<a class="hl-skip-link" href="#main-content">Перейти до основного вмісту</a>
+<nav aria-label="Навігація курсу" class="lesson-course-nav"><div class="lcn-inner"><div class="lcn-group lcn-group--primary"><a aria-label="Головна" class="lcn-home" href="../index.html"><span aria-hidden="true" class="hl-icon hl-icon--home"></span><span class="lcn-label">Головна</span></a><a aria-label="Зміст розділу" class="lcn-contents" href="index.html"><span aria-hidden="true" class="hl-icon hl-icon--contents"></span><span class="lcn-label">Зміст розділу</span></a></div><div class="lcn-current"><span aria-hidden="true" class="hl-icon hl-lesson-identity-icon hl-icon--school"></span><span class="lcn-current-label">§5 • Історія, 6 клас</span></div><div class="lcn-group lcn-group--steps"><a aria-label="Попередній параграф §4" class="lcn-step lcn-step--previous" href="04-paleolit.html" title="Попередній параграф"><span aria-hidden="true" class="hl-icon hl-icon--previous"></span><span class="lcn-label">§4</span></a><a aria-label="Наступний параграф §6" class="lcn-step lcn-step--next" href="06-neolit.html" title="Наступний параграф"><span class="lcn-label">§6</span><span aria-hidden="true" class="hl-icon hl-icon--next"></span></a></div></div></nav>
+<header class="hl-lesson-hero hl-lesson-hero--mesolithic" id="overview"><div class="hl-lesson-hero__inner"><div class="hl-lesson-hero__top"><div class="hl-lesson-hero__copy"><div class="hl-lesson-hero__kicker"><span aria-hidden="true" class="hl-icon hl-icon--timeline"></span><span>ПЕРІОД • МЕЗОЛІТ</span></div><h1 class="hl-lesson-hero__title"><span class="hl-lesson-hero__accent">Мезоліт</span> — час великого потепління</h1><p class="hl-lesson-hero__lead">Як потепління після льодовикового періоду змінило природу, полювання, рибальство, знаряддя та спосіб життя мезолітичних спільнот.</p></div><div aria-hidden="true" class="hl-lesson-hero__number">§5</div></div><div class="hl-lesson-hero__stats"><div class="hl-lesson-hero__stat"><strong>XI–VI тис.</strong><span>до н. е. (Часові межі)</span></div><div class="hl-lesson-hero__stat"><strong>~100 м</strong><span>Підняття рівня моря</span></div><div class="hl-lesson-hero__stat"><strong>~300</strong><span>Стоянок в Україні</span></div><div class="hl-lesson-hero__stat"><strong>Лук і стріли</strong><span>Головний винахід</span></div></div></div></header>
+<!-- Header & Navigation -->
+<div class="hl-secondary-nav-shell"><nav aria-label="Розділи параграфа" class="hl-secondary-nav"><div class="hl-secondary-nav__track"><a class="px-3 py-1.5 rounded-lg hover:bg-[#2c4c3e] transition hl-nav-item" href="#climate"><span aria-hidden="true" class="hl-icon hl-nav-icon hl-icon--landscape"></span><span class="hl-nav-label">Клімат</span></a><a class="px-3 py-1.5 rounded-lg hover:bg-[#2c4c3e] transition hl-nav-item" href="#economy"><span aria-hidden="true" class="hl-icon hl-nav-icon hl-icon--wheat"></span><span class="hl-nav-label">Господарство</span></a><a class="px-3 py-1.5 rounded-lg hover:bg-[#2c4c3e] transition hl-nav-item" href="#inventions"><span aria-hidden="true" class="hl-icon hl-nav-icon hl-icon--science"></span><span class="hl-nav-label">Винаходи</span></a><a class="px-3 py-1.5 rounded-lg hover:bg-[#2c4c3e] transition hl-nav-item" href="#animals"><span aria-hidden="true" class="hl-icon hl-nav-icon hl-icon--animal"></span><span class="hl-nav-label">Тварини</span></a><a class="px-3 py-1.5 bg-amber-600 hover:bg-amber-500 text-white rounded-lg transition hl-nav-item" href="#quiz"><span aria-hidden="true" class="hl-icon hl-nav-icon hl-icon--quiz"></span><span class="hl-nav-label">Перевірка знань</span></a></div></nav></div>
+<!-- Main Content Container -->
+<main class="max-w-6xl mx-auto px-4 py-8 flex-grow space-y-12" id="main-content" tabindex="-1">
+<!-- HERO SECTION / METRICS DASHBOARD -->
+<figure class="hl-media-card hl-media-card--split" data-historylab-media="content" data-media-id="mesolithic-microliths">
+<div class="hl-media-card__visual">
+<div class="hl-media-card__frame hl-media-card__frame--artifact">
+<img alt="Два невеликі крем’яні мікроліти мезолітичної доби на масштабній сітці." class="hl-media-card__image" decoding="async" height="1000" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mesolithic_Microliths_(FindID_476431).jpg?width=1200" width="1000"/>
+</div>
+<figcaption class="hl-media-card__caption">
+      Джерело: <a href="https://commons.wikimedia.org/wiki/File:Mesolithic_Microliths_(FindID_476431).jpg" rel="noopener noreferrer" target="_blank">West Yorkshire Archaeology Advisory Service / Mary Blevins / Wikimedia Commons</a> ·
+      <a href="https://creativecommons.org/licenses/by-sa/2.0/" rel="noopener noreferrer" target="_blank">CC BY-SA 2.0</a>
+</figcaption>
+</div>
+<div class="hl-media-card__body">
+<span class="hl-media-card__type">Археологічна знахідка</span>
+<h2 class="hl-media-card__title">Мезолітичні мікроліти</h2>
+<p class="hl-media-card__text">Невеликі оброблені кам’яні пластинки показують, як у мезоліті знаряддя ставали дрібнішими та спеціалізованішими.</p>
+</div>
+</figure>
+<!-- SECTION 1: CLIMATE & ENVIRONMENT -->
+<section class="space-y-6" id="climate">
+<div class="border-l-4 border-[#2c4c3e] pl-4">
+<h2 class="hl-h2">1. Зміна Природних Умов та Занепад Льодовика</h2>
+<p class="text-stone-600 text-sm md:text-base mt-1">
+                    Близько 13 тисячоліть тому почалося стрімке потепління. Льодовик розтанув, а рівень моря піднявся на 100 метрів!
+                </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+<!-- Climate Explanation Card -->
+<div class="lg:col-span-6 p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col justify-between space-y-4 hl-card">
+<div>
+<span class="text-amber-900 text-xs font-bold px-2.5 py-1 rounded-md hl-card">Геологічні зміни</span>
+<h3 class="mt-3 hl-h3">Що сталося з ландшафтом Європи?</h3>
+<ul class="mt-3 text-xs md:text-sm text-stone-700 space-y-2">
+<li class="flex items-start space-x-2"><span><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--water"></span></span> <span>Утворилося Балтійське море (раніше було прісним озером).</span></li>
+<li class="flex items-start space-x-2"><span>🌲</span> <span>На місці тундри виросли густі листяні ліси.</span></li>
+<li class="flex items-start space-x-2"><span>🦣</span> <span>Мамонти, носороги та печерні ведмеді вимерли через неможливість пристосуватися.</span></li>
+<li class="flex items-start space-x-2"><span>🦌</span> <span>У нових лісах з'явилися ведмеді, тури, кабани, олені, зайці.</span></li>
+</ul>
+</div>
+<div class="p-3 rounded-xl text-xs text-stone-700 border border-stone-200 hl-card">
+<span class="font-bold text-emerald-300"><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--idea"></span> Цікавий факт:</span> Вплив льодовика найбільше відчувався на півночі, тому в деяких регіонах світу мезоліт виділяють не скрізь.
+                    </div>
+</div>
+<!-- Animal Fate Chart Card -->
+<div class="lg:col-span-6 bg-[#1e332a] text-[#f7f5f0] p-6 rounded-2xl flex flex-col justify-between shadow-sm">
+<div>
+<h3 class="hl-h3">Доля тварин при переході до мезоліту</h3>
+<p class="text-xs text-stone-300 mb-2">Категоріальна схема: які тварини зникли, а які були поширені в нових природних умовах:</p>
+</div>
+<p data-chart-evidence="animalChart" class="text-[11px] leading-relaxed text-slate-500"><strong>Дані:</strong> 0/1 — лише категоріальний код для візуалізації («вимерли» / «вижили»), а не числова оцінка чисельності чи поширеності.</p>
+<div class="chart-container">
+<canvas aria-describedby="animalChart-a11y-summary" aria-label="Діаграма: Доля тварин при переході до мезоліту" id="animalChart" role="img"></canvas><span class="hl-sr-only" id="animalChart-a11y-summary">Категоріальна схема: мамонт і шерстистий носоріг позначені як вимерлі; олень, дикий кабан і ведмідь — як тварини, що вижили. Значення 0/1 не є статистикою.</span>
+</div>
+<div class="text-xs text-stone-300 text-center">
+                        Мамонти та носороги зникли, а дрібніші, спритніші тварини вижили.
+                    </div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: ECONOMY, MICROBLADES & INVENTIONS -->
+<section class="space-y-6" id="economy">
+<div class="border-l-4 border-[#2c4c3e] pl-4">
+<h2 class="hl-h2" id="inventions">2. Господарство та Нові Винаходи Мезоліту</h2>
+<p class="text-stone-600 text-sm md:text-base mt-1">
+                    Оскільки тварини стали меншими та спритнішими, людині довелося винаходити нову зброю та знаряддя.
+                </p>
+</div>
+<!-- Interactive Tool Tabs -->
+<div class="p-6 rounded-2xl border border-stone-200 shadow-sm hl-card">
+<div aria-label="Вибір винаходу мезоліту" class="flex flex-wrap gap-2 mb-6" id="inventionTabs" role="group">
+<button class="tab-btn active px-4 py-2 rounded-xl border border-stone-300 font-semibold text-sm transition hl-v84-tab" aria-pressed="true" id="btn-micro" onclick="switchInvention('micro')" type="button">🔪 Мікроліти</button>
+<button class="tab-btn px-4 py-2 rounded-xl border border-stone-300 font-semibold text-sm transition hl-v84-tab" aria-pressed="false" id="btn-bow" onclick="switchInvention('bow')" type="button">🏹 Лук і стріли</button>
+<button class="tab-btn px-4 py-2 rounded-xl border border-stone-300 font-semibold text-sm transition hl-v84-tab" aria-pressed="false" id="btn-boat" onclick="switchInvention('boat')" type="button">🛶 Човен і водний транспорт</button>
+<button class="tab-btn px-4 py-2 rounded-xl border border-stone-300 font-semibold text-sm transition hl-v84-tab" aria-pressed="false" id="btn-fish" onclick="switchInvention('fish')" type="button">🎣 Рибальство</button>
+</div>
+<!-- Active Invention Display Card -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center p-6 rounded-xl border border-stone-200 hl-card" id="inventionContent">
+<!-- Javascript renders content here -->
+</div>
+</div>
+</section>
+<!-- SECTION 3: FIRST DOMESTICATED ANIMALS -->
+<section class="space-y-6" id="animals">
+<div class="border-l-4 border-[#2c4c3e] pl-4">
+<h2 class="hl-h2">3. Перші Свійські Тварини</h2>
+<p class="text-stone-600 text-sm md:text-base mt-1">
+                    Саме наприкінці палеоліту або на початку мезоліту людина зробила перші кроки до приручення тварин.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Dog Card -->
+<div class="p-6 rounded-2xl border border-stone-200 shadow-sm space-y-3 hl-card">
+<div class="flex items-center space-x-3">
+<span class="text-4xl">🐕</span>
+<div>
+<h3 class="hl-h3">Приручення Собаки</h3>
+<p class="text-xs text-amber-800 font-semibold">Вірний помічник на полюванні</p>
+</div>
+</div>
+<p class="text-xs md:text-sm text-stone-700 leading-relaxed">
+                        Собака став першою свійською твариною в історії людства. Він допомагав мисливцям вистежувати здобич у густих лісах, охороняв стоянки та попереджав про небезпеку.
+                    </p>
+</div>
+<!-- Pig Card -->
+<div class="p-6 rounded-2xl border border-stone-200 shadow-sm space-y-3 hl-card">
+<div class="flex items-center space-x-3">
+<span class="text-4xl">🐗</span>
+<div>
+<h3 class="hl-h3">Одомашнення Свині — пізніше</h3>
+<p class="text-xs text-emerald-800 font-semibold">Переважно неолітичний процес</p>
+</div>
+</div>
+<p class="text-xs md:text-sm text-stone-700 leading-relaxed">
+                        Свиню одомашнили пізніше, переважно вже в неолітичних землеробських суспільствах. У мезоліті головними залишалися полювання, рибальство та збиральництво.
+                    </p>
+</div>
+</div>
+</section>
+<!-- SECTION 4: QUIZ FOR 6TH GRADERS -->
+
+<!-- Stage 5.1C pedagogical parity: glossary -->
+<section class="my-8 rounded-2xl border border-slate-700/70 bg-slate-900/55 p-5 md:p-6 shadow-lg" data-stage51c="glossary"><div class="mb-4 flex items-center gap-3"><div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-sky-500/30 bg-sky-500/10 text-sky-300"><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--book"></span></div><div><div class="text-[11px] font-extrabold uppercase tracking-wider text-sky-300">Словничок</div><h2 class="text-white hl-h2">Ключові поняття §5</h2></div></div><div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4"><div class="rounded-xl border border-slate-700 bg-slate-900/95 p-4 shadow-sm"><h3 class="hl-h3 text-amber-300">Мезоліт</h3><p class="mt-2 text-sm leading-relaxed text-slate-300">Середній кам’яний вік — період між палеолітом і неолітом, пов’язаний із потеплінням після льодовикової доби.</p></div><div class="rounded-xl border border-slate-700 bg-slate-900/95 p-4 shadow-sm"><h3 class="hl-h3 text-amber-300">Мікроліт</h3><p class="mt-2 text-sm leading-relaxed text-slate-300">Невеликий оброблений кам’яний вкладиш, який міг бути частиною складного знаряддя або зброї.</p></div><div class="rounded-xl border border-slate-700 bg-slate-900/95 p-4 shadow-sm"><h3 class="hl-h3 text-amber-300">Лук і стріли</h3><p class="mt-2 text-sm leading-relaxed text-slate-300">Дистанційна мисливська зброя, поширення якої стало важливою рисою мезолітичних технологій.</p></div><div class="rounded-xl border border-slate-700 bg-slate-900/95 p-4 shadow-sm"><h3 class="hl-h3 text-amber-300">Одомашнення</h3><p class="mt-2 text-sm leading-relaxed text-slate-300">Тривалий процес пристосування популяцій тварин або рослин до життя й використання поруч із людиною.</p></div></div></section>
+<section class="space-y-6" id="quiz">
+<div class="border-l-4 border-[#2c4c3e] pl-4">
+<h2 class="hl-h2">Перевірка знань</h2>
+<p class="text-stone-600 text-sm md:text-base mt-1">
+                    Дай відповіді на 4 запитання, щоб перевірити, як добре ти засвоїв матеріал про Мезоліт!
+                </p>
+</div>
+<div class="p-6 md:p-8 rounded-3xl border border-stone-200 shadow-sm space-y-8 hl-card" id="quizContainer">
+<!-- Question 1 -->
+<div class="space-y-3">
+<p class="font-bold text-stone-900 text-sm md:text-base">1. Що означає слово «мезоліт» у перекладі з грецької мови?</p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<button class="q1-btn p-3 rounded-xl border border-stone-200 hover:bg-emerald-50 text-left text-xs font-medium transition" onclick="checkAnswer(1, 'A', this)" type="button">A) Новий камінь</button>
+<button class="q1-btn p-3 rounded-xl border border-stone-200 hover:bg-emerald-50 text-left text-xs font-medium transition" onclick="checkAnswer(1, 'B', this)" type="button">Б) Середній камінь</button>
+<button class="q1-btn p-3 rounded-xl border border-stone-200 hover:bg-emerald-50 text-left text-xs font-medium transition" onclick="checkAnswer(1, 'C', this)" type="button">В) Давній камінь</button>
+</div>
+</div>
+<!-- Question 2 -->
+<div class="space-y-3">
+<p class="font-bold text-stone-900 text-sm md:text-base">2. Як називалися маленькі кам'яні знаряддя праці мезоліту?</p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<button class="q2-btn p-3 rounded-xl border border-stone-200 hover:bg-emerald-50 text-left text-xs font-medium transition" onclick="checkAnswer(2, 'A', this)" type="button">A) Рубила</button>
+<button class="q2-btn p-3 rounded-xl border border-stone-200 hover:bg-emerald-50 text-left text-xs font-medium transition" onclick="checkAnswer(2, 'B', this)" type="button">Б) Чопери</button>
+<button class="q2-btn p-3 rounded-xl border border-stone-200 hover:bg-emerald-50 text-left text-xs font-medium transition" onclick="checkAnswer(2, 'C', this)" type="button">В) Мікроліти</button>
+</div>
+</div>
+<!-- Question 3 -->
+<div class="space-y-3">
+<p class="font-bold text-stone-900 text-sm md:text-base">3. Яка тварина була приручена першою в історії людства?</p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<button class="q3-btn p-3 rounded-xl border border-stone-200 hover:bg-emerald-50 text-left text-xs font-medium transition" onclick="checkAnswer(3, 'A', this)" type="button">A) Собака</button>
+<button class="q3-btn p-3 rounded-xl border border-stone-200 hover:bg-emerald-50 text-left text-xs font-medium transition" onclick="checkAnswer(3, 'B', this)" type="button">Б) Кінь</button>
+<button class="q3-btn p-3 rounded-xl border border-stone-200 hover:bg-emerald-50 text-left text-xs font-medium transition" onclick="checkAnswer(3, 'C', this)" type="button">В) Корова</button>
+</div>
+</div>
+<!-- Question 4 -->
+<div class="space-y-3">
+<p class="font-bold text-stone-900 text-sm md:text-base">4. Який новий спосіб добування їжі опанувала людина в мезоліті завдяки гарпунам і гачкам?</p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<button class="q4-btn p-3 rounded-xl border border-stone-200 hover:bg-emerald-50 text-left text-xs font-medium transition" onclick="checkAnswer(4, 'A', this)" type="button">A) Землеробство</button>
+<button class="q4-btn p-3 rounded-xl border border-stone-200 hover:bg-emerald-50 text-left text-xs font-medium transition" onclick="checkAnswer(4, 'B', this)" type="button">Б) Рибальство</button>
+<button class="q4-btn p-3 rounded-xl border border-stone-200 hover:bg-emerald-50 text-left text-xs font-medium transition" onclick="checkAnswer(4, 'C', this)" type="button">В) Скотарство</button>
+</div>
+</div>
+<!-- Score Banner -->
+<div class="hidden p-4 rounded-2xl border border-emerald-200 text-center space-y-2 hl-card" id="quizResult">
+<h3 class="hl-h4" id="scoreText">Твій результат: 0 / 4</h3>
+<p class="text-xs text-stone-600" id="scoreFeedback">Дай відповіді на всі запитання!</p>
+</div>
+</div>
+</section>
+<!-- History Lab full activity start -->
+
+<!-- Stage 5.1C pedagogical parity: memory -->
+<aside class="historylab-memory my-6 rounded-2xl border border-amber-500/25 bg-amber-500/5 p-5" data-stage51c="memory"><div class="mb-3 text-xs font-extrabold uppercase tracking-wider text-amber-400">Запам’ятай 3 речі</div><div class="grid gap-2 md:grid-cols-3"><div class="rounded-xl bg-slate-900/60 p-3 text-sm leading-relaxed text-slate-300"><span class="mr-2 font-bold text-amber-400">1.</span>Мезоліт пов’язаний із потеплінням після льодовикової доби та великими змінами ландшафтів і тваринного світу.</div><div class="rounded-xl bg-slate-900/60 p-3 text-sm leading-relaxed text-slate-300"><span class="mr-2 font-bold text-amber-400">2.</span>Лук і стріли, мікроліти, рибальські знаряддя та човни розширили способи добування їжі.</div><div class="rounded-xl bg-slate-900/60 p-3 text-sm leading-relaxed text-slate-300"><span class="mr-2 font-bold text-amber-400">3.</span>Одомашнення тварин було тривалим процесом; собака став важливим помічником людини ще до поширення землеробства.</div></div></aside>
+<section class="historylab-activity my-8 rounded-2xl border border-slate-700/70 bg-slate-900/55 p-5 md:p-6 shadow-lg" data-activity="compare">
+<div class="mb-4 flex items-center gap-3"><div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-400"><span aria-hidden="true" class="hl-icon hl-section-heading-icon hl-icon--search"></span></div><div><div class="text-[11px] font-extrabold uppercase tracking-wider text-amber-400">Лабораторія історика</div><h2 class="text-white hl-h2">Було → стало: перехід до мезоліту</h2></div></div><div class="grid gap-3 md:grid-cols-2"><div class="rounded-xl border border-slate-700 bg-slate-950/45 p-4"><h3 class="mb-3 hl-h3">Палеоліт</h3><button aria-expanded="false" class="hl-reveal mb-2 w-full rounded-lg bg-slate-800/80 px-3 py-2 text-left text-sm text-slate-200 hover:bg-slate-700" onclick="const _hlTarget=this.nextElementSibling;_hlTarget.classList.toggle('hidden');this.setAttribute('aria-expanded',_hlTarget.classList.contains('hidden')?'false':'true')" type="button">Природні умови <span class="float-right text-amber-400">+</span></button><p class="hidden mb-3 px-2 text-sm leading-relaxed text-slate-400">Холодніші етапи льодовикової доби</p><button aria-expanded="false" class="hl-reveal mb-2 w-full rounded-lg bg-slate-800/80 px-3 py-2 text-left text-sm text-slate-200 hover:bg-slate-700" onclick="const _hlTarget=this.nextElementSibling;_hlTarget.classList.toggle('hidden');this.setAttribute('aria-expanded',_hlTarget.classList.contains('hidden')?'false':'true')" type="button">Полювання <span class="float-right text-amber-400">+</span></button><p class="hidden mb-3 px-2 text-sm leading-relaxed text-slate-400">Великі й середні тварини, різні колективні способи</p><button aria-expanded="false" class="hl-reveal mb-2 w-full rounded-lg bg-slate-800/80 px-3 py-2 text-left text-sm text-slate-200 hover:bg-slate-700" onclick="const _hlTarget=this.nextElementSibling;_hlTarget.classList.toggle('hidden');this.setAttribute('aria-expanded',_hlTarget.classList.contains('hidden')?'false':'true')" type="button">Знаряддя <span class="float-right text-amber-400">+</span></button><p class="hidden mb-3 px-2 text-sm leading-relaxed text-slate-400">Різноманітні кам’яні вироби</p></div><div class="rounded-xl border border-slate-700 bg-slate-950/45 p-4"><h3 class="mb-3 hl-h3">Мезоліт</h3><button aria-expanded="false" class="hl-reveal mb-2 w-full rounded-lg bg-slate-800/80 px-3 py-2 text-left text-sm text-slate-200 hover:bg-slate-700" onclick="const _hlTarget=this.nextElementSibling;_hlTarget.classList.toggle('hidden');this.setAttribute('aria-expanded',_hlTarget.classList.contains('hidden')?'false':'true')" type="button">Природні умови <span class="float-right text-amber-400">+</span></button><p class="hidden mb-3 px-2 text-sm leading-relaxed text-slate-400">Потепління після завершення останнього льодовикового періоду</p><button aria-expanded="false" class="hl-reveal mb-2 w-full rounded-lg bg-slate-800/80 px-3 py-2 text-left text-sm text-slate-200 hover:bg-slate-700" onclick="const _hlTarget=this.nextElementSibling;_hlTarget.classList.toggle('hidden');this.setAttribute('aria-expanded',_hlTarget.classList.contains('hidden')?'false':'true')" type="button">Полювання <span class="float-right text-amber-400">+</span></button><p class="hidden mb-3 px-2 text-sm leading-relaxed text-slate-400">Більше значення рухливого полювання; поширення лука</p><button aria-expanded="false" class="hl-reveal mb-2 w-full rounded-lg bg-slate-800/80 px-3 py-2 text-left text-sm text-slate-200 hover:bg-slate-700" onclick="const _hlTarget=this.nextElementSibling;_hlTarget.classList.toggle('hidden');this.setAttribute('aria-expanded',_hlTarget.classList.contains('hidden')?'false':'true')" type="button">Знаряддя <span class="float-right text-amber-400">+</span></button><p class="hidden mb-3 px-2 text-sm leading-relaxed text-slate-400">Ширше використання мікролітів</p></div></div></section>
+<!-- History Lab full activity end -->
+</main>
+<!-- Footer -->
+<!-- JavaScript Logic -->
+<script>
+        // Data Store for Inventions
+        const inventionsData = {
+            micro: {
+                title: "Мікролітичні Знаряддя",
+                icon: "🔪",
+                subtitle: "Економне використання кремнію",
+                desc: "Запаси кремнію виснажувалися, а великі рубила стали незручними. З уламків та відщепів почали створювати маленькі кремнієві вкладні — мікроліти. Їх вставляли у дерев'яні або кістяні оправи, створюючи складні складені знаряддя праці.",
+                fact: "Мікроліти дозволили значно заощаджувати кремінь та створювати ефективніші інструменти."
+            },
+            bow: {
+                title: "Лук і Стріли",
+                icon: "🏹",
+                subtitle: "Винахід для одиночного полювання",
+                desc: "Оскільки звірі стали меншими і дуже спритними, масове загінне полювання на мамонтів відійшло в минуле. Лук і стріли дозволили мисливцю самотужки й успішно полювати на птахів, оленів та кабанів.",
+                fact: "Це одна з найважливіших зброєвих інновацій кам'яного віку."
+            },
+            boat: {
+                title: "Човен і Вітрило",
+                icon: "🛶",
+                subtitle: "Підкорення водних просторів",
+                desc: "Через танення льодовиків з'явилося багато нових річок і озер. Люди винайшли човни та вітрила, що дозволило їм пересуватися по воді, перевозити вантажі та займатися річковим і морським промислом.",
+                fact: "Човни виготовляли з випалених стовбурів дерев або за допомогою каркаса зі шкур."
+            },
+            fish: {
+                title: "Рибальські Гарпуни та Гачки",
+                icon: "🎣",
+                subtitle: "Нове джерело харчування",
+                desc: "Опанування рибальства стало революційним кроком. За допомогою кістяних гарпунів, гачків та сплетенених з лози пасток і сіток люди забезпечили собі стабільний додатковий запас їжі.",
+                fact: "Плетіння з лози стало ще одним корисним ремеслом цієї епохи."
+            }
+        };
+
+        // Render Invention Info
+        function switchInvention(key) {
+            const item = inventionsData[key];
+            const container = document.getElementById('inventionContent');
+            
+            document.querySelectorAll('#inventionTabs button').forEach(btn => {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-pressed', 'false');
+            });
+            const activeInventionBtn = document.getElementById(`btn-${key}`);
+            activeInventionBtn.classList.add('active');
+            activeInventionBtn.setAttribute('aria-pressed', 'true');
+
+            container.innerHTML = `
+                <div class="md:col-span-3 flex flex-col items-center justify-center p-6 rounded-2xl border border-stone-200 text-center hl-card">
+                    <span class="text-6xl mb-2">${item.icon}</span>
+                    <span class="text-xs font-bold text-emerald-300 uppercase tracking-wider">Винахід мезоліту</span>
+                </div>
+                <div class="md:col-span-9 space-y-3">
+                    <h4 class="hl-h4">${item.title}</h4>
+                    <p class="text-xs font-semibold text-emerald-800">${item.subtitle}</p>
+                    <p class="text-xs md:text-sm text-stone-700 leading-relaxed">${item.desc}</p>
+                    <div class="p-3 rounded-xl text-xs text-stone-800 border border-emerald-200 hl-card">
+                        <span class="font-bold text-emerald-300"><span aria-hidden='true' class='hl-icon hl-content-icon hl-icon--idea mr-1 align-[-0.12em]'></span> Цікавий факт:</span> ${item.fact}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Interactive Quiz Logic
+        const answers = { 1: 'B', 2: 'C', 3: 'A', 4: 'B' };
+        let userAnswers = {};
+
+        function checkAnswer(qNum, option, btn) {
+            userAnswers[qNum] = option;
+            
+            const btnGroup = document.querySelectorAll(`.q${qNum}-btn`);
+            btnGroup.forEach(b => {
+                b.classList.remove('bg-[#2c4c3e]', 'text-white', 'border-[#2c4c3e]');
+                b.classList.add('border-stone-200');
+            });
+            btn.classList.add('bg-[#2c4c3e]', 'text-white', 'border-[#2c4c3e]');
+
+            let score = 0;
+            let answeredCount = Object.keys(userAnswers).length;
+
+            for (let i = 1; i <= 4; i++) {
+                if (userAnswers[i] === answers[i]) score++;
+            }
+
+            const resultBox = document.getElementById('quizResult');
+            resultBox.classList.remove('hidden');
+            document.getElementById('scoreText').innerText = `Твій результат: ${score} з 4 правильних відповідей!`;
+            
+            if (answeredCount === 4) {
+                if (score === 4) {
+                    document.getElementById('scoreFeedback').innerHTML = `<span aria-hidden='true' class='hl-icon hl-content-icon hl-icon--star mr-1.5 align-[-0.12em]'></span> Чудово! Ти чудово засвоїв параграф про мезоліт!`;
+                } else if (score >= 2) {
+                    document.getElementById('scoreFeedback').innerHTML = `<span aria-hidden='true' class='hl-icon hl-content-icon hl-icon--check mr-1.5 align-[-0.12em]'></span> Незле! Але варто ще раз переглянути винаходи та мікроліти.`;
+                } else {
+                    document.getElementById('scoreFeedback').innerHTML = `<span aria-hidden='true' class='hl-icon hl-content-icon hl-icon--book mr-1.5 align-[-0.12em]'></span> Спробуй ще раз перечитати текст інфографіки!`;
+                }
+            } else {
+                document.getElementById('scoreFeedback').innerText = `Продовжуй відповідати! Пройдено ${answeredCount} з 4 запитань.`;
+            }
+        }
+
+        // Initialize on Load
+        window.addEventListener('load', () => {
+            switchInvention('micro');
+
+            // Animal Survival Comparison Chart
+            const ctxAnimal = document.getElementById('animalChart').getContext('2d');
+            new Chart(ctxAnimal, {
+                type: 'bar',
+                data: {
+                    labels: ['Мамонт', 'Шерстистий носоріг', 'Олень', 'Дикий кабан', 'Ведмідь'],
+                    datasets: [{
+                        label: 'Статус у мезоліті',
+                        data: [0, 0, 1, 1, 1],
+                        backgroundColor: [HistoryLabCharts.color(4), HistoryLabCharts.color(4), HistoryLabCharts.color(2), HistoryLabCharts.color(2), HistoryLabCharts.color(2)],
+                        borderRadius: 6
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.raw === 0 ? ' Вимерлі тварини' : ' Вижили у нових лісах';
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: { display: false },
+                        y: {
+                            grid: { display: false },
+                            ticks: { color: '#f8fafc', font: { size: 10, weight: 'bold' } }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+<footer class="historylab-footer">
+<div class="historylab-footer__inner">
+<div>
+<div class="historylab-footer__brand">History Lab • Історія України. Всесвітня історія • 6 клас</div>
+<p class="historylab-footer__copy">© 2026 History Lab. Усі права на структуру сайту, дизайн та авторські інтерактивні матеріали захищено.</p>
+<p class="historylab-footer__note">Сайт створено з навчальною метою для використання під час вивчення курсу історії у 6 класі.</p>
+<div class="historylab-footer__textbook">
+<p><strong>Інтерактивний навчальний додаток до підручника «Історія України. Всесвітня історія»</strong></p>
+<p>Автори підручника: <strong>О. В. Гісем, О. О. Гісем (2023)</strong></p>
+</div>
+</div>
+<div>
+<div class="historylab-footer__title">Авторські права та використані матеріали</div>
+<p>Права на тексти, ілюстрації, карти, фотографії та інші матеріали, запозичені з підручників або інших джерел, належать їхнім відповідним авторам і правовласникам.</p>
+<p class="historylab-footer__note">Наявність сторонніх матеріалів на сайті не означає передачу авторських прав на них власнику History Lab.</p>
+</div>
+<div aria-label="Навчальний заклад" class="historylab-footer__institution">
+<span aria-hidden="true" class="historylab-footer__institution-logo">
+<img alt="" decoding="async" height="100" loading="lazy" src="../assets/institution/kharkiv-lyceum-99.gif" width="127"/>
+</span>
+<div class="historylab-footer__institution-text">
+<div class="historylab-footer__institution-kicker">Навчальний заклад</div>
+<div class="historylab-footer__institution-name">Харківський ліцей № 99</div>
+<div class="historylab-footer__institution-note">History Lab • навчальний вебпроєкт з історії для 6 класу</div>
+</div>
+</div>
+</div>
+</footer>
+<script defer="" src="../assets/historylab-v842.js"></script>
+</body>
+</html>

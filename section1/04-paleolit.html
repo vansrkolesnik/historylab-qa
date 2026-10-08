@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+
+<html lang="uk">
+<head>
+<!-- Chosen Palette: Warm Earth & Prehistoric Stone (Warm Neutral #FBF8F3, Slate Amber #C85A32, Bone Beige #F4EEE0, Earthy Green #4A7C59, Charcoal #2D241E) -->
+<!-- Application Structure Plan: 
+         Designed specifically for 6th graders to transform abstract historical textbook content into an engaging prehistoric exploration app.
+         1. Hero Header & Quick Key Metrics Dashboard (timeline bounds, primary economy type, key materials).
+         2. Interactive Section 1: "Привласнювальне Господарство" with Chart.js visualization of diet/activities and an interactive Mammoth facts explorer.
+         3. Interactive Section 2: "Арсенал Кам'яного Віку" with a hands-on tool inspector (рубило, скребок, голка з сухожиллями) and bone-needle step simulator.
+         4. Interactive Section 3: "Стоянки та Житла в Україні" featuring a location switcher (Королево, Межиріч, Мізин) and a step-by-step Interactive Mammoth Bone Hut Builder.
+         5. Interactive Section 4: "Перевірочний Експрес-Тест" (4-question interactive quiz with visual score feedback for self-assessment).
+    -->
+<!-- Visualization & Content Choices:
+         - Diet & Survival Ratio: Chart.js Donut Chart (Canvas) showing gathering vs hunting balance.
+         - Animal Mass Comparison: Chart.js Horizontal Bar Chart comparing Woolly Mammoth weight to modern Asian Elephant and Human.
+         - Tool Arsenal: Custom interactive HTML/Tailwind tab cards with detail reveal (No SVG used, clean unicode symbols and styled containers).
+         - Bone Hut Builder: Dynamic step-by-step HTML state renderer showing frame construction from mammoth bones to hide layers.
+         - Map Explorer: Interactive location selector updating factual cards about Ukrainian Paleolithic sites (Королево, Мізин, Межиріч, Киїк-Коба).
+    -->
+<!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>§4 Палеоліт — Історія, 6 клас | History Lab</title>
+<link href="https://history-lab.netlify.app/section1/04-paleolit.html" rel="canonical"/>
+<link href="../assets/tailwind-local/tw-04-section1-04-paleolit.css" rel="stylesheet">
+<!-- History Lab local chart runtime -->
+<script src="../assets/historylab-chart-local.js"></script>
+<style>
+        
+        
+        body {
+            font-family:var(--hl-font-body);
+            background-color: #fbf8f3;
+            color: #2d241e;
+        }
+
+        .chart-container {
+            position: relative;
+            width: Переважно;
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 280px;
+            max-height: 350px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 320px;
+            }
+        }
+
+        .tab-btn.active {
+            background-color: #c85a32;
+            color: #ffffff;
+            border-color: #c85a32;
+        }
+
+        .site-card.active {
+            border-color: #c85a32;
+            background-color: #fff8f5;
+            box-shadow: 0 4px 14px rgba(200, 90, 50, 0.15);
+        }
+    
+.historylab-footer__textbook{margin-top:12px;padding-top:12px;border-top:1px solid rgba(148,163,184,.25)}
+.historylab-footer__textbook p{margin:0 0 4px}
+.historylab-footer__textbook strong{color:#475569}
+
+</style>
+<style id="historylab-copyright-style">
+.historylab-footer{max-width:1180px;margin:42px auto 0;padding:0 22px 30px;font-family:var(--hl-font-body)}
+.historylab-footer__inner{border-top:1px solid rgba(148,163,184,.35);padding-top:22px;display:grid;grid-template-columns:1.05fr .95fr;gap:26px;color:#64748b;font-size:13px;line-height:1.6}
+.historylab-footer__brand{font-size:15px;font-weight:800;color:#475569;margin-bottom:5px}
+.historylab-footer p{margin:0 0 6px}
+.historylab-footer__copy{font-weight:650;color:#475569}
+.historylab-footer__title{font-weight:800;color:#475569;margin-bottom:5px}
+.historylab-footer__note{font-size:12px;color:#7c8798}
+@media(max-width:720px){.historylab-footer__inner{grid-template-columns:1fr;gap:14px}.historylab-footer{margin-top:30px}}
+</style>
+<script src="../assets/historylab-chart-theme.js"></script>
+<link href="../assets/historylab-v842.css" rel="stylesheet"/>
+<link href="../assets/historylab-typography.css" rel="stylesheet"/>
+<link href="../favicon.ico" rel="icon" type="image/x-icon"/>
+</link></head>
+<body class="min-h-screen flex flex-col justify-between antialiased hl-section-1 hl-ds2 hl-v84">
+<a class="hl-skip-link" href="#main-content">Перейти до основного вмісту</a>
+<nav aria-label="Навігація курсу" class="lesson-course-nav"><div class="lcn-inner"><div class="lcn-group lcn-group--primary"><a aria-label="Головна" class="lcn-home" href="../index.html"><span aria-hidden="true" class="hl-icon hl-icon--home"></span><span class="lcn-label">Головна</span></a><a aria-label="Зміст розділу" class="lcn-contents" href="index.html"><span aria-hidden="true" class="hl-icon hl-icon--contents"></span><span class="lcn-label">Зміст розділу</span></a></div><div class="lcn-current"><span aria-hidden="true" class="hl-icon hl-lesson-identity-icon hl-icon--school"></span><span class="lcn-current-label">§4 • Історія, 6 клас</span></div><div class="lcn-group lcn-group--steps"><a aria-label="Попередній параграф §3" class="lcn-step lcn-step--previous" href="03-neandertaltsi-kromaniontsi.html" title="Попередній параграф"><span aria-hidden="true" class="hl-icon hl-icon--previous"></span><span class="lcn-label">§3</span></a><a aria-label="Наступний параграф §5" class="lcn-step lcn-step--next" href="05-mezolit.html" title="Наступний параграф"><span class="lcn-label">§5</span><span aria-hidden="true" class="hl-icon hl-icon--next"></span></a></div></div></nav>
+<header class="hl-lesson-hero hl-lesson-hero--paleolithic" id="overview"><div class="hl-lesson-hero__inner"><div class="hl-lesson-hero__top"><div class="hl-lesson-hero__copy"><div class="hl-lesson-hero__kicker"><span aria-hidden="true" class="hl-icon hl-icon--timeline"></span><span>ПЕРІОД • ПАЛЕОЛІТ</span></div><h1 class="hl-lesson-hero__title"><span class="hl-lesson-hero__accent">Палеоліт</span> — епоха «давнього каменю»</h1><p class="hl-lesson-hero__lead">Як у палеоліті люди пристосовувалися до холодного клімату, удосконалювали кам’яні знаряддя та залишали стоянки на землях сучасної України.</p></div><div aria-hidden="true" class="hl-lesson-hero__number">§4</div></div><div class="hl-lesson-hero__stats"><div class="hl-lesson-hero__stat"><strong>близько 1 млн — 10 тис.</strong><span>років тому в Україні</span></div><div class="hl-lesson-hero__stat"><strong>Привласнювальне</strong><span>тип господарства</span></div><div class="hl-lesson-hero__stat"><strong>Кремінь</strong><span>головний матеріал</span></div><div class="hl-lesson-hero__stat"><strong>кілька тонн</strong><span>вага мамонта</span></div></div></div></header>
+<!-- Header & Navigation -->
+<div class="hl-secondary-nav-shell"><nav aria-label="Розділи параграфа" class="hl-secondary-nav"><div class="hl-secondary-nav__track"><a class="px-3 py-1.5 rounded-lg hover:bg-stone-800 transition hl-nav-item" href="#overview"><span aria-hidden="true" class="hl-icon hl-nav-icon hl-icon--timeline"></span><span class="hl-nav-label">Хронологія</span></a><a class="px-3 py-1.5 rounded-lg hover:bg-stone-800 transition hl-nav-item" href="#economy"><span aria-hidden="true" class="hl-icon hl-nav-icon hl-icon--wheat"></span><span class="hl-nav-label">Господарство</span></a><a class="px-3 py-1.5 rounded-lg hover:bg-stone-800 transition hl-nav-item" href="#tools"><span aria-hidden="true" class="hl-icon hl-nav-icon hl-icon--tools"></span><span class="hl-nav-label">Знаряддя</span></a><a class="px-3 py-1.5 rounded-lg hover:bg-stone-800 transition hl-nav-item" href="#settlements"><span aria-hidden="true" class="hl-icon hl-nav-icon hl-icon--dwelling"></span><span class="hl-nav-label">Стоянки та житло</span></a><a class="px-3 py-1.5 bg-amber-600 hover:bg-amber-500 text-white rounded-lg transition hl-nav-item" href="#quiz"><span aria-hidden="true" class="hl-icon hl-nav-icon hl-icon--quiz"></span><span class="hl-nav-label">Перевірка знань</span></a></div></nav></div>
+<!-- Main Content Container -->
+<main class="max-w-6xl mx-auto px-4 py-8 flex-grow space-y-12" id="main-content" tabindex="-1"><figure class="hl-media-card hl-media-card--split hl-media-card--reverse" data-historylab-media="content" data-media-id="paleolithic-painting">
+<div class="hl-media-card__visual">
+<div class="hl-media-card__frame hl-media-card__frame--scene">
+<img alt="Зображення пізньопалеолітичного наскельного малюнка з музейної експозиції." class="hl-media-card__image" decoding="async" height="800" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Late_Paleolithic_Painting_(10099308525).jpg?width=1200" width="1200"/>
+</div>
+<figcaption class="hl-media-card__caption">
+      Джерело: <a href="https://commons.wikimedia.org/wiki/File:Late_Paleolithic_Painting_(10099308525).jpg" rel="noopener noreferrer" target="_blank">Gary Todd / Wikimedia Commons</a> ·
+      <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener noreferrer" target="_blank">CC0 1.0</a>
+</figcaption>
+</div>
+<div class="hl-media-card__body">
+<span class="hl-media-card__type">Пам’ятка</span>
+<h2 class="hl-media-card__title">Палеолітичне мистецтво</h2>
+<p class="hl-media-card__text">Наскельне мистецтво є важливим джерелом про уявлення та спостереження людей палеоліту. Воно доповнює археологічні дані про житло, знаряддя й полювання.</p>
+</div>
+</figure>
+<!-- SECTION 1: ECONOMY & MAMMOTH EXPLORER -->
+<section class="space-y-6" id="economy">
+<div class="border-l-4 border-amber-600 pl-4">
+<h2 class="hl-h2">1. Господарство: Як виживали давні люди?</h2>
+<p class="text-stone-600 text-sm md:text-base mt-1">
+                    Цей розділ пояснює суть <strong>привласнювального господарства</strong> — люди лише брали готове від природи, ще не вміючи вирощувати їжу.
+                </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+<!-- Visual Chart Card -->
+<div class="lg:col-span-7 p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col justify-between hl-card">
+<div>
+<div class="flex justify-between items-center mb-4">
+<h3 class="hl-h3">Структура добування їжі у палеоліті</h3>
+<span class="text-xs font-medium text-amber-900 px-2.5 py-1 rounded-md hl-card">Привласнення</span>
+</div>
+<p class="text-xs text-stone-500 mb-4">
+                            Наведіть курсор або натисніть на сектори діаграми, щоб дізнатися деталі двох основних занять первісної людини.
+                        </p>
+</div>
+<p data-chart-evidence="economyChart" class="text-[11px] leading-relaxed text-slate-500"><strong>Дані:</strong> категоріальна навчальна схема двох основних способів добування їжі. Розміри секторів умовні й не показують статистичних часток.</p>
+<div class="chart-container">
+<canvas aria-describedby="economyChart-a11y-summary" aria-label="Діаграма: Структура добування їжі у палеоліті" id="economyChart" role="img"></canvas><span class="hl-sr-only" id="economyChart-a11y-summary">Категоріальна схема: полювання на тварин і збиральництво рослин. Сектори однакового розміру умовно; це не статистичне співвідношення.</span>
+</div>
+<div class="hl-hint mt-4" id="chartDetails">
+<span class="font-bold text-amber-800">Підказка:</span> Натисніть на сектор діаграми вище, щоб відкрити історичну довідку про збиральництво чи полювання.
+                    </div>
+</div>
+<!-- Mammoth Explorer Card -->
+<div class="lg:col-span-5 bg-stone-900 text-amber-50 p-6 rounded-2xl flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center space-x-2 text-amber-400 font-bold text-sm uppercase tracking-wider mb-2">
+<span>🦣</span> <span>Головна здобич льодовика</span>
+</div>
+<h3 class="text-white mb-2 hl-h3">Шерстистий Мамонт</h3>
+<p class="text-xs text-stone-300 leading-relaxed">
+                            Один мамонт забезпечував племені сотні кілограмів м'яса, жир для обігріву, шкури для одягу та міцні кістки для будівництва житла.
+                        </p>
+</div>
+<!-- Interactive Size Comparison Chart Container -->
+<div class="my-4">
+<div class="text-xs text-amber-300 font-semibold mb-2">Порівняння ваги тварин (у тоннах):</div>
+<p data-chart-evidence="mammothChart" class="text-[11px] leading-relaxed text-slate-500"><strong>Дані:</strong> орієнтовне порівняння маси. Для мамонта 10 т використано як середину діапазону 8–12 т, наведеного в підручнику; інші значення — навчальні орієнтири.</p>
+<div class="chart-container" style="height: 180px; max-height: 200px;">
+<canvas aria-describedby="mammothChart-a11y-summary" aria-label="Діаграма: Шерстистий Мамонт" id="mammothChart" role="img"></canvas><span class="hl-sr-only" id="mammothChart-a11y-summary">Орієнтовне порівняння маси: шерстистий мамонт — близько 10 тонн як середина діапазону 8–12 тонн; індійський слон — близько 4 тонн; людина — близько 0,07 тонни.</span>
+</div>
+</div>
+<div class="bg-stone-800 p-3 rounded-xl border border-stone-700 text-xs text-stone-300 space-y-1">
+<div class="flex justify-between"><span>Довжина шерсті:</span> <span class="font-bold text-amber-400">40 – 90 см</span></div>
+<div class="flex justify-between"><span>Використання:</span> <span class="font-bold text-amber-400">М'ясо, жир, шкури, кістки</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: TOOLS & BONE-NEEDLE TECH -->
+<section class="space-y-6" id="tools">
+<div class="border-l-4 border-amber-600 pl-4">
+<h2 class="hl-h2">2. Арсенал Знарядь Праці з Кременю та Кістки</h2>
+<p class="text-stone-600 text-sm md:text-base mt-1">
+                    Основний матеріал епохи — <strong>кремінь</strong>. Він був міцним, дуже поширеним і легко розколювався на гострі пластини.
+                </p>
+</div>
+<!-- Interactive Tool Selector Tabs -->
+<div class="p-6 rounded-2xl border border-stone-200 shadow-sm hl-card">
+<div aria-label="Вибір знаряддя палеоліту" class="flex flex-wrap gap-2 mb-6" id="toolTabs" role="group">
+<button class="tab-btn active px-4 py-2 rounded-xl border border-stone-300 font-semibold text-sm transition hl-v84-tab" aria-pressed="true" id="btn-rubilo" onclick="switchTool('rubilo')" type="button">🪓 Рубило</button>
+<button class="tab-btn px-4 py-2 rounded-xl border border-stone-300 font-semibold text-sm transition hl-v84-tab" aria-pressed="false" id="btn-skrebok" onclick="switchTool('skrebok')" type="button">🔪 Скребок</button>
+<button class="tab-btn px-4 py-2 rounded-xl border border-stone-300 font-semibold text-sm transition hl-v84-tab" aria-pressed="false" id="btn-golka" onclick="switchTool('golka')" type="button">🦴 Кістяна голка</button>
+<button class="tab-btn px-4 py-2 rounded-xl border border-stone-300 font-semibold text-sm transition hl-v84-tab" aria-pressed="false" id="btn-spis" onclick="switchTool('spis')" type="button"><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--quiz"></span> Списометалка</button>
+</div>
+<!-- Active Tool Card Display -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center p-6 rounded-xl border border-stone-200 hl-card" id="toolContent">
+<!-- Javascript will render tool details here -->
+</div>
+</div>
+</section>
+<!-- SECTION 3: SETTLEMENTS & BONE HUT BUILDER -->
+<section class="space-y-6" id="settlements">
+<div class="border-l-4 border-amber-600 pl-4">
+<h2 class="hl-h2">3. Стоянки та Житла Давніх Людей в Україні</h2>
+<p class="text-stone-600 text-sm md:text-base mt-1">
+                    Оскільки люди шукали їжу, вони постійно переходили з місця на місце. Їхні тимчасові поселення називають <strong>стоянками</strong>.
+                </p>
+</div>
+<!-- Map Interactive Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="site-card active cursor-pointer p-5 rounded-2xl border-2 border-stone-200 hover:border-amber-400 transition hl-card hl-keyboard-control" id="site-korolevo" onclick="selectSite('korolevo')" role="button" tabindex="0">
+<div class="flex justify-between items-start">
+<span class="text-2xl"><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--pin"></span></span>
+<span class="text-xs font-bold text-amber-800 px-2 py-0.5 rounded hl-card">Найдавніша!</span>
+</div>
+<h3 class="mt-2 hl-h3">Королево</h3>
+<p class="text-xs text-stone-500 font-medium">Закарпатська область</p>
+<p class="text-xs text-stone-700 mt-3">Знайдено найдавніші відомі сліди перебування ранніх людей в Україні. У підручнику використано орієнтир близько 1 млн років тому й назву «пітекантропи».</p>
+</div>
+<div class="site-card cursor-pointer p-5 rounded-2xl border-2 border-stone-200 hover:border-amber-400 transition hl-card hl-keyboard-control" id="site-mezhyrich" onclick="selectSite('mezhyrich')" role="button" tabindex="0">
+<div class="flex justify-between items-start">
+<span class="text-2xl">⛺</span>
+<span class="text-xs font-bold text-amber-800 px-2 py-0.5 rounded hl-card">Житла з мамонта</span>
+</div>
+<h3 class="mt-2 hl-h3">Межиріч</h3>
+<p class="text-xs text-stone-500 font-medium">Черкаська область (біля Канева)</p>
+<p class="text-xs text-stone-700 mt-3">Унікальні реконструйовані житла кроманьйонців з кісток мамонта діаметром 4-5 метрів.</p>
+</div>
+<div class="site-card cursor-pointer p-5 rounded-2xl border-2 border-stone-200 hover:border-amber-400 transition hl-card hl-keyboard-control" id="site-mizyn" onclick="selectSite('mizyn')" role="button" tabindex="0">
+<div class="flex justify-between items-start">
+<span class="text-2xl"><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--music"></span></span>
+<span class="text-xs font-bold text-amber-800 px-2 py-0.5 rounded hl-card">Мистецтво &amp; Музика</span>
+</div>
+<h3 class="mt-2 hl-h3">Мізинська стоянка</h3>
+<p class="text-xs text-stone-500 font-medium">Чернігівська область (р. Десна)</p>
+<p class="text-xs text-stone-700 mt-3">Знайдено кістяні браслети з меандровим орнаментом та давні кістяні предмети, які дослідники пов’язують із музичною практикою.</p>
+</div>
+</div>
+<div class="mt-4 p-4 rounded-2xl border border-stone-200 hl-card">
+<p class="text-xs md:text-sm text-stone-700 leading-relaxed"><strong class="text-amber-800"><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--idea"></span>Наука уточнює.</strong> Для узгодженості з підручником у шкалі уроку збережено орієнтир <strong>близько 1 млн років тому</strong>. Нове датування найдавнішого шару зі знаряддями в Королеві становить приблизно <strong>1,4 млн років тому</strong>. <a class="font-semibold text-amber-800" href="https://www.nature.com/articles/s41586-024-07151-3" rel="noopener noreferrer" target="_blank">Джерело: Nature</a>.</p>
+</div>
+<!-- Interactive Bone Hut Construction Simulator -->
+<div class="bg-amber-900 text-amber-50 p-6 md:p-8 rounded-3xl shadow-md space-y-6">
+<div class="max-w-2xl">
+<span class="bg-amber-700 text-amber-100 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Інтерактивна реконструкція</span>
+<h3 class="text-white mt-2 hl-h3">Як будували житло з кісток мамонта?</h3>
+<p class="text-xs md:text-sm text-amber-200 mt-1">
+                        Під час льодовика дерев бракувало, тому кроманьйонці будували міцні куполоподібні житла в низинах річок з масивних кісток тварин.
+                    </p>
+</div>
+<!-- Simulator Controls & Step Visualization -->
+<div class="bg-stone-900 p-6 rounded-2xl border border-amber-800/50 space-y-6">
+<div class="flex flex-wrap items-center justify-between gap-4 border-b border-stone-800 pb-4">
+<div class="text-sm font-bold text-amber-400" id="hutStepTitle">Крок 1: Опора та Каркас</div>
+<div class="flex space-x-2">
+<button class="px-3 py-1.5 bg-stone-800 hover:bg-stone-700 text-amber-200 text-xs font-bold rounded-lg transition" onclick="prevHutStep()" type="button">← Назад</button>
+<button class="px-3 py-1.5 bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold rounded-lg transition" onclick="nextHutStep()" type="button">Далі →</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+<div class="md:col-span-5 flex justify-center">
+<!-- Visual HTML Bone Representation -->
+<div class="w-48 h-48 rounded-full border-4 border-dashed border-amber-600/60 bg-stone-950 flex flex-col items-center justify-center p-4 text-center relative overflow-hidden" id="hutVisual">
+<!-- Javascript updates hut graphic elements -->
+</div>
+</div>
+<div class="md:col-span-7 space-y-3">
+<h3 class="text-white hl-h4" id="hutStepHeading">Основа з черепів мамонта</h3>
+<p class="text-xs md:text-sm text-stone-300 leading-relaxed" id="hutStepDesc">
+                                На окремих стоянках Східної Європи в конструкціях жител використовували великі кістки мамонтів; точна кількість і спосіб укладання різнилися.
+                            </p>
+<div class="p-3 bg-stone-800/80 rounded-xl text-xs text-amber-300 font-medium" id="hutStepFact">
+<span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--idea"></span> Діаметр житла становив 4-5 метрів. Такі споруди могли слугувати житлом або місцем діяльності групи людей; точний склад мешканців встановити складно.
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: QUIZ FOR 6TH GRADERS -->
+
+<!-- Stage 5.1C pedagogical parity: glossary -->
+<section class="my-8 rounded-2xl border border-slate-700/70 bg-slate-900/55 p-5 md:p-6 shadow-lg" data-stage51c="glossary"><div class="mb-4 flex items-center gap-3"><div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-sky-500/30 bg-sky-500/10 text-sky-300"><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--book"></span></div><div><div class="text-[11px] font-extrabold uppercase tracking-wider text-sky-300">Словничок</div><h2 class="text-white hl-h2">Ключові поняття §4</h2></div></div><div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4"><div class="rounded-xl border border-slate-700 bg-slate-900/95 p-4 shadow-sm"><h3 class="hl-h3 text-amber-300">Палеоліт</h3><p class="mt-2 text-sm leading-relaxed text-slate-300">Найдавніший і найдовший період кам’яного віку; назва означає «давній камінь».</p></div><div class="rounded-xl border border-slate-700 bg-slate-900/95 p-4 shadow-sm"><h3 class="hl-h3 text-amber-300">Привласнювальне господарство</h3><p class="mt-2 text-sm leading-relaxed text-slate-300">Спосіб забезпечення їжею завдяки полюванню, збиральництву та використанню готових ресурсів природи.</p></div><div class="rounded-xl border border-slate-700 bg-slate-900/95 p-4 shadow-sm"><h3 class="hl-h3 text-amber-300">Стоянка</h3><p class="mt-2 text-sm leading-relaxed text-slate-300">Місце, де давні люди або інші гомініни жили певний час і залишили сліди своєї діяльності.</p></div><div class="rounded-xl border border-slate-700 bg-slate-900/95 p-4 shadow-sm"><h3 class="hl-h3 text-amber-300">Кремінь</h3><p class="mt-2 text-sm leading-relaxed text-slate-300">Тверда гірська порода, яку часто використовували для виготовлення гострих кам’яних знарядь.</p></div></div></section>
+<section class="space-y-6" id="quiz">
+<div class="border-l-4 border-amber-600 pl-4">
+<h2 class="hl-h2">Перевірка знань</h2>
+<p class="text-stone-600 text-sm md:text-base mt-1">
+                    Дай відповіді на 4 запитання, щоб перевірити, як добре ти засвоїв матеріал про Палеоліт!
+                </p>
+</div>
+<div class="p-6 md:p-8 rounded-3xl border border-stone-200 shadow-sm space-y-8 hl-card" id="quizContainer">
+<!-- Question 1 -->
+<div class="space-y-3">
+<p class="font-bold text-stone-900 text-sm md:text-base">1. Що означає слово «палеоліт» у перекладі з грецької мови?</p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<button class="q1-btn p-3 rounded-xl border border-stone-200 hover:bg-amber-50 text-left text-xs font-medium transition" onclick="checkAnswer(1, 'A', this)" type="button">A) Новий камінь</button>
+<button class="q1-btn p-3 rounded-xl border border-stone-200 hover:bg-amber-50 text-left text-xs font-medium transition" onclick="checkAnswer(1, 'B', this)" type="button">Б) Давній камінь</button>
+<button class="q1-btn p-3 rounded-xl border border-stone-200 hover:bg-amber-50 text-left text-xs font-medium transition" onclick="checkAnswer(1, 'C', this)" type="button">В) Бронзовий вік</button>
+</div>
+</div>
+<!-- Question 2 -->
+<div class="space-y-3">
+<p class="font-bold text-stone-900 text-sm md:text-base">2. Який тип господарства панував у добу палеоліту?</p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<button class="q2-btn p-3 rounded-xl border border-stone-200 hover:bg-amber-50 text-left text-xs font-medium transition" onclick="checkAnswer(2, 'A', this)" type="button">A) Відтворювальне (землеробство)</button>
+<button class="q2-btn p-3 rounded-xl border border-stone-200 hover:bg-amber-50 text-left text-xs font-medium transition" onclick="checkAnswer(2, 'B', this)" type="button">Б) Привласнювальне (збиральництво й полювання)</button>
+<button class="q2-btn p-3 rounded-xl border border-stone-200 hover:bg-amber-50 text-left text-xs font-medium transition" onclick="checkAnswer(2, 'C', this)" type="button">В) Ремісниче</button>
+</div>
+</div>
+<!-- Question 3 -->
+<div class="space-y-3">
+<p class="font-bold text-stone-900 text-sm md:text-base">3. Де було знайдено найдавнішу стоянку первісних людей на території України?</p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<button class="q3-btn p-3 rounded-xl border border-stone-200 hover:bg-amber-50 text-left text-xs font-medium transition" onclick="checkAnswer(3, 'A', this)" type="button">A) С. Королево на Закарпатті</button>
+<button class="q3-btn p-3 rounded-xl border border-stone-200 hover:bg-amber-50 text-left text-xs font-medium transition" onclick="checkAnswer(3, 'B', this)" type="button">Б) С. Межиріч на Черкащині</button>
+<button class="q3-btn p-3 rounded-xl border border-stone-200 hover:bg-amber-50 text-left text-xs font-medium transition" onclick="checkAnswer(3, 'C', this)" type="button">В) Мізин на Чернігівщині</button>
+</div>
+</div>
+<!-- Question 4 -->
+<div class="space-y-3">
+<p class="font-bold text-stone-900 text-sm md:text-base">4. З чого робили нитки для зшивання шкур за допомогою кістяних голок?</p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<button class="q4-btn p-3 rounded-xl border border-stone-200 hover:bg-amber-50 text-left text-xs font-medium transition" onclick="checkAnswer(4, 'A', this)" type="button">A) З рослинного волокна та льону</button>
+<button class="q4-btn p-3 rounded-xl border border-stone-200 hover:bg-amber-50 text-left text-xs font-medium transition" onclick="checkAnswer(4, 'B', this)" type="button">Б) З висушеного сухожилля тварин</button>
+<button class="q4-btn p-3 rounded-xl border border-stone-200 hover:bg-amber-50 text-left text-xs font-medium transition" onclick="checkAnswer(4, 'C', this)" type="button">В) З металевого дроту</button>
+</div>
+</div>
+<!-- Score Banner -->
+<div class="hidden p-4 rounded-2xl border border-amber-200 text-center space-y-2 hl-card" id="quizResult">
+<h3 class="hl-h4" id="scoreText">Твій результат: 0 / 4</h3>
+<p class="text-xs text-stone-600" id="scoreFeedback">Дай відповіді на всі запитання!</p>
+</div>
+</div>
+</section>
+<!-- History Lab full activity start -->
+
+<!-- Stage 5.1C pedagogical parity: memory -->
+<aside class="historylab-memory my-6 rounded-2xl border border-amber-500/25 bg-amber-500/5 p-5" data-stage51c="memory"><div class="mb-3 text-xs font-extrabold uppercase tracking-wider text-amber-400">Запам’ятай 3 речі</div><div class="grid gap-2 md:grid-cols-3"><div class="rounded-xl bg-slate-900/60 p-3 text-sm leading-relaxed text-slate-300"><span class="mr-2 font-bold text-amber-400">1.</span>Палеоліт — найдовший період кам’яного віку, коли основні знаряддя виготовляли з каменю, кістки та рогу.</div><div class="rounded-xl bg-slate-900/60 p-3 text-sm leading-relaxed text-slate-300"><span class="mr-2 font-bold text-amber-400">2.</span>Господарство було привласнювальним: люди полювали, збирали природні ресурси й пристосовували спосіб життя до довкілля.</div><div class="rounded-xl bg-slate-900/60 p-3 text-sm leading-relaxed text-slate-300"><span class="mr-2 font-bold text-amber-400">3.</span>Королево, Мізин і Межиріч — важливі пам’ятки, але вони належать до різних етапів палеоліту й розповідають про різні давні спільноти.</div></div></aside>
+<section class="historylab-activity my-8 rounded-2xl border border-slate-700/70 bg-slate-900/55 p-5 md:p-6 shadow-lg" data-activity="detective">
+<div class="mb-4 flex items-center gap-3"><div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-400"><span aria-hidden="true" class="hl-icon hl-section-heading-icon hl-icon--search"></span></div><div><div class="text-[11px] font-extrabold uppercase tracking-wider text-amber-400">Лабораторія історика</div><h2 class="text-white hl-h2">Археологічна експедиція: стоянка первісних людей</h2></div></div><div class="mb-3 flex flex-wrap gap-2"><span class="rounded-full bg-slate-800 px-3 py-1 text-xs font-semibold text-slate-300">Спостереження</span><span class="rounded-full bg-slate-800 px-3 py-1 text-xs font-semibold text-slate-300">Висновок дослідників</span></div><div class="grid gap-2 md:grid-cols-2"><button aria-expanded="false" class="rounded-xl border border-slate-700 bg-slate-950/45 p-3 text-left text-sm text-slate-200 hover:border-amber-500/50" onclick="const _hlTarget=this.querySelector('.hl-answer');_hlTarget.classList.toggle('hidden');this.setAttribute('aria-expanded',_hlTarget.classList.contains('hidden')?'false':'true')" type="button">Кам’яні знаряддя<span class="hl-answer hidden mt-2 block text-xs font-bold text-amber-300">→ Спостереження</span></button><button aria-expanded="false" class="rounded-xl border border-slate-700 bg-slate-950/45 p-3 text-left text-sm text-slate-200 hover:border-amber-500/50" onclick="const _hlTarget=this.querySelector('.hl-answer');_hlTarget.classList.toggle('hidden');this.setAttribute('aria-expanded',_hlTarget.classList.contains('hidden')?'false':'true')" type="button">Сліди вогнища<span class="hl-answer hidden mt-2 block text-xs font-bold text-amber-300">→ Спостереження</span></button><button aria-expanded="false" class="rounded-xl border border-slate-700 bg-slate-950/45 p-3 text-left text-sm text-slate-200 hover:border-amber-500/50" onclick="const _hlTarget=this.querySelector('.hl-answer');_hlTarget.classList.toggle('hidden');this.setAttribute('aria-expanded',_hlTarget.classList.contains('hidden')?'false':'true')" type="button">Люди обробляли камінь<span class="hl-answer hidden mt-2 block text-xs font-bold text-amber-300">→ Висновок дослідників</span></button><button aria-expanded="false" class="rounded-xl border border-slate-700 bg-slate-950/45 p-3 text-left text-sm text-slate-200 hover:border-amber-500/50" onclick="const _hlTarget=this.querySelector('.hl-answer');_hlTarget.classList.toggle('hidden');this.setAttribute('aria-expanded',_hlTarget.classList.contains('hidden')?'false':'true')" type="button">На стоянці використовували вогонь<span class="hl-answer hidden mt-2 block text-xs font-bold text-amber-300">→ Висновок дослідників</span></button><button aria-expanded="false" class="rounded-xl border border-slate-700 bg-slate-950/45 p-3 text-left text-sm text-slate-200 hover:border-amber-500/50" onclick="const _hlTarget=this.querySelector('.hl-answer');_hlTarget.classList.toggle('hidden');this.setAttribute('aria-expanded',_hlTarget.classList.contains('hidden')?'false':'true')" type="button">Королево: близько 1 млн років тому<span class="hl-answer hidden mt-2 block text-xs font-bold text-amber-300">→ Висновок дослідників</span></button></div><p class="mt-3 text-xs text-slate-500">Натисни на твердження, щоб перевірити категорію.</p></section>
+<!-- History Lab full activity end -->
+</main>
+<!-- Footer -->
+<!-- JavaScript Logic -->
+<script>
+        // Data Store for Tools
+        const toolsData = {
+            rubilo: {
+                title: "Універсальне Рубило",
+                icon: "🪓",
+                subtitle: "Кам'яний «швейцарський ніж» первісної людини",
+                desc: "Універсальне знаряддя з обробленого з двох боків кременю. Воно одночасно заміняло ніж, сокиру та кайло (кирку). Рубилом можна було розтесувати деревину, розрубувати туші тварин або викопувати коріння.",
+                fact: "Кремінь розколювали за допомогою іншого каменю, створюючи гострі краї."
+            },
+            skrebok: {
+                title: "Кременевий Скребок",
+                icon: "🔪",
+                subtitle: "Основний інструмент для обробки шкір",
+                desc: "Скребки виготовлялися з крем'яних відщепів. Вони мали опуклі гострі краї і слугували для очищення та вичинки шкур вбитих оленів і бізонів. З оброблених шкур шили зимовий одяг і виготовляли намети.",
+                fact: "Одяг зі шкур рятував людей від лютих морозів під час Льодовикового періоду."
+            },
+            golka: {
+                title: "Кістяна Голка з Вушком",
+                icon: "🦴",
+                subtitle: "Висока технологія швейного ремесла",
+                desc: "Оскільки ниток із рослин тоді ще не існувало, люди використовували висушені сухожилля тварин. Голкою з кістки робили отвори у шкурі й протягували сухожильні «нитки», зшиваючи міцний одяг.",
+                fact: "Голки виточували з рогів та твердих кісток оленів чи птахів."
+            },
+            spis: {
+                title: "Списометалка",
+                icon: `<span aria-hidden='true' class='hl-icon hl-content-icon hl-icon--quiz align-[-0.12em]'></span>`,
+                subtitle: "Зброя далекого бою для безпечного полювання",
+                desc: "Списометалка збільшувала дальність і силу кидка списа у кілька разів. Вона дозволяла мисливцям уражати великих тварин (бізонів, мамонтів) з безпечної відстані.",
+                fact: "Це один із перших складних механізмів, винайдених людиною."
+            }
+        };
+
+        // Render Tool Info
+        function switchTool(toolKey) {
+            const tool = toolsData[toolKey];
+            const container = document.getElementById('toolContent');
+            
+            // Update active state on tab buttons
+            document.querySelectorAll('#toolTabs button').forEach(btn => {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-pressed', 'false');
+            });
+            const activeToolBtn = document.getElementById(`btn-${toolKey}`);
+            activeToolBtn.classList.add('active');
+            activeToolBtn.setAttribute('aria-pressed', 'true');
+
+            container.innerHTML = `
+                <div class="md:col-span-3 flex flex-col items-center justify-center p-6 rounded-2xl border border-stone-200 text-center hl-card">
+                    <span class="text-6xl mb-2">${tool.icon}</span>
+                    <span class="text-xs font-bold text-amber-800 uppercase tracking-wider">Знаряддя праці</span>
+                </div>
+                <div class="md:col-span-9 space-y-3">
+                    <div class="flex items-center space-x-2">
+                        <h4 class="hl-h4">${tool.title}</h4>
+                    </div>
+                    <p class="text-xs font-semibold text-amber-700">${tool.subtitle}</p>
+                    <p class="text-xs md:text-sm text-stone-700 leading-relaxed">${tool.desc}</p>
+                    <div class="p-3 bg-amber-100/60 rounded-xl text-xs text-stone-800 border border-amber-200 hl-light-surface">
+                        <span class="font-bold text-amber-900"><span aria-hidden='true' class='hl-icon hl-content-icon hl-icon--idea mr-1 align-[-0.12em]'></span> Цікавий факт:</span> ${tool.fact}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Map Site Selection Logic
+        function selectSite(siteKey) {
+            document.querySelectorAll('.site-card').forEach(card => card.classList.remove('active'));
+            document.getElementById(`site-${siteKey}`).classList.add('active');
+        }
+
+        // Interactive Bone Hut Simulator Logic
+        const hutSteps = [
+            {
+                title: "Крок 1: Фундамент із черепів",
+                heading: "Важка кругова основа",
+                desc: "У коло діаметром 4–5 метрів викладали 20–30 масивних черепів мамонтів. Вони слугували противагою та фундаментом для захисту від сильного льодовикового вітру.",
+                fact: "Дерева в тундростепу майже не було, тому кістки заміняли колоди.",
+                visual: `<div class="text-4xl">🦴</div><div class="text-xs text-amber-400 font-bold mt-2">Кругова основа з черепів</div>`
+            },
+            {
+                title: "Крок 2: Каркас з бивнів і щелеп",
+                heading: "Переплетені купольні дуги",
+                desc: "У черепи-фундамент вставляли довгі бивні та великі ребра мамонтів, зводячи їх догори у формі купола. Для міцності їх зв'язували шкіряними ременями.",
+                fact: "На одне житло використовували кістки понад 30-40 мамонтів!",
+                visual: `<div class="text-4xl"><span aria-hidden='true' class='hl-icon hl-content-icon hl-icon--state mr-1 align-[-0.12em]'></span></div><div class="text-xs text-amber-400 font-bold mt-2">Купольні дуги з бивнів</div>`
+            },
+            {
+                title: "Крок 3: Покриття шкурами",
+                heading: "Захист від морозу та снігу",
+                desc: "Зверху купол вкривали кількома шарами зшитих шкур бізонів та північних оленів. Краї шкур притискали біля землі важкими мамонтовими кістками.",
+                fact: "Усередині такого житла температура була набагато вищою, ніж надворі.",
+                visual: `<div class="text-4xl">⛺</div><div class="text-xs text-amber-400 font-bold mt-2">Покриття шкурами бізонів</div>`
+            },
+            {
+                title: "Крок 4: Внутрішнє вогнище",
+                heading: "Серце первісного дому",
+                desc: "Посеред житла облаштовували багаття для обігріву та приготування їжі. У житлі разом мешкало 10-15 членів однієї родини.",
+                fact: "Дим виходив через отвір у верхівці купола.",
+                visual: `<div class="text-4xl"><span aria-hidden='true' class='hl-icon hl-content-icon hl-icon--fire mr-1 align-[-0.12em]'></span></div><div class="text-xs text-amber-400 font-bold mt-2">Центральне вогнище</div>`
+            }
+        ];
+
+        let currentHutStep = 0;
+
+        function updateHutSimulator() {
+            const step = hutSteps[currentHutStep];
+            document.getElementById('hutStepTitle').innerText = step.title;
+            document.getElementById('hutStepHeading').innerText = step.heading;
+            document.getElementById('hutStepDesc').innerText = step.desc;
+            document.getElementById('hutStepFact').innerHTML = `<span aria-hidden='true' class='hl-icon hl-content-icon hl-icon--idea mr-1.5 align-[-0.12em]'></span> ${step.fact}`;
+            document.getElementById('hutVisual').innerHTML = step.visual;
+        }
+
+        function nextHutStep() {
+            currentHutStep = (currentHutStep + 1) % hutSteps.length;
+            updateHutSimulator();
+        }
+
+        function prevHutStep() {
+            currentHutStep = (currentHutStep - 1 + hutSteps.length) % hutSteps.length;
+            updateHutSimulator();
+        }
+
+        // Interactive Quiz Logic
+        const answers = { 1: 'B', 2: 'B', 3: 'A', 4: 'B' };
+        let userAnswers = {};
+
+        function checkAnswer(qNum, option, btn) {
+            userAnswers[qNum] = option;
+            
+            // Highlight selected button in group
+            const btnGroup = document.querySelectorAll(`.q${qNum}-btn`);
+            btnGroup.forEach(b => {
+                b.classList.remove('bg-amber-600', 'text-white', 'border-amber-600');
+                b.classList.add('border-stone-200');
+            });
+            btn.classList.add('bg-amber-600', 'text-white', 'border-amber-600');
+
+            // Evaluate Quiz
+            let score = 0;
+            let answeredCount = Object.keys(userAnswers).length;
+
+            for (let i = 1; i <= 4; i++) {
+                if (userAnswers[i] === answers[i]) score++;
+            }
+
+            const resultBox = document.getElementById('quizResult');
+            resultBox.classList.remove('hidden');
+            document.getElementById('scoreText').innerText = `Твій результат: ${score} з 4 правильних відповідей!`;
+            
+            if (answeredCount === 4) {
+                if (score === 4) {
+                    document.getElementById('scoreFeedback').innerHTML = `<span aria-hidden='true' class='hl-icon hl-content-icon hl-icon--star mr-1.5 align-[-0.12em]'></span> Чудово! Ти відмінно знаєш матеріал про Палеоліт!`;
+                } else if (score >= 2) {
+                    document.getElementById('scoreFeedback').innerHTML = `<span aria-hidden='true' class='hl-icon hl-content-icon hl-icon--check mr-1.5 align-[-0.12em]'></span> Добре! Але повтори ще розділи про стоянки та знаряддя.`;
+                } else {
+                    document.getElementById('scoreFeedback').innerHTML = `<span aria-hidden='true' class='hl-icon hl-content-icon hl-icon--book mr-1.5 align-[-0.12em]'></span> Спробуй ще раз перечитати матеріал інфографіки!`;
+                }
+            } else {
+                document.getElementById('scoreFeedback').innerText = `Відповідай далі! Пройдено ${answeredCount} з 4 запитань.`;
+            }
+        }
+
+        // Initialize Charts on Window Load
+        window.addEventListener('load', () => {
+            // Render default tool
+            switchTool('rubilo');
+            updateHutSimulator();
+
+            // Chart 1: Donut Economy Chart
+            const ctxEconomy = document.getElementById('economyChart').getContext('2d');
+            const economyChart = new Chart(ctxEconomy, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Полювання на тварин', 'Збиральництво рослин'],
+                    datasets: [{
+                        data: [1, 1],
+                        backgroundColor: HistoryLabCharts.colors(2),
+                        borderWidth: 2,
+                        borderColor: HistoryLabCharts.sliceBorder
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                font: { family: '"Nunito", system-ui, -apple-system, "Segoe UI", Arial, sans-serif', size: 12 },
+                                color: '#f1f5f9'
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return ' ' + context.label;
+                                }
+                            }
+                        }
+                    },
+                    onClick: (evt, activeElements) => {
+                        const detailsDiv = document.getElementById('chartDetails');
+                        if (activeElements.length > 0) {
+                            const index = activeElements[0].index;
+                            if (index === 0) {
+                                detailsDiv.innerHTML = `<span class="font-bold text-amber-900">🦣 Полювання:</span> Забезпечувало племена м'ясом, жиром для вогнища, шкурами для одягу та кістками для будівництва житла. Полювали колективно на мамонтів, бізонів та оленів.`;
+                            } else {
+                                detailsDiv.innerHTML = `<span class="font-bold text-emerald-900"><span aria-hidden='true' class='hl-icon hl-content-icon hl-icon--search mr-1.5 align-[-0.12em]'></span> Збиральництво:</span> Заняття жінок та дітей. Пошук їстівних корінців, дикорослих ягід, горіхів, диких фруктів та яйця птахів.`;
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Chart 2: Mammoth Weight Comparison Chart
+            const ctxMammoth = document.getElementById('mammothChart').getContext('2d');
+            new Chart(ctxMammoth, {
+                type: 'bar',
+                data: {
+                    labels: ['Шерстистий Мамонт', 'Індійський Слон', 'Людина'],
+                    datasets: [{
+                        label: 'Орієнтовна маса (тонн)',
+                        data: [10, 4, 0.07],
+                        backgroundColor: HistoryLabCharts.colors(3),
+                        borderRadius: 6
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return ` Вага: ${context.raw} тонн`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: { color: '#334155' },
+                            ticks: { color: '#cbd5e1', font: { size: 10 } }
+                        },
+                        y: {
+                            grid: { display: false },
+                            ticks: { color: '#f8fafc', font: { size: 10, weight: 'bold' } }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+<footer class="historylab-footer">
+<div class="historylab-footer__inner">
+<div>
+<div class="historylab-footer__brand">History Lab • Історія України. Всесвітня історія • 6 клас</div>
+<p class="historylab-footer__copy">© 2026 History Lab. Усі права на структуру сайту, дизайн та авторські інтерактивні матеріали захищено.</p>
+<p class="historylab-footer__note">Сайт створено з навчальною метою для використання під час вивчення курсу історії у 6 класі.</p>
+<div class="historylab-footer__textbook">
+<p><strong>Інтерактивний навчальний додаток до підручника «Історія України. Всесвітня історія»</strong></p>
+<p>Автори підручника: <strong>О. В. Гісем, О. О. Гісем (2023)</strong></p>
+</div>
+</div>
+<div>
+<div class="historylab-footer__title">Авторські права та використані матеріали</div>
+<p>Права на тексти, ілюстрації, карти, фотографії та інші матеріали, запозичені з підручників або інших джерел, належать їхнім відповідним авторам і правовласникам.</p>
+<p class="historylab-footer__note">Наявність сторонніх матеріалів на сайті не означає передачу авторських прав на них власнику History Lab.</p>
+</div>
+<div aria-label="Навчальний заклад" class="historylab-footer__institution">
+<span aria-hidden="true" class="historylab-footer__institution-logo">
+<img alt="" decoding="async" height="100" loading="lazy" src="../assets/institution/kharkiv-lyceum-99.gif" width="127"/>
+</span>
+<div class="historylab-footer__institution-text">
+<div class="historylab-footer__institution-kicker">Навчальний заклад</div>
+<div class="historylab-footer__institution-name">Харківський ліцей № 99</div>
+<div class="historylab-footer__institution-note">History Lab • навчальний вебпроєкт з історії для 6 класу</div>
+</div>
+</div>
+</div>
+</footer>
+<script defer="" src="../assets/historylab-v842.js"></script>
+</body>
+</html>

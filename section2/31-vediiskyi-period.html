@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+
+<html lang="uk">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>§31 Ведійський період в історії Індії — Історія, 6 клас | History Lab</title>
+<link href="https://history-lab.netlify.app/section2/31-vediiskyi-period.html" rel="canonical"/>
+<link href="../assets/tailwind-local/tw-32-section2-31-vediiskyi-period.css" rel="stylesheet"/>
+<!-- History Lab local chart runtime -->
+<script src="../assets/historylab-chart-local.js"></script>
+<style>
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 580px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 290px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 320px;
+            }
+        }
+        .custom-shadow {
+            box-shadow: 0 4px 20px -2px rgba(180, 83, 9, 0.12);
+        }
+        .varna-card {
+            transition: all 0.25s ease-in-out;
+        }
+        .varna-card:hover {
+            transform: translateY(-3px);
+        }
+    
+.historylab-footer__textbook{margin-top:12px;padding-top:12px;border-top:1px solid rgba(148,163,184,.25)}
+.historylab-footer__textbook p{margin:0 0 4px}
+.historylab-footer__textbook strong{color:#475569}
+
+</style>
+<script>
+        const varnaData = {
+            'brahmins': {
+                title: '<span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--religion"></span> Брахмани (Жерці)',
+                origin: 'Створені з вуст (голови) Брахми',
+                duties: 'Виконання релігійних обрядів, приношення жертв богам, збереження й вивчення Вед, навчання молоді.',
+                status: 'Найвища, найшанованіша варна Давньої Індії. Життя брахмана вважалося недоторканним.',
+                colorClass: 'hl-varna-brahmins'
+            },
+            'kshatriyas': {
+                title: `<span aria-hidden='true' class='hl-icon hl-content-icon hl-icon--war mr-1 align-[-0.12em]'></span> Кшатрії (Воїни та Знать)`,
+                origin: 'Створені з рук Брахми',
+                duties: 'Управління державою (раджі), збирання податків, захист країни від ворогів, ведення воєн.',
+                status: 'Друга за впливовістю варна. До неї належали правителі племен — раджі та воєначальники.',
+                colorClass: 'hl-varna-kshatriyas'
+            },
+            'vaishyas': {
+                title: `<span aria-hidden='true' class='hl-icon hl-content-icon hl-icon--wheat mr-1 align-[-0.12em]'></span> Вайшії (Землероби, Ремісники, Купці)`,
+                origin: 'Створені зі стегон Брахми',
+                duties: 'Сільське господарство (вирощування злаків, худоби), ремесло, торгівля, сплачування податків.',
+                status: 'Основа економіки країни. Складали більшість вільного населення Давньої Індії.',
+                colorClass: 'hl-varna-vaishyas'
+            },
+            'shudras': {
+                title: `<span aria-hidden='true' class='hl-icon hl-content-icon hl-icon--tools mr-1 align-[-0.12em]'></span> Шудри (Слуги та Наймити)`,
+                origin: 'Створені з запилених ніг Брахми',
+                duties: 'Обслуговування представників трьох вищих варн, важка фізична праця, ремісничі допоміжні роботи.',
+                status: 'Не мали права вивчати Веди та здійснювати жертвоприношення. Були неповноправними.',
+                colorClass: 'hl-varna-shudras'
+            },
+            'untouchables': {
+                title: '<span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--warning"></span> Недоторканні (Парії)',
+                origin: 'Не входили до жодної варни Брахми (поза суспільством)',
+                duties: 'Прибирання сміття, забій худоби, обробка шкір, прибирання трупів, брудна робота.',
+                status: 'Жили за межами поселень. Їм заборонялося брати воду з загальних криниць та навіть наступати на тінь вищих варн.',
+                colorClass: 'hl-varna-untouchables'
+            }
+        };
+
+        window.showVarnaInfo = function(key, btnElement) {
+            const data = varnaData[key];
+            const box = document.getElementById('varna-details-box');
+            if (!data || !box) return;
+
+            document.querySelectorAll('.varna-tab-btn').forEach(btn => {
+                btn.classList.remove('ring-2', 'ring-saffron-600', 'font-bold');
+                btn.setAttribute('aria-pressed', 'false');
+            });
+            if (btnElement) {
+                btnElement.classList.add('ring-2', 'ring-saffron-600', 'font-bold');
+                btnElement.setAttribute('aria-pressed', 'true');
+            }
+
+            box.className = `hl-varna-details p-5 rounded-xl border-2 transition-all duration-300 ${data.colorClass} shadow-md`;
+            box.innerHTML = `
+                <div class="flex justify-between items-start flex-wrap gap-2">
+                    <h4 class="hl-h4">${data.title}</h4>
+                    <span class="text-xs px-2.5 py-1 bg-saffron-700 text-white rounded-full font-semibold">${data.origin}</span>
+                </div>
+                <div class="mt-3 space-y-2 text-xs md:text-sm">
+                    <p><strong><span aria-hidden='true' class='hl-icon hl-content-icon hl-icon--shield mr-1 align-[-0.12em]'></span> Обов'язки та заняття:</strong> ${data.duties}</p>
+                    <p><strong><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--star"></span> Становище в суспільстві:</strong> ${data.status}</p>
+                </div>
+            `;
+        };
+
+        window.filterGlossary = function() {
+            const input = document.getElementById('glossary-search');
+            const query = (input ? input.value : '').toLocaleLowerCase('uk-UA').trim();
+            const items = Array.from(document.querySelectorAll('#glossary-grid .glossary-item'));
+            let visible = 0;
+
+            items.forEach(item => {
+                const text = item.textContent.toLocaleLowerCase('uk-UA');
+                const match = !query || text.includes(query);
+                item.hidden = !match;
+                if (match) visible++;
+            });
+
+            const empty = document.getElementById('glossary-empty');
+            if (empty) empty.hidden = visible !== 0;
+        };
+
+        let quizAnswers = { 1: null, 2: null, 3: null, 4: null, 5: null, 6: null, 7: null, 8: null };
+
+        window.checkAnswer = function(qNum, isCorrect, btnElement) {
+            const qBlock = btnElement.closest('.quiz-q');
+            const buttons = qBlock.querySelectorAll('.q-btn');
+
+            buttons.forEach(btn => {
+                btn.disabled = true;
+                btn.classList.remove('hover:bg-stone-600', 'bg-stone-700');
+                btn.classList.add('bg-stone-800', 'opacity-60');
+            });
+
+            if (isCorrect) {
+                btnElement.classList.remove('bg-stone-800', 'opacity-60');
+                btnElement.classList.add('bg-emerald-600', 'text-white', 'font-bold');
+                quizAnswers[qNum] = true;
+            } else {
+                btnElement.classList.remove('bg-stone-800', 'opacity-60');
+                btnElement.classList.add('bg-crimson-600', 'text-white');
+                quizAnswers[qNum] = false;
+            }
+
+            if (Object.values(quizAnswers).every(val => val !== null)) {
+                calculateQuizScore();
+            }
+        };
+
+        function calculateQuizScore() {
+            const score = Object.values(quizAnswers).filter(Boolean).length;
+            const resultBox = document.getElementById('quiz-result');
+            const scoreText = document.getElementById('quiz-score-text');
+            const badgeText = document.getElementById('quiz-badge-text');
+
+            scoreText.innerText = `Твій результат: ${score} з 8 правильних відповідей!`;
+
+            if (score === 8) {
+                badgeText.innerHTML = `<span aria-hidden='true' class='hl-icon hl-content-icon hl-icon--star mr-1.5 align-[-0.12em]'></span> Знавець Ведійської Індії! Відмінно (12 балів)! Ти досконало знаєш параграф 31!`;
+            } else if (score >= 6) {
+                badgeText.innerHTML = `<span aria-hidden='true' class='hl-icon hl-content-icon hl-icon--star mr-1.5 align-[-0.12em]'></span> Чудовий результат! Ти добре розумієш тему Аріїв, Вед та суспільних варн!`;
+            } else {
+                badgeText.innerHTML = `<span aria-hidden='true' class='hl-icon hl-content-icon hl-icon--book mr-1.5 align-[-0.12em]'></span> Повтори матеріали §31 (Арії, Веди, Варни) та спробуй пройти перевірку знань ще раз!`;
+            }
+
+            resultBox.classList.remove('hidden');
+        }
+
+        window.resetQuiz = function() {
+            quizAnswers = { 1: null, 2: null, 3: null, 4: null, 5: null, 6: null, 7: null, 8: null };
+            document.getElementById('quiz-result').classList.add('hidden');
+
+            const buttons = document.querySelectorAll('.q-btn');
+            buttons.forEach(btn => {
+                btn.disabled = false;
+                btn.className = "q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white";
+            });
+        };
+    </script>
+<style id="historylab-copyright-style">
+.historylab-footer{max-width:1180px;margin:42px auto 0;padding:0 22px 30px;font-family:var(--hl-font-body)}
+.historylab-footer__inner{border-top:1px solid rgba(148,163,184,.35);padding-top:22px;display:grid;grid-template-columns:1.05fr .95fr;gap:26px;color:#64748b;font-size:13px;line-height:1.6}
+.historylab-footer__brand{font-size:15px;font-weight:800;color:#475569;margin-bottom:5px}
+.historylab-footer p{margin:0 0 6px}
+.historylab-footer__copy{font-weight:650;color:#475569}
+.historylab-footer__title{font-weight:800;color:#475569;margin-bottom:5px}
+.historylab-footer__note{font-size:12px;color:#7c8798}
+@media(max-width:720px){.historylab-footer__inner{grid-template-columns:1fr;gap:14px}.historylab-footer{margin-top:30px}}
+</style>
+<script src="../assets/historylab-chart-theme.js"></script>
+<link href="../assets/historylab-v842.css" rel="stylesheet"/>
+<style id="hl-varna-contrast-fix">
+/* §31 Varna selector: preserve each varna accent while keeping readable dark teaching surfaces. */
+body.hl-v84.hl-ds2 main #varna-details-box.hl-varna-details{
+  background:linear-gradient(145deg,#172033,#111827 72%)!important;
+  color:#cbd5e1!important;
+  border-color:#f59e0b!important;
+  text-shadow:none!important;
+}
+body.hl-v84.hl-ds2 main #varna-details-box.hl-varna-details :is(.hl-h4,h4,strong){color:#f8fafc!important}
+body.hl-v84.hl-ds2 main #varna-details-box.hl-varna-details p{color:#cbd5e1!important}
+body.hl-v84.hl-ds2 main #varna-details-box.hl-varna-brahmins{
+  border-color:#f59e0b!important;
+  background:linear-gradient(145deg,rgba(245,158,11,.16),#111827 72%)!important;
+  box-shadow:0 8px 24px rgba(180,83,9,.18)!important;
+}
+body.hl-v84.hl-ds2 main #varna-details-box.hl-varna-kshatriyas{
+  border-color:#ef4444!important;
+  background:linear-gradient(145deg,rgba(239,68,68,.16),#111827 72%)!important;
+  box-shadow:0 8px 24px rgba(185,28,28,.18)!important;
+}
+body.hl-v84.hl-ds2 main #varna-details-box.hl-varna-vaishyas{
+  border-color:#10b981!important;
+  background:linear-gradient(145deg,rgba(16,185,129,.14),#111827 72%)!important;
+  box-shadow:0 8px 24px rgba(4,120,87,.18)!important;
+}
+body.hl-v84.hl-ds2 main #varna-details-box.hl-varna-shudras{
+  border-color:#a8a29e!important;
+  background:linear-gradient(145deg,rgba(168,162,158,.13),#111827 72%)!important;
+  box-shadow:0 8px 24px rgba(87,83,78,.18)!important;
+}
+body.hl-v84.hl-ds2 main #varna-details-box.hl-varna-untouchables{
+  border-color:#64748b!important;
+  background:linear-gradient(145deg,rgba(100,116,139,.16),#0f172a 72%)!important;
+  box-shadow:0 8px 24px rgba(15,23,42,.3)!important;
+}
+</style>
+<link href="../assets/historylab-typography.css" rel="stylesheet"/>
+<link href="../favicon.ico" rel="icon" type="image/x-icon">
+</link></head>
+<body class="bg-saffron-50/40 text-stone-900 font-sans leading-relaxed selection:bg-saffron-200 selection:text-saffron-900 hl-section-2 hl-ds2 hl-v84">
+<a class="hl-skip-link" href="#main-content">Перейти до основного вмісту</a>
+<nav aria-label="Навігація курсу" class="lesson-course-nav"><div class="lcn-inner"><div class="lcn-group lcn-group--primary"><a aria-label="Головна" class="lcn-home" href="../index.html"><span aria-hidden="true" class="hl-icon hl-icon--home"></span><span class="lcn-label">Головна</span></a><a aria-label="Зміст розділу" class="lcn-contents" href="index.html"><span aria-hidden="true" class="hl-icon hl-icon--contents"></span><span class="lcn-label">Зміст розділу</span></a></div><div class="lcn-current"><span aria-hidden="true" class="hl-icon hl-lesson-identity-icon hl-icon--school"></span><span class="lcn-current-label">§31 • Історія, 6 клас</span></div><div class="lcn-group lcn-group--steps"><a aria-label="Попередній параграф §30" class="lcn-step lcn-step--previous" href="30-kharappa.html" title="Попередній параграф"><span aria-hidden="true" class="hl-icon hl-icon--previous"></span><span class="lcn-label">§30</span></a><a aria-label="Наступний параграф §32" class="lcn-step lcn-step--next" href="32-indiia-relihii-mauriiv.html" title="Наступний параграф"><span class="lcn-label">§32</span><span aria-hidden="true" class="hl-icon hl-icon--next"></span></a></div></div></nav>
+<header class="hl-lesson-hero hl-lesson-hero--india"><div class="hl-lesson-hero__inner"><div class="hl-lesson-hero__top"><div class="hl-lesson-hero__copy"><div class="hl-lesson-hero__kicker"><span aria-hidden="true" class="hl-icon hl-icon--religion"></span><span>ПЕРІОД • ВЕДІЙСЬКА ІНДІЯ</span></div><h1 class="hl-lesson-hero__title"><span class="hl-lesson-hero__accent">Ведійський період</span> в історії Індії</h1><p class="hl-lesson-hero__lead">Як після занепаду Хараппської цивілізації на півночі Індії формувався ведійський світ, пов’язаний з аріями, Ведами, санскритом і новими суспільними відносинами.</p></div><div aria-hidden="true" class="hl-lesson-hero__number">§31</div></div><div class="hl-lesson-hero__stats"><div class="hl-lesson-hero__stat"><strong>XVI–VII ст. до н. е.</strong><span>ведійська доба</span></div><div class="hl-lesson-hero__stat"><strong>4 Веди</strong><span>священні тексти</span></div><div class="hl-lesson-hero__stat"><strong>4 варни</strong><span>суспільний поділ</span></div><div class="hl-lesson-hero__stat"><strong>2 епоси</strong><span>«Махабхарата» і «Рамаяна»</span></div></div></div></header>
+<div class="hl-secondary-nav-shell"><nav aria-label="Розділи параграфа" class="hl-secondary-nav"><div class="hl-secondary-nav__track"><a class="hl-v84-tab hl-nav-item px-2.5 py-1.5 rounded-lg transition" href="#aryans-dravidians"><span aria-hidden="true" class="hl-icon hl-nav-icon hl-icon--people"></span><span class="hl-nav-label">Арії та дравіди</span></a><a class="hl-v84-tab hl-nav-item px-2.5 py-1.5 rounded-lg transition" href="#vedas-sanskrit"><span aria-hidden="true" class="hl-icon hl-nav-icon hl-icon--writing"></span><span class="hl-nav-label">Веди та санскрит</span></a><a class="hl-v84-tab hl-nav-item px-2.5 py-1.5 rounded-lg transition" href="#varnas-society"><span aria-hidden="true" class="hl-icon hl-nav-icon hl-icon--people"></span><span class="hl-nav-label">Варни</span></a><a class="hl-v84-tab hl-nav-item px-2.5 py-1.5 rounded-lg transition" href="#epics"><span aria-hidden="true" class="hl-icon hl-nav-icon hl-icon--book"></span><span class="hl-nav-label">Епоси</span></a><a class="hl-v84-tab hl-nav-item px-2.5 py-1.5 rounded-lg transition" href="#glossary"><span aria-hidden="true" class="hl-icon hl-nav-icon hl-icon--book"></span><span class="hl-nav-label">Словник</span></a><a class="hl-v84-tab hl-nav-item px-2.5 py-1.5 rounded-lg transition" href="#quiz"><span aria-hidden="true" class="hl-icon hl-nav-icon hl-icon--quiz"></span><span class="hl-nav-label">Перевірка знань</span></a></div></nav></div>
+<main class="max-w-7xl mx-auto px-4 py-8 space-y-12" id="main-content" tabindex="-1">
+<figure class="hl-media-card hl-media-card--split" data-historylab-media="content" data-media-id="painted-grey-ware">
+<div class="hl-media-card__visual">
+<div class="hl-media-card__frame hl-media-card__frame--artifact">
+<img alt="Зразки сірої розписної кераміки з Сонкха, датовані приблизно 1000–600 роками до н. е." class="hl-media-card__image" decoding="async" height="1000" loading="lazy" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Painted_Grey_Ware_-_Sonkh_-_1000-600_BCE_-_Showcase_6-15_-_Prehistory_and_Terracotta_Gallery_-_Government_Museum_-_Mathura_2013-02-24_6461.JPG?width=1200" width="1000"/>
+</div>
+<figcaption class="hl-media-card__caption">
+      Джерело: <a href="https://commons.wikimedia.org/wiki/File:Painted_Grey_Ware_-_Sonkh_-_1000-600_BCE_-_Showcase_6-15_-_Prehistory_and_Terracotta_Gallery_-_Government_Museum_-_Mathura_2013-02-24_6461.JPG" rel="noopener noreferrer" target="_blank">Biswarup Ganguly / Wikimedia Commons</a> ·
+      <a href="https://creativecommons.org/licenses/by/3.0/" rel="noopener noreferrer" target="_blank">CC BY 3.0</a>
+</figcaption>
+</div>
+<div class="hl-media-card__body">
+<span class="hl-media-card__type">Артефакт</span>
+<h2 class="hl-media-card__title">Сіра розписна кераміка</h2>
+<p class="hl-media-card__text">Археологічна культура сірої розписної кераміки пов’язана з частиною поселень Північної Індії ведійської доби й допомагає співвідносити тексти з матеріальною культурою.</p>
+</div>
+</figure>
+<!-- SECTION 1: ARYANS & DRAVIDIANS -->
+<section class="space-y-6 scroll-mt-20" id="aryans-dravidians">
+<div class="border-l-4 border-saffron-600 pl-4">
+<span class="text-xs font-bold text-saffron-700 uppercase tracking-widest">Пункт 1 параграфа 31</span>
+<h2 class="hl-h2">1. Дравіди та Арії: Зріз двох культур Індостану</h2>
+<p class="text-stone-600 text-sm mt-1">
+                    У середині II тис. до н. е. на північний захід Індії мігрували індоєвропейські племена <strong>аріїв</strong>, які зустріли корінних жителів — <strong>дравідів</strong>.
+                </p>
+</div>
+<!-- Comparison Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Dravidians Card -->
+<div class="p-6 rounded-xl border-2 border-stone-300 custom-shadow space-y-3 flex flex-col justify-between hover:border-saffron-500 transition hl-card">
+<div>
+<div class="flex items-center space-x-3 border-b border-stone-100 pb-3">
+<span class="text-3xl">🏺</span>
+<div>
+<h3 class="hl-h3">Дравіди (Корінне населення)</h3>
+<span class="text-xs text-stone-500 font-semibold">Місцеві жителі півострова Індостан</span>
+</div>
+</div>
+<ul class="space-y-2 text-xs md:text-sm text-stone-700 mt-3">
+<li>👤 <strong>Зовнішній вигляд:</strong> Мали темнішу шкіру та були нижчими на зріст, ніж арії.</li>
+<li><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--city"></span> <strong>Спадщина:</strong> Засновники давньоіндійських міст (Хараппської цивілізації), осілі землероби.</li>
+<li>🤝 <strong>Взаємодія:</strong> Змушені були сплачувати данину аріям, проте зберегли свою мову та ремісничі навички.</li>
+</ul>
+</div>
+<div class="p-2.5 rounded text-[11px] text-stone-700 font-medium hl-card">
+                        Сучасні індійці є нащадками як дравідів, так і аріїв.
+                    </div>
+</div>
+<!-- Aryans Card -->
+<div class="p-6 rounded-xl border-2 border-saffron-600 custom-shadow space-y-3 flex flex-col justify-between hover:border-saffron-700 transition hl-card">
+<div>
+<div class="flex items-center space-x-3 border-b border-stone-100 pb-3">
+<span class="text-3xl">🏹</span>
+<div>
+<h3 class="text-saffron-900 hl-h3">Арії («Благородні люди»)</h3>
+<span class="text-xs text-saffron-700 font-semibold">Прибулі індоєвропейські кочівники (XVI ст. до н. е.)</span>
+</div>
+</div>
+<ul class="space-y-2 text-xs md:text-sm text-stone-700 mt-3">
+<li>🐎 <strong>Спосіб життя:</strong> Скотарі-кочівники, що володіли бойовими колісницями й одомашнили коней.</li>
+<li><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--crown"></span> <strong>Управління:</strong> На чолі племені стояв вождь — <strong>раджа</strong>.</li>
+<li>🐄 <strong>Священні тварини:</strong> Особливо вшановували <strong>корову</strong> та <strong>бика зебу</strong>. Корова вважалася символом багатства та життя.</li>
+<li><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--wheat"></span> <strong>Міграція:</strong> Коли землі навколо поселення виснажувалися, племена разом із раджею переходили на нові родючі місця.</li>
+</ul>
+</div>
+<div class="bg-saffron-100 p-2.5 rounded text-[11px] text-saffron-950 font-bold border border-saffron-500">
+                        Арії поширилися з північно-західної Індії на весь басейн річок Інд та Ганг.
+                    </div>
+</div>
+</div>
+<!-- Visual Chart & Historical Quote -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+<div class="lg:col-span-6 p-5 rounded-xl border border-stone-200 custom-shadow flex flex-col justify-between hl-card">
+<div>
+<h3 class="text-saffron-900 text-center mb-1 hl-h3">Господарський уклад арійських поселень</h3>
+<p class="text-[11px] text-stone-500 text-center mb-2">Основні джерела існування аріїв у Давній Індії</p>
+<p data-chart-evidence="aryanEconomyChart" class="text-[11px] leading-relaxed text-slate-500"><strong>Дані:</strong> категоріальна схема занять, відомих із ведійських текстів; сектори не є відсотками господарства.</p>
+<div class="chart-container">
+<canvas aria-describedby="aryanEconomyChart-a11y-summary" aria-label="Діаграма: Господарський уклад арійських поселень" id="aryanEconomyChart" role="img"></canvas><span class="hl-sr-only" id="aryanEconomyChart-a11y-summary">Категоріальна схема занять ведійських спільнот: скотарство, землеробство, ремесло й військова справа, данина. Сектори не означають частки економіки.</span>
+</div>
+</div>
+<div class="text-xs text-stone-600 bg-saffron-50/70 p-3 rounded-lg border border-saffron-200 mt-2">
+<span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--idea"></span> <strong>Священна корова:</strong> За вбивство корови у Давній Індії передбачалося найсуворіше покарання, оскільки вона давала молоко, масло та надійний прожиток усій родині.
+                    </div>
+</div>
+<div class="lg:col-span-6 bg-stone-900 text-white p-5 rounded-xl custom-shadow flex flex-col justify-between space-y-4">
+<div>
+<div class="flex justify-between items-center">
+<span class="text-xs font-bold text-saffron-500 uppercase tracking-widest">Джерела повідомляють</span>
+<span class="text-[10px] bg-stone-800 text-saffron-500 px-2 py-0.5 rounded border border-saffron-600">Арріан (II ст. н. е.)</span>
+</div>
+<h3 class="text-saffron-100 mt-2 hl-h3">Опис давнього населення Індостану</h3>
+<blockquote class="mt-3 p-3 bg-stone-800 rounded-lg text-xs md:text-sm text-stone-300 italic border-l-2 border-saffron-500">
+                            «Індійці, що живуть на півдні, більше схожі на ефіопів, темношкірі, волосся в них чорне... ті, що живуть далі на північ, більше нагадують єгиптян... У давнину індійці нагадували скіфів, що, блукаючи зі своїми возами, змінюють одну частину Скіфії на іншу, не населяючи міст...»
+                        </blockquote>
+</div>
+<div class="text-[11px] text-saffron-500/80 italic border-t border-stone-800 pt-2">
+<span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--pin"></span> Грецький історик Арріан порівнював кочовий спосіб життя давніх аріїв із відомими в Європі скіфами-кочівниками.
+                    </div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: VEDAS & SANSKRIT -->
+<section class="space-y-6 scroll-mt-20" id="vedas-sanskrit">
+<div class="border-l-4 border-saffron-600 pl-4">
+<span class="text-xs font-bold text-saffron-700 uppercase tracking-widest">Пункт 2 параграфа 31</span>
+<h2 class="hl-h2">2. Веди та Санскрит: Духовна скарбниця Давньої Індії</h2>
+<p class="text-stone-600 text-sm mt-1">
+                    Слово <strong>«Веди»</strong> перекладається як <em>«Знання»</em> або <em>«Вчення»</em>. Це найдавніші священні тексти Індії, записані давньою мовою <strong>Санскрит</strong>.
+                </p>
+</div>
+<!-- Sanskrit & Vedas Overview -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="md:col-span-5 bg-gradient-to-br from-saffron-900 to-stone-900 text-white p-6 rounded-xl shadow-lg space-y-4 flex flex-col justify-between">
+<div>
+<span class="text-3xl"><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--writing"></span></span>
+<h3 class="text-saffron-200 mt-2 hl-h3">Що таке Санскрит?</h3>
+<p class="text-xs md:text-sm text-saffron-100 leading-relaxed mt-2">
+<strong>Санскрит</strong> — це давня літературна мова аріїв, якою було написано священні книги, поеми та наукові праці. Вона належить до індоєвропейської мовної сім'ї та є однією з найдавніших відомих писемних мов світу.
+                        </p>
+</div>
+<div class="p-3 bg-stone-800/80 rounded-lg text-xs text-saffron-500 border border-saffron-700/50">
+<span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--idea"></span> Багато слів у санскриті схожі на українські (наприклад: <em>«маті»</em> — мати, <em>«братрі»</em> — брат, <em>«дева»</em> — диво/бог).
+                    </div>
+</div>
+<div class="md:col-span-7 p-6 rounded-xl border border-stone-200 custom-shadow space-y-4 hl-card">
+<h3 class="text-saffron-900 hl-h3">Чотири збірки Священних Вед (XV–V ст. до н. е.)</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+<div class="p-3 bg-saffron-50 rounded-lg border border-saffron-200 space-y-1">
+<span class="font-bold text-saffron-900 text-sm block">1. Рігведа</span>
+<p class="text-stone-600">«Веди гімнів» — найдавніша збірка з 1028 релігійних гімнів богам. Головна пам'ятка ведійської доби.</p>
+</div>
+<div class="p-3 bg-saffron-50 rounded-lg border border-saffron-200 space-y-1">
+<span class="font-bold text-saffron-900 text-sm block">2. Самаведа</span>
+<p class="text-stone-600">«Веди пісень» — мелодії, обрядові пісні та співи, які виконували жерці під час ритуалів.</p>
+</div>
+<div class="p-3 bg-saffron-50 rounded-lg border border-saffron-200 space-y-1">
+<span class="font-bold text-saffron-900 text-sm block">3. Яджурведа</span>
+<p class="text-stone-600">«Веди жертвоприношень» — тексти молитов, правил і формул для проведення ритуальних жертв.</p>
+</div>
+<div class="p-3 bg-saffron-50 rounded-lg border border-saffron-200 space-y-1">
+<span class="font-bold text-saffron-900 text-sm block">4. Атхарваведа</span>
+<p class="text-stone-600">«Веди заклинань» — замовляння, обереги від хвороб, заклинання проти ворогів та магічні формули.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Vedic Gods Cards -->
+<div class="p-5 rounded-xl border border-stone-200 custom-shadow space-y-3 hl-card">
+<h3 class="uppercase hl-h3"><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--religion"></span> Ведійський Пантеон (Головні боги аріїв)</h3>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+<div class="p-3 rounded-lg border border-stone-200 space-y-1 hl-card">
+<div class="text-2xl">🌩️</div>
+<strong class="text-saffron-900 text-sm block">Індра</strong>
+<p class="text-stone-600">Бог грому, блискавки та війни. Цар богів і захисник арійських воїнів у боях.</p>
+</div>
+<div class="p-3 rounded-lg border border-stone-200 space-y-1 hl-card">
+<div class="text-2xl"><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--fire"></span></div>
+<strong class="text-saffron-900 text-sm block">Агні</strong>
+<p class="text-stone-600">Бог вогню та священного жертовного вогнища. Посередник між людьми та небесними богами.</p>
+</div>
+<div class="p-3 rounded-lg border border-stone-200 space-y-1 hl-card">
+<div class="text-2xl">🌌</div>
+<strong class="text-saffron-900 text-sm block">Варуна</strong>
+<p class="text-stone-600">Охоронець космічного порядку, світового закону (<em>Ріта</em>), володар неба та космічних вод.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: VARNAS & SOCIETY -->
+<section class="space-y-6 scroll-mt-20" id="varnas-society">
+<div class="border-l-4 border-saffron-600 pl-4">
+<span class="text-xs font-bold text-saffron-700 uppercase tracking-widest">Пункт 3 параграфа 31</span>
+<h2 class="hl-h2">3. Суспільний устрій та Варни в Давній Індії</h2>
+<p class="text-stone-600 text-sm mt-1">
+                    Суспільство Давньої Індії поділялося на замкнені верстви населення — <strong>варни</strong>. Належність до варни визначалася народженням і була спадковою.
+                </p>
+</div>
+<!-- Interactive Pyramid & Selector -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<div class="lg:col-span-5 space-y-3">
+<div class="bg-stone-900 text-white p-4 rounded-xl custom-shadow">
+<h3 class="text-saffron-500 text-center mb-1 hl-h3">Міф про виникнення варн</h3>
+<p class="text-xs text-stone-300 leading-relaxed text-center">
+                            Згідно з міфом, творець всесвіту бог <strong>Брахма</strong> створив варни зі свого тіла. Розташування варн відповідає їхньому вищому чи нижчому становищу в суспільстві:
+                        </p>
+</div>
+<!-- Interactive Varna Buttons Stack (Visual Pyramid) -->
+<div class="space-y-2" id="varna-buttons-container">
+<button aria-pressed="true" class="varna-tab-btn hl-badge-row w-full p-3 bg-amber-500 hover:bg-amber-600 text-stone-950 font-bold rounded-lg text-xs md:text-sm flex justify-between items-center shadow transition" onclick="showVarnaInfo('brahmins', this)" type="button">
+<span>1. БРАХМАНИ (Жерці)</span>
+<span class="text-[11px] bg-amber-200 px-2 py-0.5 rounded text-amber-900 hl-meta-badge">З вуст Брахми</span>
+</button>
+<button aria-pressed="false" class="varna-tab-btn hl-badge-row w-full p-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg text-xs md:text-sm flex justify-between items-center shadow transition" onclick="showVarnaInfo('kshatriyas', this)" type="button">
+<span>2. КШАТРІЇ (Воїни, Раджі)</span>
+<span class="text-[11px] bg-red-800 px-2 py-0.5 rounded text-red-100 hl-meta-badge">З рук Брахми</span>
+</button>
+<button aria-pressed="false" class="varna-tab-btn hl-badge-row w-full p-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-lg text-xs md:text-sm flex justify-between items-center shadow transition" onclick="showVarnaInfo('vaishyas', this)" type="button">
+<span>3. ВАЙШІЇ (Землероби, Ремісники)</span>
+<span class="text-[11px] bg-emerald-800 px-2 py-0.5 rounded text-emerald-100 hl-meta-badge">Зі стегон Брахми</span>
+</button>
+<button aria-pressed="false" class="varna-tab-btn hl-badge-row w-full p-3 bg-stone-600 hover:bg-stone-700 text-white font-bold rounded-lg text-xs md:text-sm flex justify-between items-center shadow transition" onclick="showVarnaInfo('shudras', this)" type="button">
+<span>4. ШУДРИ (Слуги, Наймити)</span>
+<span class="text-[11px] bg-stone-800 px-2 py-0.5 rounded text-stone-200 hl-meta-badge">З ніг Брахми</span>
+</button>
+<button aria-pressed="false" class="varna-tab-btn hl-badge-row w-full p-3 bg-slate-900 hover:bg-slate-950 text-saffron-500 font-bold rounded-lg text-xs md:text-sm flex justify-between items-center border border-saffron-600 shadow transition" onclick="showVarnaInfo('untouchables', this)" type="button">
+<span><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--warning"></span> НЕДОТОРКАННІ (Парії)</span>
+<span class="text-[11px] bg-crimson-900 px-2 py-0.5 rounded text-white hl-meta-badge">Поза варнами</span>
+</button>
+</div>
+</div>
+<!-- Dynamic Varna Card Container -->
+<div class="lg:col-span-7">
+<div class="hl-varna-details hl-varna-brahmins p-6 rounded-xl border-2 custom-shadow" id="varna-details-box">
+<div class="flex justify-between items-start flex-wrap gap-2">
+<h4 class="hl-h4"><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--religion"></span> Брахмани (Жерці)</h4>
+<span class="text-xs px-2.5 py-1 bg-saffron-700 text-white rounded-full font-semibold">Створені з вуст Брахми</span>
+</div>
+<div class="mt-3 space-y-2 text-xs md:text-sm text-stone-800">
+<p><strong><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--shield"></span> Обов'язки та заняття:</strong> Виконання релігійних обрядів, приношення жертв богам, збереження й вивчення Вед, навчання молоді.</p>
+<p><strong><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--star"></span> Становище в суспільстві:</strong> Найвища, найшанованіша варна Давньої Індії. Життя брахмана вважалося недоторканним і цінувалося найвище.</p>
+</div>
+</div>
+<!-- Comparison Chart of Rights -->
+<div class="mt-4 p-4 rounded-xl border border-stone-200 custom-shadow hl-card">
+<h4 class="text-center mb-1 hl-h4">Співвідношення прав та обов'язків верств</h4>
+<p data-chart-evidence="varnaRightsChart" class="text-[11px] leading-relaxed text-slate-500"><strong>Дані:</strong> умовна шкала 0–3 для візуального пояснення ієрархії; вона не вимірює права числом і не є історичною статистикою.</p>
+<div class="chart-container">
+<canvas aria-describedby="varnaRightsChart-a11y-summary" aria-label="Діаграма: Співвідношення прав та обов'язків верств" id="varnaRightsChart" role="img"></canvas><span class="hl-sr-only" id="varnaRightsChart-a11y-summary">Умовна шкала 0–3 для пояснення соціальної ієрархії: брахмани й кшатрії — верхні щаблі, вайшії — середній, шудри — нижчий; групи поза варновою системою показані окремо. Це не числова міра прав.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: EPICS OF ANCIENT INDIA -->
+<section class="space-y-6 scroll-mt-20" id="epics">
+<div class="border-l-4 border-saffron-600 pl-4">
+<span class="text-xs font-bold text-saffron-700 uppercase tracking-widest">Пункт 4 параграфа 31</span>
+<h2 class="hl-h2">4. Епоси Давньої Індії: «Махабхарата» та «Рамаяна»</h2>
+<p class="text-stone-600 text-sm mt-1">
+                    Ведійський період подарував світові два найвидатніші епічні твори, у яких відображено історію, вірування, честь та мораль давніх індійців.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Mahabharata -->
+<div class="p-6 rounded-xl border-2 border-saffron-500 custom-shadow space-y-3 flex flex-col justify-between hover:border-saffron-700 transition hl-card">
+<div class="space-y-3">
+<div class="flex items-center space-x-3 border-b border-stone-100 pb-3">
+<span class="text-4xl">🏹</span>
+<div>
+<h3 class="text-saffron-950 hl-h3">«Махабхарата» (Велика битва)</h3>
+<span class="text-xs text-saffron-700 font-semibold">Один із найдовших епосів у світі (~100 тисяч двовіршів)</span>
+</div>
+</div>
+<p class="text-xs md:text-sm text-stone-700 leading-relaxed">
+                            Розповідає про боротьбу за владу між двома братерськими родами — <strong>Пандавами</strong> та <strong>Кауравами</strong>. Кульмінацією є грандіозна битва на полі Курутра.
+                        </p>
+<div class="p-3 bg-saffron-50 rounded-lg text-xs text-saffron-900 space-y-1 border border-saffron-200">
+<strong><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--book"></span> Бхагавад-Гіта («Пісня Господа»):</strong> Найвідоміша частина «Махабхарати», філософська розмова царевича Арджуни з богом Крішною про обов'язок, честь і совість воїна.
+                        </div>
+</div>
+</div>
+<!-- Ramayana -->
+<div class="p-6 rounded-xl border-2 border-crimson-600 custom-shadow space-y-3 flex flex-col justify-between hover:border-red-700 transition hl-card">
+<div class="space-y-3">
+<div class="flex items-center space-x-3 border-b border-stone-100 pb-3">
+<span class="text-4xl"><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--crown"></span></span>
+<div>
+<h3 class="text-red-100 hl-h3">«Рамаяна» (Подвиги Рами)</h3>
+<span class="text-xs text-red-300 font-semibold">Епічна поема з 24 тисяч віршів (автор — мудрець Вальмікі)</span>
+</div>
+</div>
+<p class="text-xs md:text-sm text-stone-700 leading-relaxed">
+                            Поема розповідає про життя і подвиги благородного царевича <strong>Рами</strong>, підступне викрадення його дружини <strong>Сіти</strong> демоном Раваною та її порятунок за допомогою царя мавп <strong>Ханумана</strong>.
+                        </p>
+<div class="p-3 bg-red-950/35 rounded-lg text-xs text-red-200 space-y-1 border border-red-800/70">
+<strong><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--idea"></span> Моральний урок:</strong> Рама уособлює ідеал доблесті, вірності обов’язку (<em>дхарми</em>) та перемоги добра над злом.
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- GLOSSARY SECTION -->
+<section class="p-6 rounded-2xl border border-stone-200 custom-shadow space-y-4 scroll-mt-20 hl-card" id="glossary">
+<div class="flex flex-wrap justify-between items-center gap-3 border-b border-stone-200 pb-3">
+<div>
+<span class="text-xs font-bold text-saffron-700 uppercase tracking-widest">Довідник термінів</span>
+<h2 class="hl-h2"><span aria-hidden="true" class="hl-icon hl-content-icon hl-icon--search"></span> Ключові поняття §31</h2>
+</div>
+<div class="w-full sm:w-64">
+<input aria-label="Пошук терміна у словничку" class="w-full px-3 py-1.5 text-xs border border-stone-300 rounded-lg focus:outline-none focus:border-saffron-600" id="glossary-search" oninput="filterGlossary()" placeholder="Шукати термін (напр. Арії, Варна)..." type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 text-xs" id="glossary-grid">
+<div class="glossary-item p-3 rounded-lg border border-stone-200 hl-card">
+<strong class="text-saffron-900 text-sm block">Арії</strong>
+                    Індоєвропейські племена скотарів-кочівників, які у II тис. до н. е. переселилися на землі Давньої Індії.
+                </div>
+<div class="glossary-item p-3 rounded-lg border border-stone-200 hl-card">
+<strong class="text-saffron-900 text-sm block">Дравіди</strong>
+                    Корінне темношкіре населення півострова Індостан, творці давньоіндійської міської цивілізації.
+                </div>
+<div class="glossary-item p-3 rounded-lg border border-stone-200 hl-card">
+<strong class="text-saffron-900 text-sm block">Веди</strong>
+                    Найдавніші священні тексти Індії (збірки гімнів, молитов, пісень та заклинань), складені санскритом.
+                </div>
+<div class="glossary-item p-3 rounded-lg border border-stone-200 hl-card">
+<strong class="text-saffron-900 text-sm block">Санскрит</strong>
+                    Давня священна літературна мова аріїв та Давньої Індії.
+                </div>
+<div class="glossary-item p-3 rounded-lg border border-stone-200 hl-card">
+<strong class="text-saffron-900 text-sm block">Варна</strong>
+                    Замкнена верства суспільства в Давній Індії, належність до якої визначалася народженням.
+                </div>
+<div class="glossary-item p-3 rounded-lg border border-stone-200 hl-card">
+<strong class="text-saffron-900 text-sm block">Раджа</strong>
+                    Вождь арійського племені, а згодом — правитель індійського царства.
+                </div>
+<div class="glossary-item p-3 rounded-lg border border-stone-200 hl-card">
+<strong class="text-saffron-900 text-sm block">Брахмани</strong>
+                    Представники найвищої варни жерців у Давній Індії.
+                </div>
+<div class="glossary-item p-3 rounded-lg border border-stone-200 hl-card">
+<strong class="text-saffron-900 text-sm block">Кшатрії</strong>
+                    Варна воїнів, знаті та правителів (раджу) в Індії.
+                </div>
+<div class="glossary-item p-3 rounded-lg border border-stone-200 hl-card">
+<strong class="text-saffron-900 text-sm block">Недоторканні</strong>
+                    Найнижча безправна група людей поза варнами, яка виконувала «брудну» роботу та жила ізольовано.
+                </div>
+</div>
+<p class="mt-3 text-sm text-slate-400" hidden id="glossary-empty" role="status">За цим запитом термінів не знайдено. Спробуй інше слово.</p>
+</section>
+
+<!-- QUIZ SECTION -->
+<section class="bg-gradient-to-br from-saffron-950 via-stone-900 to-crimson-950 text-white rounded-2xl p-6 md:p-10 shadow-2xl space-y-6 scroll-mt-20" id="quiz">
+<div class="text-center max-w-2xl mx-auto space-y-2">
+<h2 class="text-saffron-100 hl-h2">Перевірка знань</h2>
+<p class="text-saffron-200 text-xs md:text-sm">
+                    Перевір свої знання параграфа 31 за допомогою 8 експрес-запитань!
+                </p>
+</div>
+<div class="max-w-3xl mx-auto bg-stone-900/90 p-6 rounded-xl border border-saffron-700/50 space-y-6">
+<!-- Q1 -->
+<div class="quiz-q space-y-2" data-q="1">
+<p class="font-bold text-sm text-saffron-100">1. Які племена мігрували до Індії у II тисячолітті до н. е. та дали початок Ведійському періоду?</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(1, false, this)" type="button">А) Скіфи</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(1, true, this)" type="button">Б) Арії</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(1, false, this)" type="button">В) Шумери</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(1, false, this)" type="button">Г) Перси</button>
+</div>
+</div>
+<!-- Q2 -->
+<div class="quiz-q space-y-2" data-q="2">
+<p class="font-bold text-sm text-saffron-100">2. Яку тварину арії особливого вшановували та вважали священною?</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(2, false, this)" type="button">А) Слон</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(2, true, this)" type="button">Б) Корова</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(2, false, this)" type="button">В) Тигр</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(2, false, this)" type="button">Г) Верблюд</button>
+</div>
+</div>
+<!-- Q3 -->
+<div class="quiz-q space-y-2" data-q="3">
+<p class="font-bold text-sm text-saffron-100">3. Як називалася давня мова аріїв, якою було записано Веди?</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(3, false, this)" type="button">А) Ієрогліфи</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(3, true, this)" type="button">Б) Санскрит</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(3, false, this)" type="button">В) Клинопис</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(3, false, this)" type="button">Г) Латина</button>
+</div>
+</div>
+<!-- Q4 -->
+<div class="quiz-q space-y-2" data-q="4">
+<p class="font-bold text-sm text-saffron-100">4. З якої частини тіла бога Брахми, за легендою, були створені Брахмани (жерці)?</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(4, true, this)" type="button">А) З вуст (голови)</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(4, false, this)" type="button">Б) З рук</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(4, false, this)" type="button">В) Зі стегон</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(4, false, this)" type="button">Г) З ніг</button>
+</div>
+</div>
+<!-- Q5 -->
+<div class="quiz-q space-y-2" data-q="5">
+<p class="font-bold text-sm text-saffron-100">5. До якої варни належали воїни, знатна верства та вожні племен (раджі)?</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(5, false, this)" type="button">А) Брахмани</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(5, true, this)" type="button">Б) Кшатрії</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(5, false, this)" type="button">В) Вайшії</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(5, false, this)" type="button">Г) Шудри</button>
+</div>
+</div>
+<!-- Q6 -->
+<div class="quiz-q space-y-2" data-q="6">
+<p class="font-bold text-sm text-saffron-100">6. Як називали групу людей, які жили поза варнами та виконували найбільш «брудну» роботу?</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(6, false, this)" type="button">А) Жерці</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(6, true, this)" type="button">Б) Недоторканні</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(6, false, this)" type="button">В) Раджі</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(6, false, this)" type="button">Г) Фараони</button>
+</div>
+</div>
+<!-- Q7 -->
+<div class="quiz-q space-y-2" data-q="7">
+<p class="font-bold text-sm text-saffron-100">7. Яка частина «Махабхарати» містить філософську бесіду про честь і воїнський обов'язок між Арджуною та Крішною?</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(7, true, this)" type="button">А) «Бхагавад-Гіта»</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(7, false, this)" type="button">Б) «Рамаяна»</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(7, false, this)" type="button">В) «Рігведа»</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(7, false, this)" type="button">Г) «Закони Хаммурапі»</button>
+</div>
+</div>
+<!-- Q8 -->
+<div class="quiz-q space-y-2" data-q="8">
+<p class="font-bold text-sm text-saffron-100">8. Як називалася найдавніша з чотирьох збірок Вед, що складається з 1028 гімнів богам?</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(8, false, this)" type="button">А) Самаведа</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(8, true, this)" type="button">Б) Рігведа</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(8, false, this)" type="button">В) Атхарваведа</button>
+<button class="q-btn p-2.5 bg-stone-700 rounded-lg hover:bg-stone-600 text-left transition text-white" onclick="checkAnswer(8, false, this)" type="button">Г) Яджурведа</button>
+</div>
+</div>
+<div class="hidden text-center p-5 rounded-xl bg-saffron-900 border border-saffron-500 space-y-3" id="quiz-result">
+<h3 class="text-saffron-100 hl-h3" id="quiz-score-text">Твій результат: 0/8</h3>
+<p class="text-xs text-saffron-200" id="quiz-badge-text"></p>
+<button class="mt-2 px-5 py-2 bg-saffron-600 text-white rounded-lg text-xs font-bold hover:bg-saffron-500 transition shadow" onclick="resetQuiz()" type="button">Спробувати ще раз</button>
+</div>
+</div>
+</section>
+<!-- History Lab full activity start -->
+
+<!-- Stage 5.1C pedagogical parity: memory -->
+<aside class="historylab-memory my-6 rounded-2xl border border-amber-500/25 bg-amber-500/5 p-5" data-stage51c="memory"><div class="mb-3 text-xs font-extrabold uppercase tracking-wider text-amber-400">Запам’ятай 3 речі</div><div class="grid gap-2 md:grid-cols-3"><div class="rounded-xl bg-slate-900/60 p-3 text-sm leading-relaxed text-slate-300"><span class="mr-2 font-bold text-amber-400">1.</span>Ведійський період пов’язаний із взаємодією різних груп населення Індостану та поступовими змінами господарства й суспільства.</div><div class="rounded-xl bg-slate-900/60 p-3 text-sm leading-relaxed text-slate-300"><span class="mr-2 font-bold text-amber-400">2.</span>Веди — давні збірки релігійних текстів, створені санскритом і тривалий час передавані усно.</div><div class="rounded-xl bg-slate-900/60 p-3 text-sm leading-relaxed text-slate-300"><span class="mr-2 font-bold text-amber-400">3.</span>Ведійські тексти є джерелом про вірування й суспільство, але описують світ через релігійну традицію, тому потребують критичного читання.</div></div></aside>
+<section class="historylab-activity my-8 rounded-2xl border border-slate-700/70 bg-slate-900/55 p-5 md:p-6 shadow-lg" data-activity="source">
+<div class="mb-4 flex items-center gap-3"><div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-400"><span aria-hidden="true" class="hl-icon hl-section-heading-icon hl-icon--search"></span></div><div><div class="text-[11px] font-extrabold uppercase tracking-wider text-amber-400">Лабораторія історика</div><h2 class="text-white hl-h2">Лабораторія історика: Веди</h2></div></div><blockquote class="rounded-xl border-l-4 border-amber-500 bg-slate-950/45 p-4 text-sm leading-relaxed text-slate-300">Веди — важливі тексти для вивчення релігійних уявлень і суспільства ведійського періоду.</blockquote><div class="mt-3 grid gap-2 md:grid-cols-2"><details class="rounded-xl border border-slate-700 bg-slate-800/50 p-3"><summary class="cursor-pointer text-sm font-semibold text-slate-200">Що текст повідомляє про уявлення людей свого часу?</summary><p class="mt-2 text-xs text-slate-400">Сформулюй відповідь своїми словами та звір її з матеріалом параграфа.</p></details><details class="rounded-xl border border-slate-700 bg-slate-800/50 p-3"><summary class="cursor-pointer text-sm font-semibold text-slate-200">Які висновки потрібно перевіряти за іншими джерелами?</summary><p class="mt-2 text-xs text-slate-400">Сформулюй відповідь своїми словами та звір її з матеріалом параграфа.</p></details></div></section>
+<!-- History Lab full activity end -->
+</main>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            initAryanEconomyChart();
+            initVarnaRightsChart();
+        });
+
+        function initAryanEconomyChart() {
+            const ctx = document.getElementById('aryanEconomyChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Скотарство (корови, коні, зебу)', 'Землеробство (пшениця, ячмінь)', 'Ремесло та військова справа', 'Данина з дравідів'],
+                    datasets: [{
+                        data: [1, 1, 1, 1],
+                        backgroundColor: HistoryLabCharts.colors(4),
+                        borderWidth: 2,
+                        borderColor: HistoryLabCharts.sliceBorder
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { font: { size: 10 }, boxWidth: 10 }
+                        }
+                    }
+                }
+            });
+        }
+
+        function initVarnaRightsChart() {
+            const ctx = document.getElementById('varnaRightsChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Брахмани', 'Кшатрії', 'Вайшії', 'Шудри', 'Недоторканні'],
+                    datasets: [{
+                        label: 'Умовна навчальна шкала статусу (0–3)',
+                        data: [3, 3, 2, 1, 0],
+                        backgroundColor: HistoryLabCharts.colors(5),
+                        borderRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 3,
+                            ticks: { font: { size: 10 } }
+                        },
+                        x: {
+                            ticks: { font: { size: 9 } }
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+<footer class="historylab-footer">
+<div class="historylab-footer__inner">
+<div>
+<div class="historylab-footer__brand">History Lab • Історія України. Всесвітня історія • 6 клас</div>
+<p class="historylab-footer__copy">© 2026 History Lab. Усі права на структуру сайту, дизайн та авторські інтерактивні матеріали захищено.</p>
+<p class="historylab-footer__note">Сайт створено з навчальною метою для використання під час вивчення курсу історії у 6 класі.</p>
+<div class="historylab-footer__textbook">
+<p><strong>Інтерактивний навчальний додаток до підручника «Історія України. Всесвітня історія»</strong></p>
+<p>Автори підручника: <strong>О. В. Гісем, О. О. Гісем (2023)</strong></p>
+</div>
+</div>
+<div>
+<div class="historylab-footer__title">Авторські права та використані матеріали</div>
+<p>Права на тексти, ілюстрації, карти, фотографії та інші матеріали, запозичені з підручників або інших джерел, належать їхнім відповідним авторам і правовласникам.</p>
+<p class="historylab-footer__note">Наявність сторонніх матеріалів на сайті не означає передачу авторських прав на них власнику History Lab.</p>
+</div>
+<div aria-label="Навчальний заклад" class="historylab-footer__institution">
+<span aria-hidden="true" class="historylab-footer__institution-logo">
+<img alt="" decoding="async" height="100" loading="lazy" src="../assets/institution/kharkiv-lyceum-99.gif" width="127"/>
+</span>
+<div class="historylab-footer__institution-text">
+<div class="historylab-footer__institution-kicker">Навчальний заклад</div>
+<div class="historylab-footer__institution-name">Харківський ліцей № 99</div>
+<div class="historylab-footer__institution-note">History Lab • навчальний вебпроєкт з історії для 6 класу</div>
+</div>
+</div>
+</div>
+</footer>
+<script defer="" src="../assets/historylab-v842.js"></script>
+</body>
+</html>
