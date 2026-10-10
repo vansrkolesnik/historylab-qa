@@ -1665,16 +1665,28 @@ src.forEach(function(x){x.addEventListener('click',function(){pick(x,true);});})
     },true);
 
     shells().forEach(shell=>{
+      /* Stage 5.1C Final Regression Fix Pass 2:
+         observe only structural/text mutations here. Watching `class` / `disabled`
+         made this compatibility observer react to the very state changes it performs
+         (and to other quiz observers), which could create a feedback loop and freeze
+         the page. User actions are already covered by the click/change listeners
+         above, so attribute observation is unnecessary. */
+      let queued=false;
       const observer=new MutationObserver(()=>{
-        suppressSyntheticResult(shell);
-        const visibleNative=nativeResults(shell).some(result=>{
-          if(result.classList.contains('hidden'))return false;
-          try{const cs=getComputedStyle(result);return cs.display!=='none'&&cs.visibility!=='hidden'&&(result.textContent||'').trim();}
-          catch(_e){return (result.textContent||'').trim();}
+        if(queued)return;
+        queued=true;
+        queueMicrotask(()=>{
+          queued=false;
+          suppressSyntheticResult(shell);
+          const visibleNative=nativeResults(shell).some(result=>{
+            if(result.classList.contains('hidden'))return false;
+            try{const cs=getComputedStyle(result);return cs.display!=='none'&&cs.visibility!=='hidden'&&(result.textContent||'').trim();}
+            catch(_e){return (result.textContent||'').trim();}
+          });
+          if(visibleNative)activateQuizNav(shell);
         });
-        if(visibleNative)activateQuizNav(shell);
       });
-      observer.observe(shell,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['class','disabled','checked']});
+      observer.observe(shell,{subtree:true,childList:true,characterData:true});
     });
   }
 
