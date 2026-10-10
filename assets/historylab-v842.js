@@ -1527,15 +1527,30 @@ src.forEach(function(x){x.addEventListener('click',function(){pick(x,true);});})
     return shell.querySelectorAll('.hl-quiz-card,.quiz-q,.quiz-q-box,.hl-v84-quiz-question').length;
   }
   function suppressSyntheticResult(shell){
-    if(!shell||!hasNativeResult(shell))return;
-    const summary=shell.querySelector(':scope > .hl-quiz-summary');
-    if(summary)summary.classList.add('hidden');
+    if(!shell)return;
+    if(hasNativeResult(shell)){
+      const summary=shell.querySelector(':scope > .hl-quiz-summary');
+      if(summary)summary.classList.add('hidden');
+    }
+    const nativeReset=nativeResetButton(shell);
+    if(nativeReset)shell.dataset.hlNativeReset='1';
+    else delete shell.dataset.hlNativeReset;
+
     const systemReset=shell.querySelector(':scope > .hl-quiz-actions .hl-quiz-system-reset');
-    if(systemReset&&nativeResetButton(shell)){
-      /* A lesson-owned reset is canonical; suppress only the duplicate shared retake.
-         When no native reset exists, the Stage 2.4B layer remains responsible for
-         revealing the shared retake only after completion. */
-      systemReset.classList.add('hidden');
+    if(systemReset){
+      if(nativeReset){
+        /* Final Regression Fix Pass 3: a lesson-owned reset is canonical.
+           Keep the generated retake permanently suppressed in this shell even if
+           the shared Stage 2.4B summary sync later removes its `hidden` class. */
+        systemReset.classList.add('hidden','hl-quiz-system-reset--suppressed');
+        systemReset.setAttribute('aria-hidden','true');
+        systemReset.setAttribute('tabindex','-1');
+      }else{
+        /* No native reset: the shared retake remains the intentional fallback. */
+        systemReset.classList.remove('hl-quiz-system-reset--suppressed');
+        systemReset.removeAttribute('aria-hidden');
+        systemReset.removeAttribute('tabindex');
+      }
     }
   }
   function resetSharedQuizState(shell){

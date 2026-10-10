@@ -6694,3 +6694,17 @@ body.hl-v84.hl-ds2 main .flip-card .front > :is(
 ){
   color:var(--hl-semantic-glossary,#7dd3fc)!important;
 }
+
+/* ========================================================================
+   Stage 5.1C — Final Regression Fix Pass 3
+   Duplicate Retake Control Cleanup
+   A generated shared retake must never override a lesson-owned reset/retry.
+   Scoped narrowly to the shared system reset so generic `.hidden` behavior and
+   mini-game controls are untouched.
+   ======================================================================== */
+body.hl-v84.hl-ds2 main [data-hl-native-reset="1"] .hl-quiz-actions .hl-quiz-system-reset,
+body.hl-v84.hl-ds2 main .hl-quiz-actions .hl-quiz-system-reset.hl-quiz-system-reset--suppressed,
+body.hl-v84.hl-ds2 main .hl-quiz-actions .hl-quiz-system-reset.hl-quiz-system-reset--suppressed.hidden{
+  display:none!important;
+}
+
