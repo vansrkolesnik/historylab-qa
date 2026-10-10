@@ -1489,3 +1489,195 @@ src.forEach(function(x){x.addEventListener('click',function(){pick(x,true);});})
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
+
+/* Stage 5.1C — Final Regression Fix Pass 1
+   Quiz Reset, Result Duplication & Nav Active-State
+   Browser-QA confirmed QR-01..QR-04 and V-01. This compatibility layer keeps
+   lesson-owned scoring authoritative while preventing the shared quiz layer
+   from duplicating a native result and while fully clearing shared state after
+   a lesson-owned reset. */
+(function(){
+  'use strict';
+
+  const SHELL_SELECTOR='section#quiz,section#quiz-section,section#sec-quiz,section#test,.quiz-shell,.hl-quiz-shell';
+  const RESET_RE=/^(?:Спробувати ще раз|Пройти(?:\s+випробування)?\s+(?:ще раз|знову)|Почати знову|Повторити тест|Скинути(?:\s+тест)?)$/i;
+  const NATIVE_RESULT_SELECTOR='.hl-quiz-result,#quizResult,#quiz-result,#test-result,[id*="quiz-final" i]';
+
+  function shells(){
+    return Array.from(document.querySelectorAll(SHELL_SELECTOR)).filter((el,i,a)=>a.indexOf(el)===i);
+  }
+  function nativeResults(shell){
+    return Array.from(shell.querySelectorAll(NATIVE_RESULT_SELECTOR))
+      .filter((el,i,a)=>!el.classList.contains('hl-quiz-summary')&&a.indexOf(el)===i);
+  }
+  function hasNativeResult(shell){
+    return nativeResults(shell).length>0;
+  }
+  function nativeResetButton(shell){
+    return Array.from(shell.querySelectorAll('button')).find(btn=>{
+      if(btn.classList.contains('hl-quiz-system-reset'))return false;
+      const label=(btn.textContent||'').replace(/\s+/g,' ').trim();
+      const onclick=btn.getAttribute('onclick')||'';
+      return RESET_RE.test(label)||/\breset(?:Quiz|Test)?\s*\(/i.test(onclick);
+    })||null;
+  }
+  function totalQuestions(shell){
+    const names=Array.from(new Set(Array.from(shell.querySelectorAll('input[type="radio"][name]')).map(r=>r.name).filter(Boolean)));
+    if(names.length)return names.length;
+    return shell.querySelectorAll('.hl-quiz-card,.quiz-q,.quiz-q-box,.hl-v84-quiz-question').length;
+  }
+  function suppressSyntheticResult(shell){
+    if(!shell||!hasNativeResult(shell))return;
+    const summary=shell.querySelector(':scope > .hl-quiz-summary');
+    if(summary)summary.classList.add('hidden');
+    const systemReset=shell.querySelector(':scope > .hl-quiz-actions .hl-quiz-system-reset');
+    if(systemReset&&nativeResetButton(shell)){
+      /* A lesson-owned reset is canonical; suppress only the duplicate shared retake.
+         When no native reset exists, the Stage 2.4B layer remains responsible for
+         revealing the shared retake only after completion. */
+      systemReset.classList.add('hidden');
+    }
+  }
+  function resetSharedQuizState(shell){
+    if(!shell)return;
+
+    delete shell.dataset.hlQuizSubmitted;
+    shell.classList.add('hl-quiz-pristine');
+    shell.classList.remove('hl-quiz-interacted');
+
+    shell.querySelectorAll('.hl-quiz-card,.quiz-q,.quiz-q-box,.hl-v84-quiz-question').forEach(card=>{
+      delete card.dataset.hlQuizAnswered;
+      delete card.dataset.hlQuizOutcome;
+    });
+    shell.querySelectorAll('[data-answered]').forEach(el=>el.removeAttribute('data-answered'));
+
+    shell.querySelectorAll('button.hl-quiz-option').forEach(btn=>{
+      btn.removeAttribute('data-hl-chosen');
+      btn.classList.remove('is-selected','is-correct','is-wrong');
+      btn.disabled=false;
+      btn.removeAttribute('aria-disabled');
+    });
+    shell.querySelectorAll('input[type="radio"],input[type="checkbox"]').forEach(input=>{
+      input.checked=false;
+      input.disabled=false;
+      input.removeAttribute('aria-disabled');
+    });
+    shell.querySelectorAll('label.hl-quiz-option,.hl-quiz-option').forEach(option=>{
+      option.classList.remove('is-selected','is-correct','is-wrong');
+    });
+
+    shell.querySelectorAll('.hl-quiz-generated-feedback').forEach(el=>el.remove());
+    shell.querySelectorAll('.hl-quiz-state-indicator').forEach(el=>{
+      el.removeAttribute('data-state');
+      el.setAttribute('aria-hidden','true');
+      el.textContent='';
+    });
+
+    nativeResults(shell).forEach(result=>{
+      result.classList.add('hidden');
+      result.classList.remove('is-pending','is-success','is-warning','is-error');
+      result.removeAttribute('data-hl-quiz-level');
+    });
+
+    const summary=shell.querySelector(':scope > .hl-quiz-summary');
+    if(summary){
+      summary.classList.add('hidden');
+      summary.classList.remove('is-success','is-warning','is-error');
+    }
+    const systemReset=shell.querySelector(':scope > .hl-quiz-actions .hl-quiz-system-reset');
+    if(systemReset)systemReset.classList.add('hidden');
+
+    const progress=shell.querySelector(':scope > .hl-quiz-progress');
+    if(progress){
+      const total=totalQuestions(shell);
+      if(total>0){
+        progress.textContent=`Відповідано 0 / ${total}`;
+        progress.setAttribute('aria-label',`Відповідано 0 із ${total}`);
+        progress.dataset.hlQuizProgress='compact';
+      }else{
+        progress.textContent='Перевірка знань';
+        progress.setAttribute('aria-label','Прогрес перевірки знань');
+        delete progress.dataset.hlQuizProgress;
+      }
+    }
+  }
+  function activateQuizNav(shell){
+    if(!shell||!shell.id)return;
+    const href='#'+shell.id;
+    document.querySelectorAll('.hl-secondary-nav').forEach(nav=>{
+      const links=Array.from(nav.querySelectorAll('a[href^="#"]'));
+      const match=links.find(link=>link.getAttribute('href')===href);
+      if(!match)return;
+      links.forEach(link=>{
+        const active=link===match;
+        link.classList.toggle('is-active',active);
+        if(active)link.setAttribute('aria-current','true');
+        else link.removeAttribute('aria-current');
+      });
+      if(window.historyLabRevealNavItem)window.historyLabRevealNavItem(match);
+    });
+  }
+  function isResetButton(button){
+    if(!button)return false;
+    if(button.classList.contains('hl-quiz-system-reset'))return false;
+    const label=(button.textContent||'').replace(/\s+/g,' ').trim();
+    const onclick=button.getAttribute('onclick')||'';
+    return RESET_RE.test(label)||/\breset(?:Quiz|Test)?\s*\(/i.test(onclick);
+  }
+  function scheduleQuizNav(shell){
+    activateQuizNav(shell);
+    setTimeout(()=>activateQuizNav(shell),120);
+  }
+
+  function init(){
+    shells().forEach(shell=>suppressSyntheticResult(shell));
+
+    document.addEventListener('click',ev=>{
+      const button=ev.target&&ev.target.closest?ev.target.closest('button'):null;
+      if(!button)return;
+      const shell=button.closest(SHELL_SELECTOR);
+      if(!shell)return;
+
+      if(isResetButton(button)){
+        /* Inline lesson reset runs first; clear only the shared compatibility
+           metadata after it, so lesson-owned scoring remains authoritative. */
+        setTimeout(()=>{
+          resetSharedQuizState(shell);
+          suppressSyntheticResult(shell);
+          activateQuizNav(shell);
+        },25);
+        return;
+      }
+
+      if(button.classList.contains('hl-quiz-option')||button.classList.contains('hl-quiz-submit')||/Перевірити(?:\s+відповіді)?/i.test((button.textContent||'').trim())){
+        scheduleQuizNav(shell);
+        setTimeout(()=>suppressSyntheticResult(shell),10);
+      }
+    },false);
+
+    document.addEventListener('change',ev=>{
+      const input=ev.target;
+      if(!input||!input.matches||!input.matches('input[type="radio"],input[type="checkbox"]'))return;
+      const shell=input.closest(SHELL_SELECTOR);
+      if(!shell)return;
+      scheduleQuizNav(shell);
+      setTimeout(()=>suppressSyntheticResult(shell),10);
+    },true);
+
+    shells().forEach(shell=>{
+      const observer=new MutationObserver(()=>{
+        suppressSyntheticResult(shell);
+        const visibleNative=nativeResults(shell).some(result=>{
+          if(result.classList.contains('hidden'))return false;
+          try{const cs=getComputedStyle(result);return cs.display!=='none'&&cs.visibility!=='hidden'&&(result.textContent||'').trim();}
+          catch(_e){return (result.textContent||'').trim();}
+        });
+        if(visibleNative)activateQuizNav(shell);
+      });
+      observer.observe(shell,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['class','disabled','checked']});
+    });
+  }
+
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});
+  else init();
+})();
