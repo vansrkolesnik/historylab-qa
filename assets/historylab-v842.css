@@ -6708,3 +6708,69 @@ body.hl-v84.hl-ds2 main .hl-quiz-actions .hl-quiz-system-reset.hl-quiz-system-re
   display:none!important;
 }
 
+
+/* Stage 5.1C Fix Pass 4 — quiz action presentation only.
+   Keep visibility/state rules and native event handlers owned by Fix Pass 3. */
+body.hl-v84.hl-ds2 main .hl-quiz-shell :is(.hl-quiz-submit,.hl-quiz-reset){
+  box-sizing:border-box!important;
+  width:100%!important;
+  max-width:100%!important;
+  min-height:48px!important;
+  padding:12px 16px!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:8px!important;
+  font-size:16px!important;
+  font-weight:800!important;
+  line-height:1.375!important;
+  border-radius:var(--hl-c3c-option-radius,.8rem)!important;
+  white-space:normal!important;
+  text-align:center!important;
+}
+body.hl-v84.hl-ds2 main .hl-quiz-shell .hl-quiz-submit{
+  background:#92400e!important;
+  color:#fff7ed!important;
+  border:1px solid #f59e0b!important;
+}
+body.hl-v84.hl-ds2.hl-section-3 main .hl-quiz-shell .hl-quiz-submit{
+  background:#075985!important;
+  color:#fff!important;
+  border-color:#0ea5e9!important;
+}
+body.hl-v84.hl-ds2 main .hl-quiz-shell .hl-quiz-reset{
+  background:#1e293b!important;
+  color:#fde68a!important;
+  border:1px solid #64748b!important;
+  margin-top:12px!important;
+}
+/* A wrapper already supplies the 12px space between native actions. */
+body.hl-v84.hl-ds2 main .hl-quiz-shell div:has(> .hl-quiz-submit):has(> .hl-quiz-reset){
+  gap:12px!important;
+}
+body.hl-v84.hl-ds2 main .hl-quiz-shell div:has(> .hl-quiz-submit) > .hl-quiz-reset,
+body.hl-v84.hl-ds2 main .hl-quiz-shell .hl-quiz-actions > .hl-quiz-reset{
+  margin-top:0!important;
+}
+body.hl-v84.hl-ds2 main .hl-quiz-shell :is(.hl-quiz-submit,.hl-quiz-reset) > .hl-icon{
+  width:1.1em!important;
+  height:1.1em!important;
+  flex:0 0 1.1em!important;
+  margin:0!important;
+}
+body.hl-v84.hl-ds2 main .hl-quiz-shell .hl-quiz-action-label{
+  min-width:0;
+  overflow-wrap:anywhere;
+}
+@media(hover:hover){
+  body.hl-v84.hl-ds2 main .hl-quiz-shell .hl-quiz-submit:hover{background:#b45309!important}
+  body.hl-v84.hl-ds2.hl-section-3 main .hl-quiz-shell .hl-quiz-submit:hover{
+    background:#0c4a6e!important;border-color:#38bdf8!important;
+  }
+  body.hl-v84.hl-ds2 main .hl-quiz-shell .hl-quiz-reset:hover{
+    background:#273449!important;color:#fff7ed!important;border-color:#f59e0b!important;
+  }
+}
+body.hl-v84.hl-ds2 main .hl-quiz-shell :is(.hl-quiz-submit,.hl-quiz-reset):focus-visible{
+  outline:3px solid #fbbf24!important;
+  outline-offset:3px!important;
+}
