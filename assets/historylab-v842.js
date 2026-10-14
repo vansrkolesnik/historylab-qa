@@ -1708,3 +1708,39 @@ src.forEach(function(x){x.addEventListener('click',function(){pick(x,true);});})
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});
   else init();
 })();
+
+/* History Lab — Stage 5.2E.1: local file navigation compatibility.
+   Restore directory-index navigation for file:/// previews only.
+   Canonical, sitemap, source hrefs and HTTP(S) navigation stay unchanged. */
+(function () {
+  'use strict';
+  if (window.location.protocol !== 'file:') return;
+
+  function repairDirectoryLink(anchor) {
+    const href = anchor.getAttribute('href');
+    if (!href || href.charAt(0) === '#') return;
+    try {
+      const destination = new URL(href, document.baseURI);
+      if (destination.protocol !== 'file:' || !destination.pathname.endsWith('/')) return;
+      destination.pathname += 'index.html';
+      anchor.setAttribute('href', destination.href);
+    } catch (_) {
+      /* Do not interfere with a malformed or non-navigation URL. */
+    }
+  }
+
+  function init() {
+    document.querySelectorAll('a[href]').forEach(repairDirectoryLink);
+    // Also handles links inserted by an interactive lesson after DOM ready.
+    document.addEventListener('click', function (event) {
+      const anchor = event.target && event.target.closest && event.target.closest('a[href]');
+      if (anchor) repairDirectoryLink(anchor);
+    }, true);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init, {once: true});
+  } else {
+    init();
+  }
+})();
