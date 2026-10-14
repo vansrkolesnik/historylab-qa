@@ -1,0 +1,6 @@
+# History Lab — public education website
+# Stage 5.2C: crawl policy and sitemap discovery
+User-agent: *
+Allow: /
+
+Sitemap: https://history-lab.netlify.app/sitemap.xml
