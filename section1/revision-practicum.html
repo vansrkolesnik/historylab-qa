@@ -14,13 +14,14 @@
 /* Stage 5.3B.2 — isolated prototype styles, existing History Lab tokens and components retained */
 body.hlp-prototype {background:#0b1220;color:#e2e8f0;margin:0}
 .hlp-prototype *{box-sizing:border-box}
-.hlp-prototype .hlp-main{width:min(100% - 32px,1100px);margin:32px auto 0;display:grid;gap:30px}
+.hlp-prototype .hlp-main{width:min(100% - 32px,1040px);margin:32px auto 0;display:grid;gap:30px}
 .hlp-prototype .hlp-lead-panel,.hlp-prototype .hlp-panel,.hlp-prototype .hlp-summary{border:1px solid #3c4b61;border-radius:22px;padding:clamp(18px,3vw,32px);background:linear-gradient(145deg,#141f30,#19263a);box-shadow:0 12px 34px rgba(0,0,0,.16);min-width:0}
 .hlp-prototype .hlp-lead-panel{border-color:#8f6734;background:linear-gradient(130deg,#29251d,#19263a)}
 .hlp-prototype .hlp-panel{scroll-margin-top:90px}
 .hlp-prototype .hlp-section-kicker{color:#fbbf24;font-size:.77rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;margin:0 0 7px}
 .hlp-prototype .hlp-panel h2,.hlp-prototype .hlp-summary h2{font-size:clamp(1.3rem,2.5vw,1.9rem);font-weight:800;color:#fff7e8;margin:0 0 10px;line-height:1.28}
 .hlp-prototype .hlp-panel h3{font-family:var(--hl-font-body,system-ui);font-size:1.05rem;font-weight:800;color:#f8fafc;margin:0 0 12px;line-height:1.48}
+.hlp-prototype .hlp-question > h3{max-width:78ch;overflow-wrap:anywhere}
 .hlp-prototype .hlp-panel p,.hlp-prototype .hlp-lead-panel p,.hlp-prototype .hlp-summary p{line-height:1.65;color:#d3ddec}
 .hlp-prototype .hlp-muted{color:#a9b9d0!important;font-size:.92rem}
 .hlp-prototype .hlp-chip-row{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 0}
@@ -81,7 +82,7 @@ body.hlp-prototype {background:#0b1220;color:#e2e8f0;margin:0}
 .hlp-prototype .hlp-divider{border:0;border-top:1px solid #45536a;margin:16px 0}
 .hlp-prototype .hlp-pill{border:1px solid #8b7652;border-radius:999px;padding:5px 10px;color:#fbd48d;font-weight:800;font-size:.83rem;display:inline-block;margin:6px 0}
 .hlp-prototype .hlp-footer-intro{font-size:.8rem;color:#9fb3cf;line-height:1.5}
-@media (max-width:750px){.hlp-prototype .hlp-grid{grid-template-columns:1fr 1fr}.hlp-prototype .hlp-assignment{grid-template-columns:1fr;gap:6px}.hlp-prototype .hlp-main{width:min(100% - 24px,1100px);gap:18px;margin-top:20px}}
+@media (max-width:750px){.hlp-prototype .hlp-grid{grid-template-columns:1fr 1fr}.hlp-prototype .hlp-assignment{grid-template-columns:1fr;gap:6px}.hlp-prototype .hlp-main{width:min(100% - 24px,1040px);gap:18px;margin-top:20px}}
 @media (max-width:520px){.hlp-prototype .hlp-grid{grid-template-columns:1fr}.hlp-prototype .hlp-source img{max-height:250px}.hlp-prototype .hlp-main{width:calc(100% - 20px)}.hlp-prototype .hlp-lead-panel,.hlp-prototype .hlp-panel,.hlp-prototype .hlp-summary{padding:16px;border-radius:16px}.hlp-prototype .hlp-question{padding:13px}.hlp-prototype .hlp-actions .hlp-btn{width:100%}.hlp-prototype .hlp-move{width:40px;height:40px}.hlp-prototype .hlp-order li{gap:6px;padding:7px}}
 @media (prefers-reduced-motion:reduce){.hlp-prototype *{scroll-behavior:auto!important;transition:none!important}}
 </style>
