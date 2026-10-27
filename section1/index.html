@@ -35,6 +35,20 @@
 <link href="../assets/historylab-v842.css" rel="stylesheet"/>
 <link href="../assets/historylab-typography.css" rel="stylesheet">
 <link href="../favicon.ico" rel="icon" type="image/x-icon"/>
+<style>
+/* Stage 5.3B.4: scoped entry, existing Section I visual identity preserved */
+.hl-section-practicum-entry{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.5rem;padding:clamp(1.25rem,3vw,2rem);border:1px solid rgba(251,191,36,.48);border-radius:1.5rem;background:linear-gradient(125deg,#30291d,#111d2e);box-shadow:0 12px 28px rgba(0,0,0,.14)}
+.hl-section-practicum-entry__text{flex:1 1 365px;min-width:0}
+.hl-section-practicum-entry__eyebrow{display:inline-flex;align-items:center;gap:.55rem;color:#fcd58d;font-size:.82rem;font-weight:850;letter-spacing:.055em;line-height:1.5}
+.hl-section-practicum-entry h2{font-family:var(--hl-font-heading,inherit);font-size:clamp(1.3rem,2.5vw,1.85rem);font-weight:850;line-height:1.25;color:#fff8eb;margin:.5rem 0 .7rem}
+.hl-section-practicum-entry p{color:#d6deeb;font-size:1rem;line-height:1.65;margin:0}
+.hl-section-practicum-entry__meta{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1rem}
+.hl-section-practicum-entry__meta span{padding:.35rem .65rem;border:1px solid rgba(250,204,21,.23);background:rgba(251,191,36,.09);border-radius:999px;font-size:.79rem;font-weight:750;color:#f6d596}
+.hl-section-practicum-entry__cta{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;flex:0 1 250px;max-width:100%;min-height:48px;padding:.85rem 1.1rem;border-radius:.85rem;border:1px solid #d97706;background:#b45309;color:#fff!important;font-size:.95rem;font-weight:850;line-height:1.35;text-decoration:none;text-align:center}
+.hl-section-practicum-entry__cta:hover{background:#92400e}
+.hl-section-practicum-entry__cta:focus-visible{outline:3px solid #fde68a;outline-offset:4px}
+@media (max-width:640px){.hl-section-practicum-entry__cta{flex:1 1 100%;width:100%}.hl-section-practicum-entry{gap:1rem}}
+</style>
 </link></head>
 <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between hl-section-1 hl-v84 hl-section-index">
 <a class="hl-skip-link" href="#main-content">Перейти до основного вмісту</a>
@@ -332,6 +346,18 @@
 </div>
 </div>
 </div>
+
+<!-- Stage 5.3B.4: E01 — distinct Section I revision practicum entry (not a paragraph card) -->
+<section class="hl-section-practicum-entry" aria-labelledby="hl-section-practicum-title">
+  <div class="hl-section-practicum-entry__text">
+    <span class="hl-section-practicum-entry__eyebrow"><span aria-hidden="true" class="hl-icon hl-icon--science"></span> ПІДСУМКОВИЙ ПРАКТИКУМ · §§1–9</span>
+    <h2 id="hl-section-practicum-title">Від перших людей до енеоліту</h2>
+    <p>Узагальни теми розділу I: віднови хронологію, досліди археологічні свідчення, поясни причини й наслідки історичних змін.</p>
+    <div class="hl-section-practicum-entry__meta"><span>4 навчальні блоки</span><span>16 завдань</span><span>25–35 хв</span><span>Самоперевірка без оцінки в журналі</span></div>
+  </div>
+  <a class="hl-section-practicum-entry__cta" href="revision-practicum.html"><span>Перейти до практикуму</span><span aria-hidden="true" class="hl-icon hl-icon--next"></span></a>
+</section>
+<!-- /Stage 5.3B.4 -->
 <!-- Interactive Quick Info Banner -->
 <div class="hl-section-index-outro hl-section-index-outro--section1">
 <div class="hl-section-index-outro__copy">
