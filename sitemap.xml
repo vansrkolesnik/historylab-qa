@@ -33,6 +33,7 @@
   <url>
     <loc>https://history-lab.netlify.app/section1/</loc>
   </url>
+  <!-- Stage 5.3B.4 E01: pending publication; enable only with removal of noindex after release QA: <url><loc>https://history-lab.netlify.app/section1/revision-practicum.html</loc></url> -->
   <url>
     <loc>https://history-lab.netlify.app/section2/10-bronzovyi-vik.html</loc>
   </url>
