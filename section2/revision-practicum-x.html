@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E02 / X — Порівняння цивілізацій | History Lab</title>
+<meta name="description" content="Міжтемний практикум X для 6 класу за §§10–35: порівняння цивілізацій, історичних джерел, природних умов і суспільних зв’язків.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../assets/tailwind-local/tw-21-section2-20-davnii-yehypet-nil.css">
+<link rel="stylesheet" href="../assets/historylab-v842.css">
+<link rel="stylesheet" href="../assets/historylab-typography.css">
+<style>
+/* Stage 5.3B.2 — isolated prototype styles, existing History Lab tokens and components retained */
+body.hlp-prototype {background:#0b1220;color:#e2e8f0;margin:0}
+.hlp-prototype *{box-sizing:border-box}
+.hlp-prototype .hlp-main{width:min(100% - 32px,1040px);margin:32px auto 0;display:grid;gap:30px}
+.hlp-prototype .hlp-lead-panel,.hlp-prototype .hlp-panel,.hlp-prototype .hlp-summary{border:1px solid #3c4b61;border-radius:22px;padding:clamp(18px,3vw,32px);background:linear-gradient(145deg,#141f30,#19263a);box-shadow:0 12px 34px rgba(0,0,0,.16);min-width:0}
+.hlp-prototype .hlp-lead-panel{border-color:#8f6734;background:linear-gradient(130deg,#29251d,#19263a)}
+.hlp-prototype .hlp-panel{scroll-margin-top:90px}
+.hlp-prototype .hlp-section-kicker{color:#fbbf24;font-size:.77rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;margin:0 0 7px}
+.hlp-prototype .hlp-panel h2,.hlp-prototype .hlp-summary h2{font-size:clamp(1.3rem,2.5vw,1.9rem);font-weight:800;color:#fff7e8;margin:0 0 10px;line-height:1.28}
+.hlp-prototype .hlp-panel h3{font-family:var(--hl-font-body,system-ui);font-size:1.05rem;font-weight:800;color:#f8fafc;margin:0 0 12px;line-height:1.48}
+.hlp-prototype .hlp-question > h3{width:100%;max-width:none;overflow-wrap:break-word;text-wrap:wrap!important}
+.hlp-prototype .hlp-panel p,.hlp-prototype .hlp-lead-panel p,.hlp-prototype .hlp-summary p{line-height:1.65;color:#d3ddec}
+.hlp-prototype .hlp-muted{color:#a9b9d0!important;font-size:.92rem}
+.hlp-prototype .hlp-chip-row{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 0}
+.hlp-prototype .hlp-chip{display:inline-flex;align-items:center;padding:7px 12px;border:1px solid #98703a;background:#352b1d;border-radius:999px;color:#ffda98;font-weight:800;font-size:.82rem}
+.hlp-prototype .hlp-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:22px 0}
+.hlp-prototype .hlp-source{margin:0;padding:12px;background:#0c1626;border:1px solid #45546a;border-radius:16px;min-width:0}
+.hlp-prototype .hlp-source img{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;background:#101c2f;border-radius:10px}
+.hlp-prototype .hlp-source figcaption{padding:10px 2px 2px;font-size:.84rem;line-height:1.48;color:#cad6e8;overflow-wrap:anywhere}
+.hlp-prototype .hlp-source strong{display:block;color:#fff0cb;font-weight:800;margin-bottom:4px}
+.hlp-prototype .hlp-source a,.hlp-prototype .hlp-lesson-links a,.hlp-prototype .hlp-review a{color:#fcd58d;text-decoration:underline;text-underline-offset:3px}
+.hlp-prototype .hlp-source small{display:block;color:#c6d2e3;margin-top:6px;font-size:.74rem}
+.hlp-prototype .hlp-questions{display:grid;gap:16px;margin:20px 0}
+.hlp-prototype .hlp-question{min-width:0;padding:18px;border:1px solid #465771;border-radius:16px;background:#111c2d}
+.hlp-prototype .hlp-question legend{width:100%;float:left;font-weight:800;line-height:1.5;color:#f8fafc;margin-bottom:12px}
+.hlp-prototype .hlp-question fieldset{border:0;margin:0;padding:0;min-width:0}
+.hlp-prototype .hlp-choice-list{clear:both;display:grid;gap:8px}
+.hlp-prototype .hlp-choice{display:flex;align-items:flex-start;gap:11px;padding:11px 13px;border-radius:11px;border:1px solid #52627a;background:#203048;color:#f1f5f9;line-height:1.48;cursor:pointer;min-width:0;overflow-wrap:anywhere}
+.hlp-prototype .hlp-choice:hover{border-color:#ffc971;background:#293d57}
+.hlp-prototype .hlp-choice input{accent-color:#eab65d;width:20px;height:20px;flex:none;margin-top:2px}
+.hlp-prototype .hlp-choice.hlp-correct{border-color:#63cf9a;background:#123c33}
+.hlp-prototype .hlp-choice.hlp-wrong{border-color:#ffa5a5;background:#54272b}
+.hlp-prototype .hlp-assignment{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center;gap:12px;border-top:1px solid #35445a;padding:12px 0}
+.hlp-prototype .hlp-assignment label{color:#e5eaf3;font-weight:700;line-height:1.45}
+.hlp-prototype .hlp-assignment select{width:100%;max-width:100%;padding:11px;background:#25354c;color:#fff;border:1px solid #7c8ea9;border-radius:10px;white-space:normal}
+.hlp-prototype .hlp-order{display:grid;gap:8px;list-style:none;counter-reset:hlp-ol;padding:0;margin:8px 0}
+.hlp-prototype .hlp-order li{display:flex;align-items:center;gap:10px;min-height:54px;padding:8px 12px;background:#24354a;border:1px solid #64758a;border-radius:11px;color:#fff;min-width:0}
+.hlp-prototype .hlp-order li::before{counter-increment:hlp-ol;content:counter(hlp-ol) ".";font-weight:900;color:#ffd587}
+.hlp-prototype .hlp-order-name{font-weight:800;flex:1;min-width:0}
+.hlp-prototype .hlp-move-pair{display:flex;gap:6px}
+.hlp-prototype .hlp-move{border:1px solid #94a3b8;border-radius:8px;background:#344963;color:#fff;width:42px;height:42px;display:grid;place-items:center;font-size:1.15rem;cursor:pointer}
+.hlp-prototype .hlp-move:disabled{opacity:.3;cursor:not-allowed}
+.hlp-prototype .hlp-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 18px;border-radius:11px;border:1px solid #e5a646;background:#b45309;color:#fff!important;font-weight:850;line-height:1.25;cursor:pointer;text-align:center}
+.hlp-prototype .hlp-btn:hover{background:#92400e}
+.hlp-prototype .hlp-btn--secondary{background:#2a394e;border-color:#8999b1;color:#eef4ff!important}
+.hlp-prototype .hlp-btn--secondary:hover{background:#3c516e}
+.hlp-prototype .hlp-actions{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 8px}
+.hlp-prototype .hlp-feedback{margin-top:13px;padding:13px 15px;border-radius:10px;border:1px solid #53657c;background:#203047;color:#e2e8f0;line-height:1.55}
+.hlp-prototype .hlp-feedback.hlp-correct{background:#12392e;border-color:#59c88a;color:#d7ffe6}
+.hlp-prototype .hlp-feedback.hlp-wrong{background:#493124;border-color:#d99b5e;color:#fff2dd}
+.hlp-prototype .hlp-feedback[hidden]{display:none}
+.hlp-prototype .hlp-block-result{color:#d8e8fb;background:#0c1728;border-radius:10px;padding:13px 15px;min-height:48px}
+.hlp-prototype .hlp-lesson-links{margin:14px 0 0;color:#d3ddec;font-size:.9rem}
+.hlp-prototype .hlp-lesson-links a{display:inline-block;margin:3px 10px 3px 0}
+.hlp-prototype .hlp-reflection{border:1px solid #9d793b;border-radius:15px;padding:18px;background:#302919;margin-top:20px}
+.hlp-prototype .hlp-reflection label{display:block;color:#fff1c7;font-weight:800;margin:0 0 8px}
+.hlp-prototype .hlp-reflection textarea{width:100%;background:#131e2f;border:1px solid #96a8c0;color:#fff;border-radius:10px;padding:12px;line-height:1.5;resize:vertical;min-height:100px}
+.hlp-prototype .hlp-reflection details{margin-top:10px}
+.hlp-prototype .hlp-reflection summary{color:#fbd38d;font-weight:800;cursor:pointer}
+.hlp-prototype .hlp-reflection ul{padding-left:20px;margin:8px 0}
+.hlp-prototype .hlp-reflection li{line-height:1.55;margin:5px 0}
+.hlp-prototype .hlp-summary{border-color:#b88743}
+.hlp-prototype .hlp-summary strong{color:#ffe6a5}
+.hlp-prototype .hlp-review ul{padding-left:20px;margin-top:8px}
+.hlp-prototype .hlp-review li{margin:7px 0;line-height:1.55}
+.hlp-prototype :is(a,button,input,select,textarea,summary):focus-visible{outline:3px solid #fde68a!important;outline-offset:3px!important}
+.hlp-prototype .hlp-panel:focus{outline:none}
+.hlp-prototype .hlp-visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.hlp-prototype .hlp-divider{border:0;border-top:1px solid #45536a;margin:16px 0}
+.hlp-prototype .hlp-pill{border:1px solid #8b7652;border-radius:999px;padding:5px 10px;color:#fbd48d;font-weight:800;font-size:.83rem;display:inline-block;margin:6px 0}
+.hlp-prototype .hlp-footer-intro{font-size:.8rem;color:#9fb3cf;line-height:1.5}
+@media (max-width:750px){.hlp-prototype .hlp-grid{grid-template-columns:1fr 1fr}.hlp-prototype .hlp-assignment{grid-template-columns:1fr;gap:6px}.hlp-prototype .hlp-main{width:min(100% - 24px,1040px);gap:18px;margin-top:20px}}
+@media (max-width:520px){.hlp-prototype .hlp-grid{grid-template-columns:1fr}.hlp-prototype .hlp-source img{max-height:250px}.hlp-prototype .hlp-main{width:calc(100% - 20px)}.hlp-prototype .hlp-lead-panel,.hlp-prototype .hlp-panel,.hlp-prototype .hlp-summary{padding:16px;border-radius:16px}.hlp-prototype .hlp-question{padding:13px}.hlp-prototype .hlp-actions .hlp-btn{width:100%}.hlp-prototype .hlp-move{width:40px;height:40px}.hlp-prototype .hlp-order li{gap:6px;padding:7px}}
+@media (prefers-reduced-motion:reduce){.hlp-prototype *{scroll-behavior:auto!important;transition:none!important}}
+
+
+/* Stage 5.3C.3 — scoped E02 hub and M2 module. Shared assets unchanged. */
+.hlp-prototype .hlp-module-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:16px 0}
+.hlp-prototype .hlp-module-card{border:1px solid #52657f;border-radius:18px;background:#102038;padding:22px;min-width:0;display:flex;flex-direction:column;gap:9px}
+.hlp-prototype .hlp-module-card--active{border-color:#eab566;background:linear-gradient(145deg,#342b1f,#12243b)}
+.hlp-prototype .hlp-module-card h3{font-size:1.25rem;color:#fff3d5;line-height:1.35;margin:0;font-weight:850;text-wrap:wrap!important}
+.hlp-prototype .hlp-module-card p{margin:0;color:#dbe5f4}
+.hlp-prototype .hlp-module-card .hlp-btn{margin-top:auto}
+.hlp-prototype .hlp-pending{margin-top:auto;display:inline-flex;align-self:flex-start;border:1px solid #71839b;color:#c3d0df;border-radius:999px;padding:7px 11px;font-size:.82rem;font-weight:800}
+.hlp-prototype .hlp-task-number{font-size:.8rem;font-weight:850;color:#f9ca7b;display:block;margin-bottom:9px}
+.hlp-prototype .hlp-task-status{margin-top:10px;font-size:.9rem;line-height:1.55}
+.hlp-prototype .hlp-task-links{margin-top:10px;font-size:.85rem;display:flex;flex-wrap:wrap;align-items:center;gap:9px}
+.hlp-prototype .hlp-task-links a{color:#ffdb99;text-decoration:underline;text-underline-offset:3px}
+.hlp-prototype .hlp-evidence-note{border:1px solid #776448;background:#2e261e;border-radius:12px;padding:13px 16px;color:#fce5b9}
+.hlp-prototype .hlp-evidence-note p{margin:0}
+.hlp-prototype .hlp-question > h3{width:100%;max-width:none;overflow-wrap:break-word;text-wrap:wrap!important}
+.hlp-prototype .hlp-question{scroll-margin-top:90px}
+.hlp-prototype .hlp-choice:has(input:focus-visible){outline:3px solid #fde68a;outline-offset:2px}
+.hlp-prototype .hlp-module-card a:focus-visible{outline:3px solid #fde68a;outline-offset:4px}
+.hlp-prototype .hlp-summary strong{color:#ffe7b0}
+@media(max-width:730px){.hlp-prototype .hlp-module-grid{grid-template-columns:1fr}.hlp-prototype .hlp-module-card{padding:17px}}
+
+/* Stage 5.3C.4.1 M1: four evidence cards in a balanced two-column desktop grid; mobile one column. */
+@media (min-width:751px){.hlp-prototype .hlp-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.hlp-prototype .hlp-source figcaption{overflow-wrap:break-word;word-break:normal}
+.hlp-prototype .hlp-question > h3{width:100%;max-width:none;overflow-wrap:break-word;text-wrap:wrap!important}
+
+/* Stage 5.3C.4.3 — M4 only. Evidence grids reflow without clipping. */
+.hlp-prototype .hlp-source figcaption{overflow-wrap:break-word;word-break:normal}
+.hlp-prototype .hlp-question > h3{width:100%;max-width:none;overflow-wrap:break-word;text-wrap:wrap!important}
+</style>
+</head>
+<body class="hl-v84 hl-ds2 hl-section-2 hlp-prototype">
+<a class="hl-skip-link" href="#main-content">Перейти до основного вмісту</a>
+<nav class="lesson-course-nav" aria-label="Навігація курсу"><div class="lcn-inner">
+<div class="lcn-group lcn-group--primary"><a class="lcn-home" href="../" aria-label="Головна"><span aria-hidden="true" class="hl-icon hl-icon--home"></span><span class="lcn-label">Головна</span></a><a class="lcn-contents" href="./" aria-label="Зміст розділу II"><span aria-hidden="true" class="hl-icon hl-icon--contents"></span><span class="lcn-label">Зміст розділу</span></a></div>
+<div class="lcn-current"><span aria-hidden="true" class="hl-icon hl-icon--timeline"></span><span class="lcn-current-label">E02 · X · Підсумок</span></div>
+<div class="lcn-group lcn-group--steps"><a class="lcn-step lcn-step--previous" href="revision-practicum.html" aria-label="До центру практикуму E02"><span aria-hidden="true" class="hl-icon hl-icon--previous"></span><span class="lcn-label">E02</span></a></div>
+</div></nav>
+<header class="hl-lesson-hero hl-lesson-hero--egypt"><div class="hl-lesson-hero__inner">
+<div class="hl-lesson-hero__top"><div class="hl-lesson-hero__copy"><div class="hl-lesson-hero__kicker"><span aria-hidden="true" class="hl-icon hl-icon--timeline"></span><span>РОЗДІЛ II · E02 · МІЖТЕМНИЙ ПІДСУМОК X</span></div>
+<h1 class="hl-lesson-hero__title"><span class="hl-lesson-hero__accent">Кілька шляхів</span> розвитку цивілізацій</h1><p class="hl-lesson-hero__lead">Порівняй давні цивілізації різних регіонів: знайди обґрунтовані подібності, відмінності й межі історичних свідчень.</p></div>
+<div aria-hidden="true" class="hl-lesson-hero__number">X</div></div>
+<div class="hl-lesson-hero__stats"><div class="hl-lesson-hero__stat"><strong>4 завдання</strong><span>міжтемні порівняння</span></div><div class="hl-lesson-hero__stat"><strong>6–10 хв</strong><span>орієнтовний час</span></div><div class="hl-lesson-hero__stat"><strong>§§10–35</strong><span>матеріал розділу II</span></div><div class="hl-lesson-hero__stat"><strong>1 підсумок</strong><span>можна проходити окремо</span></div></div>
+</div></header>
+<div class="hl-secondary-nav-shell"><nav class="hl-secondary-nav" aria-label="Навігація практикуму"><div class="hl-secondary-nav__track">
+<a href="#sources" class="hl-nav-item"><span aria-hidden="true" class="hl-icon hl-icon--search"></span><span class="hl-nav-label">Джерела</span></a>
+<a href="#tasks" class="hl-nav-item"><span aria-hidden="true" class="hl-icon hl-icon--science"></span><span class="hl-nav-label">4 завдання</span></a>
+<a href="#reflection" class="hl-nav-item"><span aria-hidden="true" class="hl-icon hl-icon--book"></span><span class="hl-nav-label">Рефлексія</span></a>
+<a href="#result" class="hl-nav-item"><span aria-hidden="true" class="hl-icon hl-icon--star"></span><span class="hl-nav-label">Підсумок</span></a>
+</div></nav></div>
+
+
+
+
+<main class="hlp-main" id="main-content" tabindex="-1">
+<section class="hlp-lead-panel" aria-labelledby="x-intro">
+<p class="hlp-section-kicker">Як працювати з підсумком</p><h2 id="x-intro" style="font-size:1.4rem;font-weight:850;color:#fff5d8">Одна історія — багато дослідницьких шляхів</h2>
+<p>Порівняй чотири великі історичні регіони й досліджуй, що можна стверджувати на основі свідчень. Обери одну або рівно дві відповіді й установи відповідність між джерелами та межами їхнього тлумачення.</p>
+<p><strong>Ти можеш пройти X незалежно від M1–M4.</strong> Результат не є шкільною оцінкою, не зберігається між сторінками та не потребує облікового запису.</p>
+<div class="hlp-chip-row"><span class="hlp-chip">§§10–35</span><span class="hlp-chip">4 завдання</span><span class="hlp-chip">Без таймера</span></div>
+</section>
+<section class="hlp-panel" id="sources" aria-labelledby="sources-title">
+<p class="hlp-section-kicker">Різні історичні джерела</p><h2 id="sources-title">Що свідчить про минуле, а що ще потрібно перевірити?</h2>
+<p>Зістав п’ять пам’яток із різних регіонів. Стела законів передає правові норми, настінний розпис — створений художником образ праці, скіфська пектораль — речове свідчення, руїни давнього міста — архітектурне, ворожильна кістка — письмове.</p>
+<div class="hlp-grid" aria-label="Різні типи пам'яток Стародавнього світу">
+<figure class="hlp-source"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Code_of_Hammurabi_(Louvre_Sb_8)-31434550325.jpg?width=1200" alt="Стела із законами царя Хаммурапі в Луврі, чорний камінь із клинописним текстом."><figcaption><strong>S1 · Стела законів Хаммурапі</strong><small>Джерело: <a href="https://commons.wikimedia.org/wiki/File:Code_of_Hammurabi_(Louvre_Sb_8)-31434550325.jpg" rel="noopener noreferrer" target="_blank">Fred Romero / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by/2.0/" rel="noopener noreferrer" target="_blank">CC BY 2.0</a></small></figcaption></figure>
+<figure class="hlp-source"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Agricultural_Scenes,_Tomb_of_Nakht_MET_DT306954.jpg?width=1200" alt="Давньоєгипетська сцена землеробських робіт із гробниці Нахта."><figcaption><strong>S2 · Землеробство в гробниці Нахта</strong><small>Джерело: <a href="https://commons.wikimedia.org/wiki/File:Agricultural_Scenes,_Tomb_of_Nakht_MET_DT306954.jpg" rel="noopener noreferrer" target="_blank">Norman de Garis Davies / The Metropolitan Museum of Art / Wikimedia Commons</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener noreferrer" target="_blank">CC0 1.0</a></small></figcaption></figure>
+<figure class="hlp-source"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Scythian_gold_pectoral_Tovsta_Mohyla_(detail_1).jpg?width=1200" alt="Деталь золотої скіфської пекторалі з Товстої Могили із рельєфними фігурами."><figcaption><strong>S3 · Золота пектораль із Товстої Могили</strong><small>Джерело: <a href="https://commons.wikimedia.org/wiki/File:Scythian_gold_pectoral_Tovsta_Mohyla_(detail_1).jpg" rel="noopener noreferrer" target="_blank">Curryfauvel / Wikimedia Commons</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener noreferrer" target="_blank">CC0 1.0</a></small></figcaption></figure>
+<figure class="hlp-source"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/The_great_bath_full_view_-_Mohenjo-daro.jpg?width=1200" alt="Руїни Великої купальні в Мохенджо-Даро, оточені цегляними стінами."><figcaption><strong>S4 · Велика купальня Мохенджо-Даро</strong><small>Джерело: <a href="https://commons.wikimedia.org/wiki/File:The_great_bath_full_view_-_Mohenjo-daro.jpg" rel="noopener noreferrer" target="_blank">Nikesh chawla / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="noopener noreferrer" target="_blank">CC BY-SA 3.0</a></small></figcaption></figure>
+<figure class="hlp-source"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Shang_Ox_Bone_Oracle_Bones.jpg?width=1200" alt="Ворожильна кістка з давньокитайськими написами доби Шан."><figcaption><strong>S5 · Ворожильна кістка Шан</strong><small>Джерело: <a href="https://commons.wikimedia.org/wiki/File:Shang_Ox_Bone_Oracle_Bones.jpg" rel="noopener noreferrer" target="_blank">Gary Lee Todd / Wikimedia Commons</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener noreferrer" target="_blank">CC0 1.0</a></small></figcaption></figure>
+</div>
+<div class="hlp-evidence-note"><p><strong>Принцип історика:</strong> джерело має автора, призначення, дату та межі достовірності. Подібність географічних умов або технологій не означає, що всі цивілізації розвивалися однаково. Писемність Хараппи лишається нерозшифрованою.</p></div>
+</section>
+<section class="hlp-panel" id="tasks" aria-labelledby="tasks-title">
+<p class="hlp-section-kicker">Підсумковий практикум X · §§10–35</p><h2 id="tasks-title">Чотири міжтемні завдання</h2>
+<p>Заповни всі відповіді й натисни «Перевірити 4 завдання». Після зміни відповіді результат оновиться лише після нової перевірки.</p>
+<div class="hlp-questions" id="x-questions"></div>
+<div class="hlp-actions"><button type="button" class="hlp-btn" id="x-check">Перевірити 4 завдання</button><button type="button" class="hlp-btn hlp-btn--secondary" id="x-reset">Скинути відповіді</button></div>
+<p class="hlp-block-result" id="x-status" role="status" aria-live="polite">Заповни відповіді до всіх чотирьох завдань.</p>
+</section>
+<section class="hlp-panel" id="reflection" aria-labelledby="reflection-title">
+<p class="hlp-section-kicker">Вільний висновок історика</p><h2 id="reflection-title">Різні цивілізації — обґрунтоване порівняння</h2>
+<p>Обери дві цивілізації з різних регіонів. Назви одну подібність, одну відмінність і щонайменше по одному історичному джерелу, яке допомогло б перевірити висновок.</p>
+<div class="hlp-reflection"><label for="x-reflection">Мій висновок (не оцінюється автоматично)</label>
+<textarea id="x-reflection" rows="4" maxlength="900" placeholder="Порівнюю… Подібність… Відмінність… Джерела… Обмеження мого висновку…"></textarea>
+<details><summary>Критерії самооцінювання</summary><ul><li>Вибрано цивілізації з двох різних історичних регіонів.</li><li>Названо одну обґрунтовану подібність і одну відмінність.</li><li>Визначено доречні історичні джерела та межі їхнього тлумачення.</li></ul></details>
+<p class="hlp-muted">Вільна відповідь залишається тільки на цій сторінці браузера та не входить до чотирьох балів.</p></div>
+</section>
+<section class="hlp-summary" id="result" aria-labelledby="result-title">
+<p class="hlp-section-kicker">Підсумок</p><h2 id="result-title">Як порівняти цивілізації?</h2>
+<p id="x-score" role="status" aria-live="polite">Підсумок з’явиться після перевірки всіх чотирьох завдань.</p>
+<div class="hlp-review" id="x-review"></div>
+<div class="hlp-actions"><a class="hlp-btn" href="revision-practicum.html">Усі частини E02</a><a class="hlp-btn hlp-btn--secondary" href="./">До розділу II</a><button type="button" class="hlp-btn hlp-btn--secondary" id="x-reset-all">Скинути весь підсумок</button></div>
+<p class="hlp-footer-intro">Stage 5.3C.4.4 · X — навчальна сторінка development. Підсумок не вимагає проходження інших модулів і не зберігає оцінки.</p>
+</section>
+</main>
+<script>(function(){
+"use strict";
+const questions=[{"id":"X.01","type":"multi","prompt":"Для порівняння Месопотамії, Єгипту, долини Інду й Давнього Китаю вибери ДВА історично виважені висновки.","options":["Річкові долини могли створювати умови для господарства, але суспільні результати різнилися.","Наявність двох річок автоматично означає однаковий політичний устрій.","Порівняння потребує даних про хронологію, господарство, владу й пам’ятки кожного регіону.","Всі цивілізації однаково використовували одну мову."],"answer":[0,2],"explain":"Багаторегіональне порівняння має спиратися на критерії та відмінності контекстів.","hint":"Шукай порівняння, а не універсальну схему.","refs":[12,20,30,33]},{"id":"X.02","type":"match","prompt":"Зістав історичне джерело з його важливою межею достовірності.","options":["Норма не доводить, що її завжди виконували.","Зображення не описує побут кожного мешканця.","На оповідь може впливати погляд зовнішнього спостерігача.","Не можна достовірно читати зміст невідомого письма."],"rows":["Стела законів Хаммурапі","Розпис із зображенням повсякдення в Єгипті","Опис скіфів давньогрецьким автором","Нерозшифровані знаки Хараппи"],"answer":[0,1,2,3],"explain":"У кожного типу джерел є власні можливості та обмеження; найкраще зіставляти різні свідчення.","hint":"Визнач, що заважає робити надто загальний висновок з одного джерела.","refs":[14,23,29,30]},{"id":"X.03","type":"multi","prompt":"Порівнюючи писемність, торгівлю та управління у різних регіонах, вибери ДВА коректні твердження.","options":["Писемність і шляхи сполучення могли виконувати різні суспільні функції.","Однакова технологія обов’язково означає однакову релігію.","Для пояснення контактів треба враховувати час, місце та призначення мережі.","Усі контакти між країнами виникали лише після військового підкорення."],"answer":[0,2],"explain":"Обмін і управління можуть потребувати письма й транспортних зв’язків, але їхні функції не тотожні.","hint":"Зосередься на функції інструменту або мережі.","refs":[17,25,28,34]},{"id":"X.04","type":"single","prompt":"Який висновок найкраще підсумовує вивчення різних стародавніх цивілізацій?","options":["Існував один правильний спосіб розвитку, решта народів від нього відставали.","Давні суспільства розвивалися в різних умовах; їх можна порівнювати за визначеними ознаками, пам’ятаючи про межі наших джерел.","Відмінності можна пояснити лише природними умовами.","Після виникнення писемності археологічні пам’ятки перестали мати значення."],"answer":1,"explain":"Історичне порівняння пояснює подібності та відмінності без ранжування культур і без перебільшення певності джерел.","hint":"Уникай тверджень «усі», «тільки», «єдиний шлях».","refs":[11,18,24,35]}];
+const root=document.getElementById("x-questions");
+const status=document.getElementById("x-status");
+const summary=document.getElementById("x-score");
+const review=document.getElementById("x-review");
+const currentOrder=Object.create(null);
+const state={checked:false,score:0};
+function node(tag,cls,text){const x=document.createElement(tag);if(cls)x.className=cls;if(text!==undefined)x.textContent=text;return x}
+function append(parent,tag,cls,text){const x=node(tag,cls,text);parent.appendChild(x);return x}
+function responseId(q){return q.id.replace(".","-")}
+function correctText(q){
+ if(q.type==="single")return q.options[q.answer];
+ if(q.type==="multi")return q.answer.map(i=>q.options[i]).join(" + ");
+ if(q.type==="match")return q.rows.map((r,i)=>r+" → "+q.options[q.answer[i]]).join("; ");
+ return q.answer.map(i=>q.items[i]).join(" → ");
+}
+function clearFeedback(){
+ for(const q of questions){
+  const feedback=document.getElementById("feedback-"+responseId(q));
+  feedback.hidden=true;feedback.textContent="";feedback.className="hlp-feedback";
+  document.getElementById("task-"+responseId(q)).querySelectorAll(".hlp-choice").forEach(el=>{el.classList.remove("hlp-correct","hlp-wrong")});
+ }
+}
+function changed(){
+ if(!state.checked)return;
+ state.checked=false;state.score=0;
+ clearFeedback();
+ status.textContent="Відповідь змінено. Перевір завдання повторно, щоб оновити результат.";
+ summary.textContent="Попередній результат скасовано після зміни відповіді. Натисни «Перевірити 4 завдання».";
+ review.replaceChildren();
+}
+function renderOrder(q,slot){
+ const id=responseId(q);
+ slot.replaceChildren();
+ const ol=append(slot,"ol","hlp-order");
+ ol.setAttribute("aria-label","Поточний порядок дослідницьких кроків");
+ const arr=currentOrder[id];
+ arr.forEach((idx,pos)=>{
+  const li=append(ol,"li");append(li,"span","hlp-order-name",q.items[idx]);
+  const controls=append(li,"div","hlp-move-pair");
+  for(const [delta,symbol,word] of [[-1,"↑","Підняти"],[1,"↓","Опустити"]]){
+   const b=append(controls,"button","hlp-move",symbol);
+   b.type="button";
+   b.disabled=pos+delta<0||pos+delta>=arr.length;
+   b.setAttribute("aria-label",word+" крок «"+q.items[idx]+"»");
+   b.addEventListener("click",()=>{
+    const other=pos+delta;
+    [arr[pos],arr[other]]=[arr[other],arr[pos]];
+    renderOrder(q,slot);changed();
+    const moved=slot.querySelectorAll(".hlp-order li")[other];
+    const focused=moved.querySelectorAll("button")[delta===-1?0:1];
+    (focused.disabled?moved.querySelector("button:not(:disabled)"):focused).focus();
+   });
+  }
+ });
+}
+function renderQuestion(q,index){
+ const id=responseId(q);
+ const card=append(root,"article","hlp-question");card.id="task-"+id;
+ append(card,"span","hlp-task-number","ЗАВДАННЯ "+(index+1)+" / 4 · 1 бал");
+ const h=append(card,"h3","",String(index+1)+". "+q.prompt);h.id="heading-"+id;
+ const area=append(card,"div","hlp-response");area.setAttribute("aria-labelledby",h.id);
+ if(q.type==="order"){
+  currentOrder[id]=q.items.map((_,i)=>i);renderOrder(q,area);
+ }else if(q.type==="match"){
+  q.rows.forEach((label,i)=>{
+   const wrap=append(area,"div","hlp-assignment");
+   const lbl=append(wrap,"label","",label);
+   const select=append(wrap,"select");select.id=id+"-select-"+i;lbl.htmlFor=select.id;
+   select.setAttribute("aria-describedby","feedback-"+id);
+   const empty=append(select,"option","","Оберіть пояснення");empty.value="";
+   q.options.forEach((txt,k)=>{const op=append(select,"option","",txt);op.value=String(k)});
+   select.addEventListener("change",changed);
+  });
+ }else{
+  const field=append(area,"fieldset");
+  append(field,"legend","hlp-visually-hidden",q.prompt);
+  const list=append(field,"div","hlp-choice-list");
+  q.options.forEach((txt,i)=>{
+   const label=append(list,"label","hlp-choice");
+   const input=append(label,"input");input.type=q.type==="single"?"radio":"checkbox";
+   input.name=id;input.value=String(i);input.setAttribute("aria-describedby","feedback-"+id);
+   append(label,"span","",txt);input.addEventListener("change",changed);
+  });
+  if(q.type==="multi")append(area,"p","hlp-muted","Обери рівно два правильні твердження.");
+ }
+ const feedback=append(card,"p","hlp-feedback");feedback.id="feedback-"+id;feedback.hidden=true;
+ const refs=append(card,"div","hlp-task-links");append(refs,"span","","Повторити:");
+ for(const n of q.refs){const a=append(refs,"a","","§"+n);a.href=({"11":"11-shcho-take-tsyvilizatsiia.html","12":"12-mesopotamiia-pryroda-hospodarstvo.html","14":"14-mesopotamiia-suspilstvo-khamurapi.html","17":"17-mesopotamiia-pysemnist-nauka.html","18":"18-mesopotamiia-relihiia-literatura.html","20":"20-davnii-yehypet-nil.html","23":"23-davnii-yehypet-povsiakdennia.html","24":"24-davnii-yehypet-pysemnist-relihiia-mystetstvo.html","25":"25-finikiia.html","28":"28-persiia.html","29":"29-kimmeriitsi-skify.html","30":"30-kharappa.html","33":"33-davnii-kytai.html","34":"34-kytai-tsin.html","35":"35-kytai-kultura.html"})[n]||"./"}
+}
+function getAnswer(q){
+ const card=document.getElementById("task-"+responseId(q));
+ if(q.type==="order")return currentOrder[responseId(q)].slice();
+ if(q.type==="match")return Array.from(card.querySelectorAll("select")).map(x=>x.value===""?null:Number(x.value));
+ const selected=Array.from(card.querySelectorAll("input:checked")).map(x=>Number(x.value));
+ return q.type==="single"?selected.length?selected[0]:null:selected.sort((a,b)=>a-b);
+}
+function isComplete(q,a){if(q.type==="single")return a!==null;if(q.type==="multi")return a.length===2;if(q.type==="match")return a.every(x=>x!==null);return true}
+function isCorrect(q,a){if(q.type==="single")return a===q.answer;return a.join("|")===q.answer.join("|")}
+function verify(){
+ const unfinished=questions.find(q=>!isComplete(q,getAnswer(q)));
+ if(unfinished){
+  status.textContent="Заповни всі завдання. Для запитання з двома твердженнями вибери рівно два.";
+  const card=document.getElementById("task-"+responseId(unfinished));
+  const focus=card.querySelector("input,select,button");
+  if(focus)focus.focus();else card.setAttribute("tabindex","-1"),card.focus();
+  return;
+ }
+ let score=0;const redo=[];
+ for(const q of questions){
+  const answer=getAnswer(q),ok=isCorrect(q,answer);if(ok)score++;else redo.push(q);
+  const card=document.getElementById("task-"+responseId(q));
+  const fb=document.getElementById("feedback-"+responseId(q));
+  fb.hidden=false;fb.className="hlp-feedback "+(ok?"hlp-correct":"hlp-wrong");
+  fb.textContent=(ok?"Правильно. ":"Є неточність. Правильна відповідь: "+correctText(q)+". ")+q.explain+(ok?"":" Підказка: "+q.hint);
+  if(q.type==="single"||q.type==="multi"){
+   card.querySelectorAll(".hlp-choice").forEach((label,i)=>{
+    const input=label.querySelector("input");
+    const correct=q.type==="single"?i===q.answer:q.answer.includes(i);
+    if(correct)label.classList.add("hlp-correct");
+    else if(input.checked)label.classList.add("hlp-wrong");
+   });
+  }
+ }
+ state.checked=true;state.score=score;
+ status.textContent="Перевірено: "+score+" із 4. Переглянь пояснення до завдань.";
+ summary.textContent="Твій результат: "+score+" із 4. Це навчальна самоперевірка, а не оцінка для журналу.";
+ review.replaceChildren();
+ if(redo.length){
+  append(review,"p","","Для повторення варто переглянути:");
+  const ul=append(review,"ul");
+  const done=new Set();
+  for(const q of redo)for(const n of q.refs)if(!done.has(n)){
+   done.add(n);const li=append(ul,"li");const a=append(li,"a","", "§"+n);
+   a.href=({"11":"11-shcho-take-tsyvilizatsiia.html","12":"12-mesopotamiia-pryroda-hospodarstvo.html","14":"14-mesopotamiia-suspilstvo-khamurapi.html","17":"17-mesopotamiia-pysemnist-nauka.html","18":"18-mesopotamiia-relihiia-literatura.html","20":"20-davnii-yehypet-nil.html","23":"23-davnii-yehypet-povsiakdennia.html","24":"24-davnii-yehypet-pysemnist-relihiia-mystetstvo.html","25":"25-finikiia.html","28":"28-persiia.html","29":"29-kimmeriitsi-skify.html","30":"30-kharappa.html","33":"33-davnii-kytai.html","34":"34-kytai-tsin.html","35":"35-kytai-kultura.html"})[n]||"./";
+  }
+ }else append(review,"p","","Усі завдання виконано правильно. Можеш ще раз поміркувати над історичними джерелами.");
+ status.setAttribute("tabindex","-1");status.focus();
+}
+function reset(clearReflection){
+ for(const q of questions){
+  const card=document.getElementById("task-"+responseId(q));
+  card.querySelectorAll("input").forEach(x=>x.checked=false);
+  card.querySelectorAll("select").forEach(x=>x.value="");
+  if(q.type==="order"){currentOrder[responseId(q)]=q.items.map((_,i)=>i);renderOrder(q,card.querySelector(".hlp-response"));}
+ }
+ clearFeedback();state.checked=false;state.score=0;
+ if(clearReflection)document.getElementById("x-reflection").value="";
+ review.replaceChildren();summary.textContent="Підсумок з’явиться після перевірки чотирьох завдань.";
+ status.textContent="Відповіді скинуто. Можна виконати завдання знову.";
+ const title=document.getElementById("tasks-title");title.setAttribute("tabindex","-1");title.focus();
+}
+questions.forEach(renderQuestion);
+document.getElementById("x-check").addEventListener("click",verify);
+document.getElementById("x-reset").addEventListener("click",()=>reset(false));
+document.getElementById("x-reset-all").addEventListener("click",()=>reset(true));
+})();</script>
+<footer class="historylab-footer"><div class="historylab-footer__inner">
+<div><div class="historylab-footer__brand">History Lab • Історія України. Всесвітня історія • 6 клас</div>
+<p class="historylab-footer__copy">© 2026 History Lab. Усі права на структуру сайту, дизайн та авторські інтерактивні матеріали захищено.</p>
+<p class="historylab-footer__note">Навчальний інтерактивний вебпроєкт для учнів шостого класу.</p>
+<div class="historylab-footer__textbook"><p><strong>Інтерактивний навчальний додаток до підручника «Історія України. Всесвітня історія»</strong></p><p>Автори підручника: <strong>О. В. Гісем, О. О. Гісем (2023)</strong></p></div></div>
+<div><div class="historylab-footer__title">Авторські права та використані матеріали</div><p>Права на запозичені тексти, зображення й інші матеріали належать їхнім авторам та правовласникам.</p><p class="historylab-footer__note">Ілюстрації археологічних пам’яток супроводжено підписами з джерелами й ліцензіями.</p></div>
+<div class="historylab-footer__institution" aria-label="Навчальний заклад"><span class="historylab-footer__institution-logo" aria-hidden="true"><img src="../assets/institution/kharkiv-lyceum-99.gif" width="127" height="100" alt="" loading="lazy"></span><div class="historylab-footer__institution-text"><div class="historylab-footer__institution-kicker">Навчальний заклад</div><div class="historylab-footer__institution-name">Харківський ліцей № 99</div><div class="historylab-footer__institution-note">History Lab • навчальний вебпроєкт з історії для 6 класу</div></div></div>
+</div></footer>
+<script defer src="../assets/historylab-v842.js"></script>
+</body>
+</html>
