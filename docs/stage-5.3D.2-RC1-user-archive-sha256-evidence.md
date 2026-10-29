@@ -24,3 +24,17 @@ To close the artifact gate, verify **246 non-directory entries**, the expected p
 This document is metadata-only in `release/stage-5.3-rc1` and **does not alter the immutable source code commit** `ba5079701ddddceac07014fcad91d5ae61481712`, nor `main`, `v1.1` or Netlify production.
 
 **Artifact QA status: SHA-256 USER-RECORDED · ZIP DIRECTORY READ PASS · FILE COUNT/CRC/RC COMMIT MATCH PENDING.**
+
+## Additional user-provided extraction evidence — 2026-10-29
+
+A later screenshot of Windows PowerShell confirms the user executed `tar.exe -xf` against the local ZIP into a separate Windows temporary directory. PowerShell printed:
+- **PASS: Архів розпаковано без помилок**
+- **Розпаковано файлів: 246**
+
+Earlier ZipArchive enumeration had exactly **246 non-directory entries + 11 directory entries = 257 total**. These counts now match the frozen RC1 Git tree's 246 blobs.
+
+**Accepted gate:** directory listing / archive extraction and count verification — **PASS (owner-attested screenshot)**.
+
+**Remaining limitations:** Successful extraction and identical counts do not cryptographically establish that each extracted file matches Git commit `ba5079701ddddceac07014fcad91d5ae61481712`. The SHA-256 is calculated for the downloaded ZIP, but no independent local-byte comparison to an authoritative immutable commit's blob inventory has yet occurred. Do not represent this as full frozen-source content validation. Manual Edge RC1 acceptance also remains PENDING.
+
+**Production:** no merge, tag mutation or Netlify deployment.
