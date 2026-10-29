@@ -35,7 +35,22 @@
 <link href="../assets/historylab-v842.css" rel="stylesheet"/>
 <link href="../assets/historylab-typography.css" rel="stylesheet">
 <link href="../favicon.ico" rel="icon" type="image/x-icon"/>
-</link></head>
+</link>
+<!-- Stage 5.3C.5.1: E02 development index entry, scoped styles; production v1.1 unaffected -->
+<style>
+.hl-section-practicum-entry{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.5rem;padding:clamp(1.25rem,3vw,2rem);border:1px solid rgba(251,191,36,.48);border-radius:1.5rem;background:linear-gradient(125deg,#30291d,#111d2e);box-shadow:0 12px 28px rgba(0,0,0,.14)}
+.hl-section-practicum-entry__text{flex:1 1 365px;min-width:0}
+.hl-section-practicum-entry__eyebrow{display:inline-flex;align-items:center;gap:.55rem;color:#fcd58d;font-size:.82rem;font-weight:850;letter-spacing:.055em;line-height:1.5}
+.hl-section-practicum-entry h2{font-family:var(--hl-font-heading,inherit);font-size:clamp(1.3rem,2.5vw,1.85rem);font-weight:850;line-height:1.25;color:#fff8eb;margin:.5rem 0 .7rem;text-wrap:wrap}
+.hl-section-practicum-entry p{color:#d6deeb;font-size:1rem;line-height:1.65;margin:0}
+.hl-section-practicum-entry__meta{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1rem}
+.hl-section-practicum-entry__meta span{padding:.35rem .65rem;border:1px solid rgba(250,204,21,.23);background:rgba(251,191,36,.09);border-radius:999px;font-size:.79rem;font-weight:750;color:#f6d596}
+.hl-section-practicum-entry__cta{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;flex:0 1 260px;max-width:100%;min-height:48px;padding:.85rem 1.1rem;border-radius:.85rem;border:1px solid #d97706;background:#b45309;color:#fff!important;font-size:.95rem;font-weight:850;line-height:1.35;text-decoration:none;text-align:center}
+.hl-section-practicum-entry__cta:hover{background:#92400e}
+.hl-section-practicum-entry__cta:focus-visible{outline:3px solid #fde68a;outline-offset:4px}
+@media (max-width:640px){.hl-section-practicum-entry__cta{flex:1 1 100%;width:100%}.hl-section-practicum-entry{gap:1rem}}
+</style>
+</head>
 <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between hl-section-2 hl-v84 hl-section-index">
 <a class="hl-skip-link" href="#main-content">Перейти до основного вмісту</a>
 <nav aria-label="Навігація курсу" class="lesson-course-nav"><div class="lcn-inner"><div class="lcn-group"><a class="lcn-home" href="../"><span aria-hidden="true" class="hl-icon hl-icon--home"></span><span class="lcn-label">Головна курсу</span></a><a href="../section1/"><span aria-hidden="true" class="hl-icon hl-icon--previous"></span><span class="lcn-label">Розділ I</span></a></div><div class="lcn-current"><span aria-hidden="true" class="hl-icon hl-lesson-identity-icon hl-icon--contents"></span>Розділ II • §10–35</div><div class="lcn-group"><a href="10-bronzovyi-vik.html"><span class="lcn-label">Почати §10</span><span aria-hidden="true" class="hl-icon hl-icon--next"></span></a><a href="../section3/"><span class="lcn-label">Розділ III</span><span aria-hidden="true" class="hl-icon hl-icon--next"></span></a></div></div></nav>
@@ -740,6 +755,18 @@
 </div>
 </div>
 </div>
+
+<!-- Stage 5.3C.5.1: E02 — distinct Section II revision practicum entry; outside all 26 .topic-card elements and filters -->
+<section class="hl-section-practicum-entry" aria-labelledby="hl-section-practicum-title">
+  <div class="hl-section-practicum-entry__text">
+    <span class="hl-section-practicum-entry__eyebrow"><span aria-hidden="true" class="hl-icon hl-icon--science"></span> ПІДСУМКОВИЙ ПРАКТИКУМ · §§10–35</span>
+    <h2 id="hl-section-practicum-title">Давні цивілізації: різні шляхи розвитку</h2>
+    <p>Узагальни історію Месопотамії, Єгипту, держав Стародавнього Сходу, українських степів, Індії та Китаю. Порівняй джерела, природні умови й життя суспільств.</p>
+    <div class="hl-section-practicum-entry__meta"><span>4 тематичні модулі + підсумок</span><span>35 завдань</span><span>Проходження частинами</span><span>Самоперевірка без оцінки в журналі</span></div>
+  </div>
+  <a class="hl-section-practicum-entry__cta" href="revision-practicum.html"><span>Перейти до практикуму</span><span aria-hidden="true" class="hl-icon hl-icon--next"></span></a>
+</section>
+<!-- /Stage 5.3C.5.1 -->
 <!-- Interactive Info Banner -->
 <div class="hl-section-index-outro hl-section-index-outro--section2">
 <div class="hl-section-index-outro__copy">
