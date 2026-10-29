@@ -33,7 +33,8 @@
   <url>
     <loc>https://history-lab.netlify.app/section1/</loc>
   </url>
-  <!-- Stage 5.3B.4 E01: pending publication; enable only with removal of noindex after release QA: <url><loc>https://history-lab.netlify.app/section1/revision-practicum.html</loc></url> -->
+
+
   <url>
     <loc>https://history-lab.netlify.app/section2/10-bronzovyi-vik.html</loc>
   </url>
@@ -175,4 +176,11 @@
   <url><loc>https://history-lab.netlify.app/section3/58-vynyknennia-poshyrennia-khrystyianstva-kryzovi-yavyshcha-rymskoi-imperii.html</loc></url>
   <url><loc>https://history-lab.netlify.app/section3/59-velyke-pereselennia-narodiv-padinnia-zakhidnoi-rymskoi-imperii.html</loc></url>
   <url><loc>https://history-lab.netlify.app/section3/60-sloviany.html</loc></url>
+  <url><loc>https://history-lab.netlify.app/section1/revision-practicum.html</loc></url>
+  <url><loc>https://history-lab.netlify.app/section2/revision-practicum.html</loc></url>
+  <url><loc>https://history-lab.netlify.app/section2/revision-practicum-m1.html</loc></url>
+  <url><loc>https://history-lab.netlify.app/section2/revision-practicum-m2.html</loc></url>
+  <url><loc>https://history-lab.netlify.app/section2/revision-practicum-m3.html</loc></url>
+  <url><loc>https://history-lab.netlify.app/section2/revision-practicum-m4.html</loc></url>
+  <url><loc>https://history-lab.netlify.app/section2/revision-practicum-x.html</loc></url>
 </urlset>
