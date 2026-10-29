@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "frozen_commit": "ba5079701ddddceac07014fcad91d5ae61481712",
+  "zip_filename": "history-lab-RC1.zip.zip",
+  "local_zip_sha256": "026E213D193CD1B299960C54EB0850AE9B0BFFA12424E94C606DA369630A9798",
+  "same_zip_as_earlier_screenshot": true,
+  "expected_git_blob_count": 246,
+  "zip_regular_files": 246,
+  "zip_directory_entries": 11,
+  "matched_git_blobs": 246,
+  "mismatches_and_errors": [],
+  "checked_utc": "2026-10-29T18:40:32.0475749Z"
+}
