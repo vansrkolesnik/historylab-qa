@@ -121,6 +121,16 @@ body.hlp-prototype {background:#0b1220;color:#e2e8f0;margin:0}
 .hlp-prototype .hlp-module-card--summary{border-width:2px}
 
 </style>
+<!-- Stage 5.3E.5.3: scoped summary navigation -->
+<style id="hlp-summary-5-3E-5-3">
+.hlp-prototype .hlp-summary .hlp-summary-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:20px}
+.hlp-prototype .hlp-summary .hlp-summary-actions>.hlp-btn{min-height:48px}
+.hlp-prototype .hlp-summary .hlp-reflection-prompt{border:1px solid #56647b;border-left:3px solid #f1bb70;background:#19283c;border-radius:12px;padding:14px 16px;margin-top:18px;color:#e6ecf7;line-height:1.6}
+.hlp-prototype .hlp-summary .hlp-reflection-prompt p{margin:0}
+.hlp-prototype .hlp-summary .hlp-reflection-prompt strong{color:#fff0ce}
+.hlp-prototype #hub-modules,.hlp-prototype #b1{scroll-margin-top:120px}
+@media(max-width:520px){.hlp-prototype .hlp-summary .hlp-summary-actions>.hlp-btn{width:100%}}
+</style>
 </head>
 <body class="hl-v84 hl-ds2 hl-section-1 hlp-prototype">
 <a class="hl-skip-link" href="#main-content">Перейти до основного вмісту</a>
@@ -201,7 +211,7 @@ body.hlp-prototype {background:#0b1220;color:#e2e8f0;margin:0}
 <p class="hlp-section-kicker">РЕЗУЛЬТАТ САМОПЕРЕВІРКИ</p><h2 id="hlp-summary-heading">Твій підсумок</h2>
 <p id="hlp-summary-status" role="status" aria-live="polite">Поки немає перевірених блоків. Почни з будь-якого завдання.</p>
 <div class="hlp-review" id="hlp-review"></div>
-<div class="hlp-actions"><button type="button" class="hlp-btn hlp-btn--secondary" id="hlp-reset-all">Скинути весь практикум</button><a class="hlp-btn" href="./">До змісту розділу I</a></div>
+<div class="hlp-actions hlp-summary-actions"><a class="hlp-btn" href="#b1">Повернутися до завдань</a><a class="hlp-btn hlp-btn--secondary" href="./">До змісту розділу I</a><button type="button" class="hlp-btn hlp-btn--secondary" id="hlp-reset-all">Скинути весь практикум</button></div>
 </section>
 </main>
 <footer class="historylab-footer"><div class="historylab-footer__inner">
