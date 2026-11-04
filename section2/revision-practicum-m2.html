@@ -128,6 +128,13 @@ body.hlp-prototype {background:#0b1220;color:#e2e8f0;margin:0}
 .hlp-prototype .hlp-summary strong{color:#ffe7b0}
 @media(max-width:730px){.hlp-prototype .hlp-module-grid{grid-template-columns:1fr}.hlp-prototype .hlp-module-card{padding:17px}}
 </style>
+<!-- Stage 5.3E.4.2 · intro and score standard -->
+<style id="hlp-intro-heading-v2">
+.hlp-lead-panel{max-width:1112px;width:100%;margin-inline:auto}
+.hlp-lead-panel>h2{line-height:1.35}
+.hlp-lead-panel>.hlp-section-kicker{line-height:1.45}
+@media(max-width:420px){.hlp-lead-panel>h2{font-size:clamp(1.12rem,5vw,1.35rem)!important}}
+</style>
 </head>
 <body class="hl-v84 hl-ds2 hl-section-2 hlp-prototype">
 <a class="hl-skip-link" href="#main-content">Перейти до основного вмісту</a>
@@ -150,12 +157,12 @@ body.hlp-prototype {background:#0b1220;color:#e2e8f0;margin:0}
 </div></nav></div>
 <main class="hlp-main" id="main-content" tabindex="-1">
 <section class="hlp-lead-panel" aria-labelledby="m2-intro">
-<p class="hlp-section-kicker">Як працювати з модулем</p><h2 id="m2-intro" style="font-size:1.4rem;font-weight:850;color:#fff5d8">Пошук історичних доказів</h2>
-<p>Дай відповіді на сім запитань. Тут є вибір одного або двох тверджень, встановлення відповідності й упорядкування дослідницьких кроків. Картки можна переставляти кнопками — перетягувати їх необов’язково.</p>
+<p class="hlp-section-kicker">ЯК ПРАЦЮВАТИ З ПРАКТИКУМОМ</p><h2 id="m2-intro" style="font-size:1.4rem;font-weight:850;color:#fff5d8">Досліджуй Давній Єгипет за джерелами</h2>
+<p>Досліджуй природу, владу й культуру Давнього Єгипту. Обирай одну чи дві відповіді, встановлюй відповідність і впорядковуй кроки кнопками ↑↓. Виконай усі сім завдань, перевір їх однією кнопкою, переглянь пояснення та за потреби виправ відповіді.</p>
 <p><strong>Підсумок — самоперевірка, а не шкільна оцінка.</strong> Можна спробувати ще раз і скинути всі відповіді. Дані не зберігаються після закриття сторінки.</p>
 <div class="hlp-chip-row"><span class="hlp-chip">§§20–24</span><span class="hlp-chip">7 завдань</span><span class="hlp-chip">Без таймера</span></div>
 </section>
-<section class="hlp-panel" id="sources" aria-labelledby="sources-title"><p class="hlp-section-kicker">Історичні свідчення</p><h2 id="sources-title">Що розповідають пам’ятки?</h2>
+<section class="hlp-panel" id="sources" aria-labelledby="sources-title"><p class="hlp-section-kicker">ДЖЕРЕЛА ТА НАВЧАЛЬНІ ОПОРИ</p><h2 id="sources-title">Що розповідають пам’ятки?</h2>
 <p>Переглянь три зображення, уже використані в уроках History Lab. Зверни увагу: царська статуя, сцена землеробства й писемна пам’ятка є різними видами джерел.</p>
 <div class="hlp-grid" aria-label="Історичні пам’ятки для порівняння"><figure class="hlp-source">
 <img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Statue_of_King_Khafre_(53280945214).jpg?width=1200" alt="Статуя Хафри як приклад офіційного представлення влади">
@@ -166,24 +173,32 @@ body.hlp-prototype {background:#0b1220;color:#e2e8f0;margin:0}
 <figcaption><strong>S3 · Папірус із «Книги мертвих» Іуефанха</strong><small>Джерело: <a href="https://commons.wikimedia.org/wiki/File:Book_of_the_Dead_of_Iuefankh,_papyrus_-_Museo_Egizio_Turin_C_1791_p032.jpg" target="_blank" rel="noopener noreferrer">Museo Egizio / Wikimedia Commons</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0 1.0</a></small></figcaption></figure></div>
 <div class="hlp-evidence-note"><p><strong>Пам’ятай:</strong> зображення допомагає поставити запитання, але не доводить автоматично, як жили всі мешканці країни. Під час виконання завдань звертай увагу на автора та мету створення джерела.</p></div>
 </section>
-<section class="hlp-panel" id="tasks" aria-labelledby="tasks-title"><p class="hlp-section-kicker">Практикум M2 · §§20–24</p><h2 id="tasks-title">Сім кроків дослідника</h2>
+<section class="hlp-panel" id="tasks" aria-labelledby="tasks-title"><p class="hlp-section-kicker">ПРАКТИЧНІ ЗАВДАННЯ · M2 · §§20–24</p><h2 id="tasks-title">Природа, влада та культура Давнього Єгипту</h2>
 <p>Виконай усі завдання й натисни «Перевірити 7 завдань». Якщо хочеш змінити відповідь після перевірки, підсумок автоматично скинеться до наступної перевірки.</p>
 <div class="hlp-questions" id="m2-questions"></div>
 <div class="hlp-actions"><button type="button" class="hlp-btn" id="m2-check">Перевірити 7 завдань</button><button type="button" class="hlp-btn hlp-btn--secondary" id="m2-reset">Скинути відповіді</button></div>
 <p class="hlp-block-result" id="m2-status" role="status" aria-live="polite">Заповни відповіді до всіх семи завдань.</p>
 </section>
-<section class="hlp-panel" id="reflection" aria-labelledby="reflection-title"><p class="hlp-section-kicker">Дослідницька рефлексія</p><h2 id="reflection-title">Порівняй два історичні свідчення</h2>
+<section class="hlp-panel" id="reflection" aria-labelledby="reflection-title"><p class="hlp-section-kicker">ПОМІРКУЙ І ЗРОБИ ВИСНОВОК</p><h2 id="reflection-title">Порівняй два історичні свідчення</h2>
 <p>Оберіть будь-які дві пам’ятки S1–S3. Запиши, яку подібність і відмінність між ними ти помітив/помітила, та поясни, для якого висновку потрібні додаткові свідчення.</p>
 <div class="hlp-reflection"><label for="m2-reflection">Мої міркування (не оцінюються автоматично)</label><textarea id="m2-reflection" rows="4" maxlength="900" placeholder="Я порівнюю… Одне джерело показує…, інше… Для перевірки потрібно…"></textarea>
 <details><summary>Критерії самооцінювання</summary><ul><li>Названо два джерела та одну спільну й одну відмінну рису.</li><li>Є посилання на те, що видно або відомо з конкретної пам’ятки.</li><li>Відокремлено висновок від припущення і названо потребу в додатковому свідченні.</li></ul></details><p class="hlp-muted">Текст не передається на сервер і не входить до 7 балів.</p></div>
 </section>
-<section class="hlp-summary" id="result" aria-labelledby="result-title"><p class="hlp-section-kicker">Підсумок</p><h2 id="result-title">Що вдалося встановити?</h2>
+<section class="hlp-summary" id="result" aria-labelledby="result-title"><p class="hlp-section-kicker">РЕЗУЛЬТАТ САМОПЕРЕВІРКИ</p><h2 id="result-title">Твій підсумок</h2>
 <p id="m2-score" role="status" aria-live="polite">Підсумок з’явиться після перевірки всіх семи завдань.</p>
 <div class="hlp-review" id="m2-review"></div>
 <div class="hlp-actions"><a class="hlp-btn" href="revision-practicum.html">Усі модулі E02</a><a class="hlp-btn hlp-btn--secondary" href="./">До розділу II</a><button type="button" class="hlp-btn hlp-btn--secondary" id="m2-reset-all">Скинути весь модуль</button></div>
 <p class="hlp-footer-intro">Stage 5.3C.3 · Пілотна версія лише в development. M1, M3, M4 і X будуть розроблені окремо.</p>
 </section>
 </main>
+<script id="hlp-scoring-text-v2">
+function hlpFeedback(score,total){
+  if(score===total)return 'Усі завдання виконано правильно.';
+  if(score/total>=0.75)return 'Більшість завдань виконано правильно. Переглянь пояснення до помилок.';
+  if(score/total>=0.5)return 'Частину завдань виконано правильно. Повтори потрібні параграфи та спробуй ще раз.';
+  return 'Повернися до підказок і параграфів. Після повторення спробуй ще раз.';
+}
+</script>
 <script>(function(){
 "use strict";
 const questions=[{"id":"M2.01","type":"single","prompt":"Чому вивчення Нілу, землеробства та управління Єгиптом доцільно поєднувати?","options":["Ніл сам вирішував усі господарські питання.","Природні умови впливали на працю й запаси, а організація господарства була пов’язана із суспільними та державними структурами.","Єгиптяни могли жити лише рибальством.","Усі жителі Єгипту виконували одну професію."],"answer":1,"explain":"Розливи річки, праця, розподіл ресурсів і влада пов’язані, але їхній зв’язок не був механічним чи однаковим для всіх.","hint":"Поміркуй про потреби працівників і роль людей в організації праці.","refs":[20,21,23]},{"id":"M2.02","type":"match","prompt":"Зістав тип джерела з найобережнішим дослідницьким висновком.","options":["Може показувати офіційне зображення влади, але не всі деталі повсякденного управління.","Допомагає досліджувати, як працю зображали, але потребує зіставлення з іншими даними.","Може передавати інформацію автора, якщо встановлено й прочитано зміст та контекст.","Автоматично розкриває думки всіх мешканців Єгипту."],"rows":["Царська статуя фараона","Настінне зображення землеробської праці","Папірус із писемним текстом"],"answer":[0,1,2],"explain":"Різні типи джерел мають різні функції та авторські обмеження.","hint":"Відокремлюй офіційний образ, сцену праці та письмовий запис.","refs":[21,23,24]},{"id":"M2.03","type":"single","prompt":"Порівнюючи господарство Єгипту та Месопотамії, який висновок буде найточнішим?","options":["Оскільки обидва регіони мали річки, державний устрій був тотожним.","Важливість річкової води можна порівнювати, але відмінності природних умов і суспільного розвитку потрібно досліджувати окремо.","Обидві цивілізації ніколи не торгували.","Наявність зрошення доводить однакові вірування."],"answer":1,"explain":"Схожі господарські завдання не означають однакових форм влади, культури чи релігії.","hint":"Розрізняй подібність умов і тотожність результатів.","refs":[12,20,21]},{"id":"M2.04","type":"multi","prompt":"Вивчаючи монументальні пам’ятки правителів і релігійне мистецтво Єгипту, вибери ДВА обережні висновки.","options":["Пам’ятка може свідчити про способи представлення царської влади.","Будь-яке царське зображення є дослівною фотографією події.","Написи, споруди та зображення варто порівнювати з контекстом їхнього створення.","Усі люди Єгипту однаково ставилися до кожного правителя."],"answer":[0,2],"explain":"Монументальна культура може передавати офіційні ідеї та цінності; вона не фіксує реакції всіх людей.","hint":"Поміркуй, хто замовляв пам’ятку і чому її створювали.","refs":[21,22,24]},{"id":"M2.05","type":"single","prompt":"Що треба зробити, перш ніж використовувати напис на папірусі як доказ певної події?","options":["За кольором папірусу визначити ставлення автора до події.","З’ясувати зміст, дату, походження й призначення тексту та перевірити відомості іншими джерелами.","Вважати всі ієрогліфи однаковими за значенням.","Не зважати на автора, якщо напис стародавній."],"answer":1,"explain":"Письмове джерело стає інформативним після читання і встановлення історичного контексту.","hint":"Стародавність документа сама по собі не гарантує точності кожного твердження.","refs":[20,24]},{"id":"M2.06","type":"order","prompt":"Встанови послідовність роботи історика із твердженням «Єгипетські зображення точно показують життя всіх верств населення».","items":["Зіставити різні пам’ятки й побутові дані","Визначити, хто створив і для кого призначено зображення","Уточнити обережний висновок про представлені групи людей","Описати, що безпосередньо видно на зображенні"],"answer":[3,1,0,2],"explain":"Спочатку спостерігаємо, потім з’ясовуємо походження, зіставляємо дані й формулюємо висновок з обмеженнями.","hint":"Починай із видимого, а заверши обережним висновком.","refs":[21,22,23,24]},{"id":"M2.07","type":"single","prompt":"Що дозволить перевірити, чи однаково жили чиновники, ремісники й землероби Давнього Єгипту?","options":["Лише портрет одного фараона.","Порівняння описів і знахідок різних поселень, ремесел та соціальних груп.","Одна сучасна художня реконструкція.","Тільки перелік єгипетських богів."],"answer":1,"explain":"Узагальнення про повсякденне життя потребує свідчень про різні групи населення, а не лише про правителів.","hint":"Чи достатньо одного джерела, щоб описати всіх мешканців країни?","refs":[21,23]}];
@@ -312,7 +327,7 @@ function verify(){
  }
  state.checked=true;state.score=score;
  status.textContent="Перевірено: "+score+" із 7. Переглянь пояснення до завдань.";
- summary.textContent="Твій результат: "+score+" із 7. Це навчальна самоперевірка, а не оцінка для журналу.";
+ summary.textContent="Твій результат: "+score+" із 7 ("+Math.round(score*100/7)+"% правильних відповідей). "+hlpFeedback(score,7)+" Це навчальна самоперевірка, а не оцінка для журналу.";
  review.replaceChildren();
  if(redo.length){
   append(review,"p","","Для повторення варто переглянути:");

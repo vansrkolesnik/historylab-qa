@@ -107,6 +107,13 @@ body.hlp-prototype {background:#0b1220;color:#e2e8f0;margin:0}
 @media (max-width:520px){.hlp-prototype .hlp-grid{grid-template-columns:1fr}.hlp-prototype .hlp-source img{max-height:250px}.hlp-prototype .hlp-main{width:calc(100% - 20px)}.hlp-prototype .hlp-lead-panel,.hlp-prototype .hlp-panel,.hlp-prototype .hlp-summary{padding:16px;border-radius:16px}.hlp-prototype .hlp-question{padding:13px}.hlp-prototype .hlp-actions .hlp-btn{width:100%}.hlp-prototype .hlp-move{width:40px;height:40px}.hlp-prototype .hlp-order li{gap:6px;padding:7px}}
 @media (prefers-reduced-motion:reduce){.hlp-prototype *{scroll-behavior:auto!important;transition:none!important}}
 </style>
+<!-- Stage 5.3E.4.2 · intro and score standard -->
+<style id="hlp-intro-heading-v2">
+.hlp-lead-panel{max-width:1112px;width:100%;margin-inline:auto}
+.hlp-lead-panel>h2{line-height:1.35}
+.hlp-lead-panel>.hlp-section-kicker{line-height:1.45}
+@media(max-width:420px){.hlp-lead-panel>h2{font-size:clamp(1.12rem,5vw,1.35rem)!important}}
+</style>
 </head>
 <body class="hl-v84 hl-ds2 hl-section-1 hlp-prototype">
 <a class="hl-skip-link" href="#main-content">Перейти до основного вмісту</a>
@@ -131,8 +138,8 @@ body.hlp-prototype {background:#0b1220;color:#e2e8f0;margin:0}
 </div></nav></div>
 <main id="main-content" class="hlp-main" tabindex="-1">
 <section class="hlp-lead-panel" aria-labelledby="hlp-intro-heading">
-<p class="hlp-section-kicker">Як працювати</p><h2 id="hlp-intro-heading" style="color:#fff5d8;font-size:1.4rem;font-weight:850">Спробуй себе в ролі історика</h2>
-<p>Виконуй завдання в будь-якому порядку. Кожен блок перевіряється окремо: після перевірки ти побачиш правильні відповіді та пояснення. Можна виправляти відповіді, повторювати спроби й скидати блоки.</p>
+<p class="hlp-section-kicker">ЯК ПРАЦЮВАТИ З ПРАКТИКУМОМ</p><h2 id="hlp-intro-heading" style="color:#fff5d8;font-size:1.4rem;font-weight:850">Досліджуй життя первісних людей</h2>
+<p>Досліджуй первісні суспільства за хронологією, археологічними знахідками та історичними висновками. Виконуй чотири блоки в будь-якому порядку. Перевіряй кожен блок окремо, читай пояснення, виправляй відповіді й повторюй спроби.</p>
 <p><strong>Це навчальна самоперевірка, а не оцінка для журналу.</strong> Не потрібно вказувати ім’я або реєструватися; відповіді не зберігаються після закриття сторінки.</p>
 <div class="hlp-chip-row"><span class="hlp-chip">Досліджуй</span><span class="hlp-chip">Порівнюй</span><span class="hlp-chip">Аргументуй</span><span class="hlp-chip">Перевіряй</span></div>
 </section>
@@ -184,7 +191,7 @@ body.hlp-prototype {background:#0b1220;color:#e2e8f0;margin:0}
 <p class="hlp-lesson-links">Повторити: <a href="01-pokhodzhennia-liudyny.html">§1</a><a href="02-antropohenez.html">§2</a><a href="03-neandertaltsi-kromaniontsi.html">§3</a><a href="04-paleolit.html">§4</a><a href="06-neolit.html">§6</a><a href="09-midno-kamianyi-vik.html">§9</a></p>
 </section>
 <section class="hlp-summary" id="result" aria-labelledby="hlp-summary-heading">
-<p class="hlp-section-kicker">Твій підсумок</p><h2 id="hlp-summary-heading">Що вдалося дослідити?</h2>
+<p class="hlp-section-kicker">РЕЗУЛЬТАТ САМОПЕРЕВІРКИ</p><h2 id="hlp-summary-heading">Твій підсумок</h2>
 <p id="hlp-summary-status" role="status" aria-live="polite">Поки немає перевірених блоків. Почни з будь-якого завдання.</p>
 <div class="hlp-review" id="hlp-review"></div>
 <div class="hlp-actions"><button type="button" class="hlp-btn hlp-btn--secondary" id="hlp-reset-all">Скинути весь практикум</button><a class="hlp-btn" href="./">До розділу I</a></div>
@@ -199,6 +206,14 @@ body.hlp-prototype {background:#0b1220;color:#e2e8f0;margin:0}
 <div><div class="historylab-footer__title">Авторські права та використані матеріали</div><p>Права на запозичені тексти, зображення й інші матеріали належать їхнім авторам та правовласникам.</p><p class="historylab-footer__note">Ілюстрації археологічних пам’яток супроводжено підписами з джерелами й ліцензіями.</p></div>
 <div class="historylab-footer__institution" aria-label="Навчальний заклад"><span class="historylab-footer__institution-logo" aria-hidden="true"><img src="../assets/institution/kharkiv-lyceum-99.gif" width="127" height="100" alt="" loading="lazy"></span><div class="historylab-footer__institution-text"><div class="historylab-footer__institution-kicker">Навчальний заклад</div><div class="historylab-footer__institution-name">Харківський ліцей № 99</div><div class="historylab-footer__institution-note">History Lab • навчальний вебпроєкт з історії для 6 класу</div></div></div>
 </div></footer>
+<script id="hlp-scoring-text-v2">
+function hlpFeedback(score,total){
+  if(score===total)return 'Усі завдання виконано правильно.';
+  if(score/total>=0.75)return 'Більшість завдань виконано правильно. Переглянь пояснення до помилок.';
+  if(score/total>=0.5)return 'Частину завдань виконано правильно. Повтори потрібні параграфи та спробуй ще раз.';
+  return 'Повернися до підказок і параграфів. Після повторення спробуй ще раз.';
+}
+</script>
 <script>
 (function () {
 'use strict';
@@ -365,7 +380,7 @@ function updateSummary(){
  const max=checked.reduce(function(acc,id){return acc+sets[id].questions.length},0);
  const msg=document.getElementById('hlp-summary-status'),review=document.getElementById('hlp-review');
  if(!checked.length){msg.textContent='Поки немає перевірених блоків. Почни з будь-якого завдання.';review.replaceChildren();return}
- msg.textContent='Перевірено '+checked.length+' із 4 блоків. Результат: '+scored+' із '+max+' балів у перевірених блоках.'+(checked.length===4?' Практикум завершено. Це самоперевірка, а не шкільна оцінка.':' Продовжуй у власному темпі.');
+ msg.textContent='Перевірено '+checked.length+' із 4 блоків. Результат: '+scored+' із '+max+' балів у перевірених блоках ('+Math.round(scored*100/max)+'% правильних відповідей серед перевірених блоків). '+(checked.length===4?hlpFeedback(scored,max):(scored===max?'Усі завдання перевірених блоків виконано правильно.':hlpFeedback(scored,max)))+' '+(checked.length===4?' Практикум завершено. Це самоперевірка, а не шкільна оцінка.':' Продовжуй у власному темпі.');
  review.replaceChildren();
  const needs=checked.filter(function(id){return state[id].score<sets[id].questions.length});
  if(needs.length){

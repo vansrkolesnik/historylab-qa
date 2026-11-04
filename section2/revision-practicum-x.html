@@ -137,6 +137,13 @@ body.hlp-prototype {background:#0b1220;color:#e2e8f0;margin:0}
 .hlp-prototype .hlp-source figcaption{overflow-wrap:break-word;word-break:normal}
 .hlp-prototype .hlp-question > h3{width:100%;max-width:none;overflow-wrap:break-word;text-wrap:wrap!important}
 </style>
+<!-- Stage 5.3E.4.2 · intro and score standard -->
+<style id="hlp-intro-heading-v2">
+.hlp-lead-panel{max-width:1112px;width:100%;margin-inline:auto}
+.hlp-lead-panel>h2{line-height:1.35}
+.hlp-lead-panel>.hlp-section-kicker{line-height:1.45}
+@media(max-width:420px){.hlp-lead-panel>h2{font-size:clamp(1.12rem,5vw,1.35rem)!important}}
+</style>
 </head>
 <body class="hl-v84 hl-ds2 hl-section-2 hlp-prototype">
 <a class="hl-skip-link" href="#main-content">Перейти до основного вмісту</a>
@@ -163,13 +170,13 @@ body.hlp-prototype {background:#0b1220;color:#e2e8f0;margin:0}
 
 <main class="hlp-main" id="main-content" tabindex="-1">
 <section class="hlp-lead-panel" aria-labelledby="x-intro">
-<p class="hlp-section-kicker">Як працювати з підсумком</p><h2 id="x-intro" style="font-size:1.4rem;font-weight:850;color:#fff5d8">Одна історія — багато дослідницьких шляхів</h2>
-<p>Порівняй чотири великі історичні регіони й досліджуй, що можна стверджувати на основі свідчень. Обери одну або рівно дві відповіді й установи відповідність між джерелами та межами їхнього тлумачення.</p>
+<p class="hlp-section-kicker">ЯК ПРАЦЮВАТИ З ПРАКТИКУМОМ</p><h2 id="x-intro" style="font-size:1.4rem;font-weight:850;color:#fff5d8">Порівняй цивілізації та їхній розвиток</h2>
+<p>Порівняй давні цивілізації за історичними джерелами та межами їх тлумачення. Обирай одну чи рівно дві відповіді та встановлюй відповідність. Виконай усі чотири завдання, перевір їх однією кнопкою, переглянь пояснення та за потреби виправ відповіді.</p>
 <p><strong>Ти можеш пройти X незалежно від M1–M4.</strong> Результат не є шкільною оцінкою, не зберігається між сторінками та не потребує облікового запису.</p>
 <div class="hlp-chip-row"><span class="hlp-chip">§§10–35</span><span class="hlp-chip">4 завдання</span><span class="hlp-chip">Без таймера</span></div>
 </section>
 <section class="hlp-panel" id="sources" aria-labelledby="sources-title">
-<p class="hlp-section-kicker">Різні історичні джерела</p><h2 id="sources-title">Що свідчить про минуле, а що ще потрібно перевірити?</h2>
+<p class="hlp-section-kicker">ДЖЕРЕЛА ТА НАВЧАЛЬНІ ОПОРИ</p><h2 id="sources-title">Що свідчить про минуле, а що ще потрібно перевірити?</h2>
 <p>Зістав п’ять пам’яток із різних регіонів. Стела законів передає правові норми, настінний розпис — створений художником образ праці, скіфська пектораль — речове свідчення, руїни давнього міста — архітектурне, ворожильна кістка — письмове.</p>
 <div class="hlp-grid" aria-label="Різні типи пам'яток Стародавнього світу">
 <figure class="hlp-source"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Code_of_Hammurabi_(Louvre_Sb_8)-31434550325.jpg?width=1200" alt="Стела із законами царя Хаммурапі в Луврі, чорний камінь із клинописним текстом."><figcaption><strong>S1 · Стела законів Хаммурапі</strong><small>Джерело: <a href="https://commons.wikimedia.org/wiki/File:Code_of_Hammurabi_(Louvre_Sb_8)-31434550325.jpg" rel="noopener noreferrer" target="_blank">Fred Romero / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by/2.0/" rel="noopener noreferrer" target="_blank">CC BY 2.0</a></small></figcaption></figure>
@@ -181,14 +188,14 @@ body.hlp-prototype {background:#0b1220;color:#e2e8f0;margin:0}
 <div class="hlp-evidence-note"><p><strong>Принцип історика:</strong> джерело має автора, призначення, дату та межі достовірності. Подібність географічних умов або технологій не означає, що всі цивілізації розвивалися однаково. Писемність Хараппи лишається нерозшифрованою.</p></div>
 </section>
 <section class="hlp-panel" id="tasks" aria-labelledby="tasks-title">
-<p class="hlp-section-kicker">Підсумковий практикум X · §§10–35</p><h2 id="tasks-title">Чотири міжтемні завдання</h2>
+<p class="hlp-section-kicker">ПРАКТИЧНІ ЗАВДАННЯ · X · §§10–35</p><h2 id="tasks-title">Міжтемне порівняння цивілізацій</h2>
 <p>Заповни всі відповіді й натисни «Перевірити 4 завдання». Після зміни відповіді результат оновиться лише після нової перевірки.</p>
 <div class="hlp-questions" id="x-questions"></div>
 <div class="hlp-actions"><button type="button" class="hlp-btn" id="x-check">Перевірити 4 завдання</button><button type="button" class="hlp-btn hlp-btn--secondary" id="x-reset">Скинути відповіді</button></div>
 <p class="hlp-block-result" id="x-status" role="status" aria-live="polite">Заповни відповіді до всіх чотирьох завдань.</p>
 </section>
 <section class="hlp-panel" id="reflection" aria-labelledby="reflection-title">
-<p class="hlp-section-kicker">Вільний висновок історика</p><h2 id="reflection-title">Різні цивілізації — обґрунтоване порівняння</h2>
+<p class="hlp-section-kicker">ПОМІРКУЙ І ЗРОБИ ВИСНОВОК</p><h2 id="reflection-title">Різні цивілізації — обґрунтоване порівняння</h2>
 <p>Обери дві цивілізації з різних регіонів. Назви одну подібність, одну відмінність і щонайменше по одному історичному джерелу, яке допомогло б перевірити висновок.</p>
 <div class="hlp-reflection"><label for="x-reflection">Мій висновок (не оцінюється автоматично)</label>
 <textarea id="x-reflection" rows="4" maxlength="900" placeholder="Порівнюю… Подібність… Відмінність… Джерела… Обмеження мого висновку…"></textarea>
@@ -196,13 +203,21 @@ body.hlp-prototype {background:#0b1220;color:#e2e8f0;margin:0}
 <p class="hlp-muted">Вільна відповідь залишається тільки на цій сторінці браузера та не входить до чотирьох балів.</p></div>
 </section>
 <section class="hlp-summary" id="result" aria-labelledby="result-title">
-<p class="hlp-section-kicker">Підсумок</p><h2 id="result-title">Як порівняти цивілізації?</h2>
+<p class="hlp-section-kicker">РЕЗУЛЬТАТ САМОПЕРЕВІРКИ</p><h2 id="result-title">Твій підсумок</h2>
 <p id="x-score" role="status" aria-live="polite">Підсумок з’явиться після перевірки всіх чотирьох завдань.</p>
 <div class="hlp-review" id="x-review"></div>
 <div class="hlp-actions"><a class="hlp-btn" href="revision-practicum.html">Усі частини E02</a><a class="hlp-btn hlp-btn--secondary" href="./">До розділу II</a><button type="button" class="hlp-btn hlp-btn--secondary" id="x-reset-all">Скинути весь підсумок</button></div>
 <p class="hlp-footer-intro">Stage 5.3C.4.4 · X — навчальна сторінка development. Підсумок не вимагає проходження інших модулів і не зберігає оцінки.</p>
 </section>
 </main>
+<script id="hlp-scoring-text-v2">
+function hlpFeedback(score,total){
+  if(score===total)return 'Усі завдання виконано правильно.';
+  if(score/total>=0.75)return 'Більшість завдань виконано правильно. Переглянь пояснення до помилок.';
+  if(score/total>=0.5)return 'Частину завдань виконано правильно. Повтори потрібні параграфи та спробуй ще раз.';
+  return 'Повернися до підказок і параграфів. Після повторення спробуй ще раз.';
+}
+</script>
 <script>(function(){
 "use strict";
 const questions=[{"id":"X.01","type":"multi","prompt":"Для порівняння Месопотамії, Єгипту, долини Інду й Давнього Китаю вибери ДВА історично виважені висновки.","options":["Річкові долини могли створювати умови для господарства, але суспільні результати різнилися.","Наявність двох річок автоматично означає однаковий політичний устрій.","Порівняння потребує даних про хронологію, господарство, владу й пам’ятки кожного регіону.","Всі цивілізації однаково використовували одну мову."],"answer":[0,2],"explain":"Багаторегіональне порівняння має спиратися на критерії та відмінності контекстів.","hint":"Шукай порівняння, а не універсальну схему.","refs":[12,20,30,33]},{"id":"X.02","type":"match","prompt":"Зістав історичне джерело з його важливою межею достовірності.","options":["Норма не доводить, що її завжди виконували.","Зображення не описує побут кожного мешканця.","На оповідь може впливати погляд зовнішнього спостерігача.","Не можна достовірно читати зміст невідомого письма."],"rows":["Стела законів Хаммурапі","Розпис із зображенням повсякдення в Єгипті","Опис скіфів давньогрецьким автором","Нерозшифровані знаки Хараппи"],"answer":[0,1,2,3],"explain":"У кожного типу джерел є власні можливості та обмеження; найкраще зіставляти різні свідчення.","hint":"Визнач, що заважає робити надто загальний висновок з одного джерела.","refs":[14,23,29,30]},{"id":"X.03","type":"multi","prompt":"Порівнюючи писемність, торгівлю та управління у різних регіонах, вибери ДВА коректні твердження.","options":["Писемність і шляхи сполучення могли виконувати різні суспільні функції.","Однакова технологія обов’язково означає однакову релігію.","Для пояснення контактів треба враховувати час, місце та призначення мережі.","Усі контакти між країнами виникали лише після військового підкорення."],"answer":[0,2],"explain":"Обмін і управління можуть потребувати письма й транспортних зв’язків, але їхні функції не тотожні.","hint":"Зосередься на функції інструменту або мережі.","refs":[17,25,28,34]},{"id":"X.04","type":"single","prompt":"Який висновок найкраще підсумовує вивчення різних стародавніх цивілізацій?","options":["Існував один правильний спосіб розвитку, решта народів від нього відставали.","Давні суспільства розвивалися в різних умовах; їх можна порівнювати за визначеними ознаками, пам’ятаючи про межі наших джерел.","Відмінності можна пояснити лише природними умовами.","Після виникнення писемності археологічні пам’ятки перестали мати значення."],"answer":1,"explain":"Історичне порівняння пояснює подібності та відмінності без ранжування культур і без перебільшення певності джерел.","hint":"Уникай тверджень «усі», «тільки», «єдиний шлях».","refs":[11,18,24,35]}];
@@ -331,7 +346,7 @@ function verify(){
  }
  state.checked=true;state.score=score;
  status.textContent="Перевірено: "+score+" із 4. Переглянь пояснення до завдань.";
- summary.textContent="Твій результат: "+score+" із 4. Це навчальна самоперевірка, а не оцінка для журналу.";
+ summary.textContent="Твій результат: "+score+" із 4 ("+Math.round(score*100/4)+"% правильних відповідей). "+hlpFeedback(score,4)+" Це навчальна самоперевірка, а не оцінка для журналу.";
  review.replaceChildren();
  if(redo.length){
   append(review,"p","","Для повторення варто переглянути:");
