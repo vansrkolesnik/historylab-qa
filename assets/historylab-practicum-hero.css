@@ -46,3 +46,15 @@ body.hl-v84.hlp-prototype .hl-lesson-hero.hl-lesson-hero--practicum-page .hl-les
     grid-template-columns: minmax(0,1fr);
   }
 }
+
+/* Stage 5.3E.5.4A.1: Match E01/E02 mobile Hero vertical spacing in E03.
+   Scoped to practicum pages; regular lesson Hero rules remain untouched. */
+@media (max-width: 560px) {
+  body.hl-v84.hlp-prototype .hl-lesson-hero.hl-lesson-hero--practicum-page .hl-lesson-hero__inner {
+    padding-top: 1.65rem;
+    padding-bottom: 1.45rem;
+  }
+  body.hl-v84.hlp-prototype .hl-lesson-hero.hl-lesson-hero--practicum-page .hl-lesson-hero__stats {
+    margin-top: 1.25rem;
+  }
+}
