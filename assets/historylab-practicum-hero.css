@@ -1,0 +1,48 @@
+/* History Lab — Stage 5.3E.5.4A: practicum-only Hero system.
+   The base Lesson Hero CSS remains authoritative for lessons §§1–60.
+   Scoped extra classes are used only on E01–E03 practicum pages. */
+
+/* Hub pages summarize entire sections, not a single civilization. */
+body.hl-v84:not(.hl-section-index) .hl-lesson-hero.hl-lesson-hero--practicum-hub {
+  --hl-lh-accent: #c0843a;
+  --hl-lh-accent-text: #fde68a;
+  --hl-lh-bg-start: #19253a;
+  --hl-lh-bg-end: #0f172a;
+  --hl-lh-glow: rgba(192,132,58,.17);
+}
+
+/* Cross-topic X has a neutral slate palette in both sections. */
+body.hl-v84:not(.hl-section-index) .hl-lesson-hero.hl-lesson-hero--practicum-x {
+  --hl-lh-accent: #94a3b8;
+  --hl-lh-accent-text: #e2e8f0;
+  --hl-lh-bg-start: #1e293b;
+  --hl-lh-bg-end: #0f172a;
+  --hl-lh-glow: rgba(148,163,184,.19);
+}
+
+/* A single monotonic heading scale on all 14 practicum pages. */
+body.hl-v84.hlp-prototype .hl-lesson-hero.hl-lesson-hero--practicum-page .hl-lesson-hero__title {
+  font-size: clamp(1.75rem,4.15vw,3.35rem);
+}
+
+/* Consistent 4 / 2 / 1 statistic grid: desktop / tablet / narrow phone.
+   More specific than the historical E03-only responsive overrides. */
+@media (min-width: 561px) and (max-width: 900px) {
+  body.hl-v84.hlp-prototype .hl-lesson-hero--practicum-page .hl-lesson-hero__stats {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+}
+@media (min-width: 390px) and (max-width: 560px) {
+  body.hl-v84.hlp-prototype .hl-lesson-hero--practicum-page .hl-lesson-hero__stats {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: .6rem;
+  }
+  body.hl-v84.hlp-prototype .hl-lesson-hero--practicum-page .hl-lesson-hero__stat {
+    padding: .66rem .72rem;
+  }
+}
+@media (max-width: 389px) {
+  body.hl-v84.hlp-prototype .hl-lesson-hero--practicum-page .hl-lesson-hero__stats {
+    grid-template-columns: minmax(0,1fr);
+  }
+}
