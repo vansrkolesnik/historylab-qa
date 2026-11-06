@@ -1,0 +1,4 @@
+# Candidate only; do NOT commit or deploy without a new Owner authorization.
+[build]
+  command = "bash scripts/build-publication.sh"
+  publish = "__publish"
