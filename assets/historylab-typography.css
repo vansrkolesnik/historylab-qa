@@ -1,6 +1,57 @@
-/* History Lab: shared typography. Layout, colours and symbol fonts stay intact. */
-@import url('./fonts/historylab-fonts.css');
+/* F5.2 RC2 — Font Rendering Stability (local review candidate).
+   font-display:optional prevents late font swapping. On a slow cold load a fallback
+   font may persist for that navigation; the approved families/weights stay intact.
+   Keep src/weights/metrics unchanged. */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 600;
+  font-display: optional;
+  src: url('./fonts/comfortaa-600.woff2') format('woff2'),
+       url('./fonts/comfortaa-600.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  font-display: optional;
+  src: url('./fonts/comfortaa-700.woff2') format('woff2'),
+       url('./fonts/comfortaa-700.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: optional;
+  src: url('./fonts/nunito-400.woff2') format('woff2'),
+       url('./fonts/nunito-400.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-display: optional;
+  src: url('./fonts/nunito-600.woff2') format('woff2'),
+       url('./fonts/nunito-600.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-display: optional;
+  src: url('./fonts/nunito-700.woff2') format('woff2'),
+       url('./fonts/nunito-700.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-display: optional;
+  src: url('./fonts/nunito-800.woff2') format('woff2'),
+       url('./fonts/nunito-800.ttf') format('truetype');
+}
 
+/* History Lab: shared typography. Layout, colours and symbol fonts stay intact. */
 :root {
   --hl-font-body: "Nunito", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   --hl-font-heading: "Comfortaa", "Nunito", system-ui, sans-serif;

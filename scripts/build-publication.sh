@@ -27,7 +27,7 @@ fi
 
 file_count="$(find "$output" -type f | wc -l | tr -d '[:space:]')"
 html_count="$(find "$output" -type f -name '*.html' | wc -l | tr -d '[:space:]')"
-if [[ "$file_count" -ne 232 || "$html_count" -ne 78 ]]; then
+if [[ "$file_count" -ne 238 || "$html_count" -ne 78 ]]; then
   echo "ERROR: unexpected output file count: $file_count total, $html_count HTML." >&2
   exit 1
 fi
